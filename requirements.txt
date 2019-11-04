@@ -1,0 +1,4 @@
+mistune
+ipython
+sympy
+jupyterlab
