@@ -1,17 +1,15 @@
 ---
 title: "Everything you wanted to know about amplitudes"
 author: Samuel Overington | ID 170431121
-date: @alt-D
-abstract: |
-  Experiment results
+date: 04-11-2019
 geometry: margin=2cm
-abstract: input{abstract.md}
-bibliography: pendulum-bib.bib
+abstract: \input{abstract.md}
+bibliography: bibliography.bib
 nocite: |
-  @name:1997aa
+  @Henn:2014aa
 output:
   pdf_document:
-    path: "../Everything you wanted to know about amplitudes.pdf"
+    path: "../thesis_output/amplitudes.pdf"
     toc: true
     toc_depth: 3
 header-includes:
