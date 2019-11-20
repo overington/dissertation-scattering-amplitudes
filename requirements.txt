@@ -1,4 +1,3 @@
 mistune
-ipython
 sympy
 jupyterlab
