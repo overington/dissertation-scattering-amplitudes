@@ -1,18 +1,24 @@
-# General outline
-* A definition of Scattering amplitudes
-* How have they been calculated using Feynman diagrams
-* (How do they relate to Gauge theory)
-* Problem with current method of computation (using Feynman diagrams)
-* difference between On-shell and Off-shell
-* Aim: To find and produce generators using the 'On-Shell' methods.
-Guage theories and spinnor matricies for Gluons and massless particles were 
+In Quantum Field Theory (QFT), a scattering amplitude is the mechanism for predicting and measurements of fundamental particle interactions. Traditionally, they have been computed by mapping the energy associated with each entering particle to exiting particles while preserving at the macro level Einsteins energy-momentum relationship of $E^2 = (pc)^2 + (mc^2)^2$.
+
+This relation is held by keeping tally of the energy momentum relation, and summing all the interactions that take place.
 
 
-## Scattering Amplitudes
+Feynman diagrams are the most common method used to keep tally of the energy and momenta of all particles in an interaction. Each entering particle will have a certain number associated with it with respect to the quantity, as will exiting particles. The computation method involves creating and counting interim interactions joining the entering particle to an exiting particle, while preserving the energy momentum relation.
 
-In Quantum Field Theory (QFT), a scattering amplitude is the method of measuring all fundamental particle interactions. It is calcuated by doing the summation of all interactions, mapping all entering particles to all exiting particles while preserving at the macro level the Einstein relationship of $E^2 = (pc)^2 + (mc^2)^2$.
+In Feynman diagrams, the interim particles are allowed to temporarily break such relations - creating a virtual particle; where the interaction is called an **off-shell** @Hodges:2013aa. But as a system, the broken symmetries must cancel each other out by the final exiting particle.
 
-## Off Shell Feynman Diagrams
+When a virtual particle breaks the energy-momentum relationship, the calculation is said to be 'off-shell'.
 
-Traditionally, Feynman diagrams have been used to calculate such interactions, which map all incoming to outgoing particles, and allow for such interactions to create temporary, or _virtual_ particles, which temporarily break symmetry laws along the path. This method of is called Off-Shell, or more formally, off the mass shell (more on this later)
+This method is rigorous, and good for simple particle interactions, however 
+
+
+
+```
+it turns out that beyond the simplest examples the complexity of the Feynman diagrammatic computation quickly gets out of hand
+```
+
+
+Graph that out and you get a parabolic surface for massive particles, and a cone for massless particles, like photons. This is known as the mass shell. The momentum of a real particle can be represented by a vector lying along the shells’ surface. The point is that real particles have momentum vectors that are on the shell – not inside it, but on it.
+
+
 . This is a null point, as it is only a temporary mater, where by the final interaction, the interaction will cancel each other out, and we are left with so called "on-shell" particles.
