@@ -1,7 +1,3 @@
-\renewcommand{\L}{\mathcal{L}}
-\renewcommand{\H}{\hat{H}}
-\newcommand{\sgn}{\text{sgn}}
-
 % --- Macro \xvec
 \makeatletter
 \newlength\xvec@height%
@@ -45,3 +41,12 @@
 % --- Define \dvec and \ddvec for dotted and double-dotted vectors.
 \newcommand{\dvec}[1]{\xvec[.]{#1}}
 \newcommand{\ddvec}[1]{\xvec[:]{#1}}
+
+
+\renewcommand{\L}{\mathcal{L}}
+\renewcommand{\H}{\hat{H}}
+\newcommand{\sgn}{\text{sgn}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}

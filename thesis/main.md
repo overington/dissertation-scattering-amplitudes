@@ -28,18 +28,22 @@ output:
 # vector testing
 
 $$
-    \dvec{x}^2
+    \dvec{x}^2\\
+    \varepsilon\ \epsilon
 $$
 
 
 
-<!--
-# Introduction
+
+<!-- # Introduction
 @import "00.introduction.md"
--->
+
 
 # Symmetries
-@import "01.symmetries.md"
+@import "01.symmetries.md" -->
+@import "01.spinor.md"
+@import "01.angular_momentum.md"
+
 
 
 <!--
