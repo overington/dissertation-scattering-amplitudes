@@ -15,21 +15,20 @@ header-includes: |
   \usepackage{siunitx,physics}
   \usepackage{mattens}
   \usepackage{tensor}
+  \usepackage{tikz}
 output:
   pdf_document:
-    path: "../thesis_output/amplitudes.pdf"
+    template: assets/template.tex
+    path: ../thesis_output/amplitudes.pdf
     toc: true
     toc_depth: 3
 ---
 
-\renewcommand{\L}{\mathcal{L}}
-\renewcommand{\H}{\hat{H}}
-\newcommand{\sgn}{\text{sgn}}
 
 # vector testing
 
 $$
-    \aS[\dot]{x}^2
+    \dvec{x}^2
 $$
 
 
