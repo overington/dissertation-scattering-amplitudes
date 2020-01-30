@@ -1,20 +1,45 @@
-Claim:
+---
+title: "test"
+author: Samuel Overington | ID 170431121
+numbersections: true
+output:
+  pdf_document:
+    template: assets/template.tex
+    path: "../thesis_output/test.pdf"
+    toc: true
+    toc_depth: 3
+header-includes:
+  - \usepackage{amssymb}
+  - \usepackage{amsmath}
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{siunitx,physics}
+  - \usepackage{pgfplots,pgfplotstable}
+  - \pgfplotsset{compat=1.13}
+---
+
+
+# ch 1
+(@eqfirst) $E = mc^2$
+
 $$
-\begin{aligned}
-  (E, \aS{p}) &= \qq{4-momentum}\\
-  &= \qq{4-velocity}
+  \L
 $$
 
-There exists these two values
+\begin{equation}
+  \label{eq:the_label}
+  \gamma = \frac{1}{\sqrt{1-v^2/c^2}}
+\end{equation}
 
-$$
-\begin{aligned}
-  p^\mu \to \tensor{\Lambda}{^\mu_nu}p^\nu
-  x^\mu \to \tensor{\Lambda}{^\mu_nu}x^\nu
-\end{aligned}
-$$
+# Section 2
 
-To prove that this quantity os a 4-vector:
+(@eqsecond) $\vec{a}\cdot\vec{b} = \abs{a}\abs{b}\cos(\theta)$
 
+\begin{equation}
+  \label{eq:the2_label}
+  \gamma = \frac{1}{\sqrt{1-v^2/c^2}}
+\end{equation}
 
-
+\begin{equation}
+  \label{eq:the3_label}
+  \gamma = \frac{1}{\sqrt{1-v^2/c^2}}
+\end{equation}
