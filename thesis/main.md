@@ -1,9 +1,13 @@
 ---
 title: "On-Shell amplitude computation using loop level unitarity-based techniques"
-author: Samuel Overington | ID 170431121
+author:
+  - name: Samuel Overington | ID 170431121
+    affiliation: |
+      School of Physics and Astronomy,
+      Queen Mary University of London
 numbersections: true
 fontsize: 12pt
-csl: assets/vancouver.csl
+geometry: margin=2cm
 bibliography: bibliography-scattering_amplitudes.bib
 abstract: \input{abstract.md}
 nocite: |
@@ -28,7 +32,16 @@ output:
     toc_depth: 3
 ---
 
-Outline:
+\twocolumn
+
+
+# Introduction
+
+@import "00.introduction.md"
+
+## Outline:
+
+The outline for the proposed project will take the following form:
 
 *   Elements of the Lorentz group
 *   Four vectors
@@ -42,9 +55,7 @@ Outline:
 
 ---
 
-# Introduction
-
-@import "00.introduction.md"
+\onecolumn
 
 
 # Symmetries
@@ -67,4 +78,4 @@ Outline:
 
 # Conclusions -->
 
-# bibliography
+# Bibliography

@@ -1,11 +1,15 @@
 ---
-title: "On-Shell amplitude computation using loop level unitarity-based techniques"
-author: Samuel Overington | ID 170431121
+title: On-Shell amplitude computation using loop level unitarity-based techniques
+author:
+  - name: Samuel Overington
+    affiliation: |
+      School of Physics and Astronomy,
+      Queen Mary University of London
 numbersections: true
 fontsize: 12pt
 geometry: margin=2cm
-csl: assets/vancouver.csl
 bibliography: bibliography-scattering_amplitudes.bib
+classoption: twocolumn
 abstract: \input{abstract.md}
 nocite: |
   @Henn:2014aa, @Hunter:2013ab, @Britto:2005ab, @Bern:2012aa, @Britto:2005aa, @Arkani-Hamed:2012aa, @Plefka:2014aa, @Landau:1975aa
@@ -25,19 +29,16 @@ output:
   pdf_document:
     template: assets/template.tex
     path: ../thesis_output/outline.pdf
-    toc: true
-    toc_depth: 3
+    toc: false
 ---
-
-\allsectionsfont{\boldmath}
-
-\twocolumn
 
 # Introduction
 
 @import "00.introduction.md"
 
-Outline:
+# Outline:
+
+The outline for the proposed project will take the following form:
 
 *   Elements of the Lorentz group
 *   Four vectors
@@ -45,7 +46,7 @@ Outline:
 *   Spinor helicity formalism (null vectors)
 *   Little group and weights
 *   Determination of three-point amplitudes of massless particles
-*   Introduction to Feynman diagrams  - reproducing amplitudes for Yang-Mills theory
+*   Introduction to Feynman diagrams - reproducing amplitudes for Yang-Mills theory
 *   Three-point amplitudes and factorisation
 *   BCFW recursion relations in Yang-Mills and Gravity
 

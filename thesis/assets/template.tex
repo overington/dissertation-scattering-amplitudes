@@ -383,7 +383,18 @@ $else$
 $endif$
 \subtitle{$subtitle$}
 $endif$
-\author{$for(author)$$author$$sep$ \and $endfor$}
+
+
+\author{
+$for(author)$
+$if(author.name)$
+$author.name$ $if(author.affiliation)$ \\ \textit{\small{($author.affiliation$)}} $endif$
+$else$
+$author$
+$endif$
+$endfor$}
+
+% \author{ $for(author)$$author$$sep$ \and $endfor$}
 \date{$date$}
 $if(beamer)$
 $if(institute)$
