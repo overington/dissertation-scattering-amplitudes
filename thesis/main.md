@@ -28,40 +28,41 @@ output:
   pdf_document:
     template: assets/template.tex
     path: ../thesis_output/amplitudes.pdf
-    toc: true
+    toc: false
     toc_depth: 3
 ---
 
 \twocolumn
 
-
 # Introduction
 
 @import "00.introduction.md"
 
-## Outline:
+\onecolumn
 
-The outline for the proposed project will take the following form:
 
-*   Elements of the Lorentz group
-*   Four vectors
-*   Spinors and transformations
-*   Spinor helicity formalism (null vectors)
+
+# Relativity
+
+@import "02.relativity.md"
+
+# Elements of the Lorentz group
+
+@import "03.lorentz_group.md"
+
+# Four vectors
+
+
+
+# Spinors and transformations
+# Spinor helicity formalism (null vectors)
+@import "01.spinor.md"
+
 *   Little group and weights
 *   Determination of three-point amplitudes of massless particles
 *   Introduction to Feynman diagrams  - reproducing amplitudes for Yang-Mills theory
 *   Three-point amplitudes and factorisation
 *   BCFW recursion relations in Yang-Mills and Gravity
-
----
-
-\onecolumn
-
-
-# Symmetries
-
-@import "01.symmetries.md"
-@import "01.spinor.md"
 
 @import "01.angular_momentum.md"
 
