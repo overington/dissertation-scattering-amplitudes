@@ -32,6 +32,12 @@ $$
 
 # Section 2
 
+$$
+\begin{aligned}
+  \L = this
+\end{aligned}
+$$
+
 (@eqsecond) $\vec{a}\cdot\vec{b} = \abs{a}\abs{b}\cos(\theta)$
 
 \begin{equation}

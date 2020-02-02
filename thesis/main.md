@@ -32,6 +32,8 @@ output:
     toc_depth: 3
 ---
 
+<!--
+
 \twocolumn
 
 # Introduction
@@ -40,6 +42,7 @@ output:
 
 \onecolumn
 
+-->
 
 
 # Relativity
