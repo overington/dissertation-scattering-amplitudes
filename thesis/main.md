@@ -13,12 +13,13 @@ abstract: \input{abstract.md}
 nocite: |
   @Henn:2014aa, @Hunter:2013ab, @Britto:2005ab, @Bern:2012aa, @Britto:2005aa, @Arkani-Hamed:2012aa, @Plefka:2014aa, @Landau:1975aa
 header-includes: |
-  \usepackage{lmodern}
+  \usepackage{lmodern,mathrsfs}
   \usepackage{sectsty}
   \usepackage{yfonts}
   \usepackage{bbold}
   \usepackage{amssymb}
   \usepackage{amsmath}
+  \usepackage{cancel,ulem}
   \usepackage[utf8]{inputenc}
   \usepackage{siunitx,physics}
   \usepackage{mattens}
@@ -31,8 +32,6 @@ output:
     toc: true
     toc_depth: 3
 ---
-
-
 \twocolumn
 
 # Introduction
@@ -50,6 +49,7 @@ output:
 
 @import "03.lorentz_group.md"
 
+
 # Four vectors
 
 
@@ -58,13 +58,20 @@ output:
 # Spinor helicity formalism (null vectors)
 @import "01.spinor.md"
 
-*   Little group and weights
-*   Determination of three-point amplitudes of massless particles
-*   Introduction to Feynman diagrams  - reproducing amplitudes for Yang-Mills theory
-*   Three-point amplitudes and factorisation
-*   BCFW recursion relations in Yang-Mills and Gravity
-
+# Little group and weights
 @import "01.angular_momentum.md"
+
+# Determination of three-point amplitudes of massless particles
+
+# Introduction to Feynman diagrams  - reproducing amplitudes for Yang-Mills theory
+
+# Three-point amplitudes and factorisation
+# BCFW recursion relations in Yang-Mills and Gravity
+
+@import "99.bcfw.md"
+
+
+
 
 
 

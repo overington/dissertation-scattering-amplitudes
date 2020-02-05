@@ -1,4 +1,5 @@
-% --- Macro \xvec
+$$
+\require{physics}
 \makeatletter
 \newlength\xvec@height%
 \newlength\xvec@depth%
@@ -34,35 +35,20 @@
   #2%
 }
 \makeatother
-
-% underline with dots
-\newcommand{\udots}[1]{%
+\newcommand{\udots}[1]{%% underline with dots
     \tikz[baseline=(todotted.base)]{
         \node[inner sep=1pt,outer sep=0pt] (todotted) {#1};
         \draw[densely dotted] (todotted.south west) -- (todotted.south east);
     }%
 }%
-
-% Fonts
-% \renewcommand*\familydefault{\sfdefault}
-
-% --- Override \vec with an invocation of \xvec.
-\let\stdvec\vec
-\renewcommand{\vec}[1]{\xvec[]{#1}}
-% --- Define \dvec and \ddvec for dotted and double-dotted vectors.
+\let\stdvec\vec  % --- Override \vec with an invocation of \xvec.
+\renewcommand{\vec}[1]{\xvec[]{#1}}  % --- Define \dvec and \ddvec for dotted and double-dotted vectors.
 \newcommand{\dvec}[1]{\xvec[.]{#1}}
 \newcommand{\ddvec}[1]{\xvec[:]{#1}}
-
-
-
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
-
-
-%%%% Some definition for the spinor braket in four and six dimensions %%%%%
-
-\newcommand{\agl}[2]{\langle#1 \, #2 \rangle}
+\newcommand{\agl}[2]{\langle#1 \, #2 \rangle} %%%% Some definition for the spinor braket in four and six dimensions %%%%%
 \newcommand{\sqr}[2]{\lbrack #1 \, #2 \rbrack}
 \newcommand{\sabrv}[2]{[#1\,#2\rangle}
 \newcommand{\asbrv}[2]{\langle#1\,#2]}
@@ -82,10 +68,7 @@
 \newcommand{\mtu}[1]{\tilde{\mu}^{\dot{#1}}}
 \newcommand{\mud}[1]{\mu_{#1}}
 \newcommand{\mtd}[1]{\tilde{\mu}_{\dot{#1}}}
-
-%%%% Some useful character %%%%
-
-\renewcommand{\L}{\mathcal{L}}
+\renewcommand{\L}{\mathcal{L}} %%%% Some useful character %%%%
 \newcommand{\Lg}{\text{L}}
 \renewcommand{\H}{\hat{H}}
 \newcommand{\sgn}{\text{sgn}}
@@ -100,10 +83,8 @@
 \newcommand{\dij}{\delta_{ij}}
 \newcommand{\sA}{\mathscr{A}}
 \newcommand{\parallelsum}{\mathbin{/\mkern-5mu/}}
+$$
 
-
-% ---------------------------------
-%  must come near the end of this file, or before the beginning of \begin{document}
-\numberwithin{equation}{section}
-
-\listfiles
+$$
+  \RR
+$$
