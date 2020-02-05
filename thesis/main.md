@@ -28,11 +28,10 @@ output:
   pdf_document:
     template: assets/template.tex
     path: ../thesis_output/amplitudes.pdf
-    toc: false
+    toc: true
     toc_depth: 3
 ---
 
-<!--
 
 \twocolumn
 
@@ -41,8 +40,6 @@ output:
 @import "00.introduction.md"
 
 \onecolumn
-
--->
 
 
 # Relativity
