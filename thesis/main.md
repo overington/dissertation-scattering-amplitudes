@@ -74,11 +74,6 @@ output:
 
 
 
-
-
-
-
-
 <!--
 # Theoretical Motivation
 
