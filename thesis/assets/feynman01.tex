@@ -1,0 +1,9 @@
+\feynmandiagram [horizontal=a to b] {
+  i1 [particle=$p_1$] -- [fermion] a,
+  i2 [particle=$p_2$] -- [fermion] a,
+  i3 [particle=$p_3$] -- [fermion] a,
+  a -- [fermion, momentum=$\vec{p}$] b,
+  f3 [particle=$p_N$] -- [fermion] b,
+  b -- [fermion] f2 [particle=$p_{N-1}$],
+  b -- [fermion] f1 [particle=$p_{N-2}$],
+};

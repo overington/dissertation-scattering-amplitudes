@@ -25,8 +25,10 @@ header-includes: |
   \usepackage{mattens}
   \usepackage{tensor}
   \usepackage{tikz}
+  \usepackage{tikz-feynman}
 output:
   pdf_document:
+    latex_engine: lualatex
     template: assets/template.tex
     path: ../thesis_output/amplitudes.pdf
     toc: true
