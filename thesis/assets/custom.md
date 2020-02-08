@@ -50,6 +50,7 @@ $$
 \newtheorem{lemma}[theorem]{Lemma}
 \newcommand{\agl}[2]{\langle#1 \, #2 \rangle} %%%% Some definition for the spinor braket in four and six dimensions %%%%%
 \newcommand{\sqr}[2]{\lbrack #1 \, #2 \rbrack}
+\newcommand{\aglb}[2]{\langle #1 \, #2 \rangle}
 \newcommand{\sabrv}[2]{[#1\,#2\rangle}
 \newcommand{\asbrv}[2]{\langle#1\,#2]}
 \newcommand{\sabr}[4]{[#1_{\dot{#2}}\, #3_{#4}\rangle}
