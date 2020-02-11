@@ -1,5 +1,8 @@
 $$
 \require{physics}
+$$
+<!--
+$$
 \makeatletter
 \newlength\xvec@height%
 \newlength\xvec@depth%
@@ -18,7 +21,7 @@ $$
   \def\xvec@dd{:}%
   \def\xvec@d{.}%
   \raisebox{.2ex}{\raisebox{\xvec@height}{\rlap{%
-    \kern.05em%  (Because left edge of drawing is at .05em)
+    \kern.05em
     \begin{tikzpicture}[scale=1]
     \pgfsetroundcap
     \draw (.05em,0)--(\xvec@width-.05em,0);
@@ -34,20 +37,27 @@ $$
   }}}%
   #2%
 }
+
+\let\stdvec\vec
+\renewcommand{\vec}[1]{\xvec[]{#1}}
+$$
+ -->
+$$
+\newcommand{\dvec}[1]{\dot{\vec{#1}}}
+\newcommand{\ddvec}[1]{\ddot{\vec{#1}}}
+\newcommand{\pdv}[1]{\frac{\partial #1}{\partial x}}
+$$
+$$
 \makeatother
-\newcommand{\udots}[1]{%% underline with dots
+\newcommand{\udots}[1]{%
     \tikz[baseline=(todotted.base)]{
         \node[inner sep=1pt,outer sep=0pt] (todotted) {#1};
         \draw[densely dotted] (todotted.south west) -- (todotted.south east);
     }%
 }%
-\let\stdvec\vec  % --- Override \vec with an invocation of \xvec.
-\renewcommand{\vec}[1]{\xvec[]{#1}}  % --- Define \dvec and \ddvec for dotted and double-dotted vectors.
-\newcommand{\dvec}[1]{\xvec[.]{#1}}
-\newcommand{\ddvec}[1]{\xvec[:]{#1}}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{corollary}{Corollary}[theorem]
-\newtheorem{lemma}[theorem]{Lemma}
+$$
+
+$$
 \newcommand{\agl}[2]{\langle#1 \, #2 \rangle} %%%% Some definition for the spinor braket in four and six dimensions %%%%%
 \newcommand{\sqr}[2]{\lbrack #1 \, #2 \rbrack}
 \newcommand{\aglb}[2]{\langle #1 \, #2 \rangle}
@@ -85,7 +95,8 @@ $$
 \newcommand{\sA}{\mathscr{A}}
 \newcommand{\parallelsum}{\mathbin{/\mkern-5mu/}}
 $$
-
+<!--
 $$
-  \RR
+  \RR \dvec{x}
 $$
+-->

@@ -1,5 +1,5 @@
 ---
-title: "On-Shell amplitude computation using loop level unitarity-based techniques"
+title: "On-Shell amplitude computation using BCFW"
 author:
   - name: Samuel Overington | ID 170431121
     affiliation: |
@@ -9,7 +9,7 @@ numbersections: true
 fontsize: 12pt
 geometry: margin=2cm
 bibliography: bibliography-scattering_amplitudes.bib
-abstract: \input{abstract.md}
+abstract:  \input{abstract}
 nocite: |
   @Henn:2014aa, @Hunter:2013ab, @Britto:2005ab, @Bern:2012aa, @Britto:2005aa, @Arkani-Hamed:2012aa, @Plefka:2014aa, @Landau:1975aa
 header-includes: |
@@ -29,8 +29,8 @@ header-includes: |
 output:
   pdf_document:
     latex_engine: lualatex
-    template: assets/template.tex
-    path: ../thesis_output/amplitudes.pdf
+    template: /Users/samuel/Documents/devices/2019-20/project/dissertation/assets/template.tex
+    path: /thesis_output/amplitudes.pdf
     toc: true
     toc_depth: 3
 ---
