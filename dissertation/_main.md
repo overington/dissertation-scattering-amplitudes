@@ -1,5 +1,5 @@
 ---
-title: "On-Shell amplitude computation using BCFW"
+title: "Computating On-Shell amplitude using BCFW"
 author:
   - name: Samuel Overington | ID 170431121
     affiliation: |
@@ -15,6 +15,7 @@ nocite: |
 header-includes: |
   \usepackage{lmodern,mathrsfs}
   \usepackage{sectsty}
+  \usepackage[skipabove=\topskip,skipbelow=\topskip]{mdframed}
   \usepackage{yfonts}
   \usepackage{bbold}
   \usepackage{amssymb}
@@ -34,7 +35,6 @@ output:
     toc: true
     toc_depth: 3
 ---
-
 \twocolumn
 
 # Introduction
@@ -45,7 +45,6 @@ output:
 
 
 # Relativity
-
 @import "02.relativity.md"
 
 # Elements of the Lorentz group
@@ -72,16 +71,5 @@ output:
 # BCFW recursion relations in Yang-Mills and Gravity
 
 @import "99.bcfw.md"
-
-
-
-<!--
-# Theoretical Motivation
-
-# Experimental setup:
-
-# Results and Discussion
-
-# Conclusions -->
 
 # Bibliography

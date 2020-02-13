@@ -4,7 +4,7 @@ author: Samuel Overington | ID 170431121
 numbersections: true
 output:
   pdf_document:
-    /* latex_engine: lualatex **/
+    latex_engine: lualatex
     template: assets/template.tex
     path: "../thesis_output/test.pdf"
     toc: true
@@ -12,6 +12,7 @@ output:
 header-includes: |
   \usepackage{lmodern,mathrsfs}
   \usepackage{sectsty}
+  \usepackage[skipabove=\topskip,skipbelow=\topskip]{mdframed}
   \usepackage{yfonts}
   \usepackage{bbold}
   \usepackage{amssymb}
@@ -24,6 +25,25 @@ header-includes: |
   \usepackage[compat=1.0.0]{tikz-feynman}
   \usepackage{feynmp}
 ---
+
+# Testing `mdframed` environment
+<!-- Defined in `assets/custom.tex`
+\mdfdefinestyle{theoremstyle}{%
+  linecolor=black,linewidth=2pt,%
+  frametitlerule=true,%
+  frametitlebackgroundcolor=gray!20,
+  innertopmargin=\topskip,innerbottommargin=\topskip,
+}
+\mdtheorem[style=theoremstyle]{definition}{Definition}
+ -->
+
+\begin{definition}
+  What is the set of linear transformations that make the metric invariant
+\end{definition}
+
+\begin{definition}[Metric]
+  There exists a metric such that $\eta \to \Lambda \eta \Lambda = \eta$
+\end{definition}
 
 # Testing `Tikz-Feynman` diagrams
 
@@ -40,7 +60,7 @@ $$
   \sabr{\lambda}{i}{\psi}{j}
 $$
 
-Testing Underline:
+# Testing Underline:
 $$
 \begin{aligned}
   \underline{\agl{i}{\eta}} \udots{$\sqr{\eta}{i}$} \to 0
@@ -54,7 +74,6 @@ $$
   \underline{\agl{i}{\eta}} \dotuline{\sqr{\eta}{i}} \to 0\\
   \dotuline{\agl{j}{\eta}} \underline{\sqr{\eta}{j}} \to 0
 -->
-
 
 # testing cancel
 
