@@ -35,8 +35,8 @@ output:
     toc: true
     toc_depth: 3
 ---
+<!--
 \twocolumn
-
 # Introduction
 
 @import "00.introduction.md"
@@ -46,10 +46,10 @@ output:
 
 # Relativity
 @import "02.relativity.md"
+ -->
+# Groups
 
-# Elements of the Lorentz group
-
-@import "03.lorentz_group.md"
+@import "03.groups.md"
 
 
 # Four vectors
