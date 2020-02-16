@@ -35,7 +35,6 @@ output:
     toc: true
     toc_depth: 3
 ---
-<!--
 \twocolumn
 # Introduction
 
@@ -46,9 +45,8 @@ output:
 
 # Relativity
 @import "02.relativity.md"
- -->
-# Groups
 
+# Groups
 @import "03.groups.md"
 
 
@@ -58,10 +56,10 @@ output:
 
 # Spinors and transformations
 # Spinor helicity formalism (null vectors)
-@import "01.spinor.md"
+@import "50.spinor.md"
 
 # Little group and weights
-@import "01.angular_momentum.md"
+@import "51.angular_momentum.md"
 
 # Determination of three-point amplitudes of massless particles
 
