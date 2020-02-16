@@ -26,6 +26,30 @@ header-includes: |
   \usepackage{feynmp}
 ---
 
+
+# testing `tensor`:
+  when placing a prime mark in `tensor`, you need to put it in the up/down part like so:
+
+$$
+\tensor{\bar{\Psi}}{^{\prime}_{\dot{\alpha}}} \tensor{M}{_{\dot{\alpha}}^{\dot{\beta}}} \tensor{\bar{\Psi}}{_\beta}
+$$
+
+all good below
+$$
+\begin{aligned}
+  \tensor{\Psi}{^{\prime}_\alpha} &= \tensor{M}{_\alpha^\beta}\tensor{\Psi}{_\beta}\\
+\end{aligned}
+$$
+
+$$
+  \tensor{\Psi}{^\prime_\alpha}\\
+  \epsilon_{\alpha\beta} \to\\
+  \tensor{M}{_\alpha^{\alpha^{\prime}}}\\
+  \tensor{M}{_\beta^{\beta^{\prime}}}\\
+\epsilon_{\alpha^{\prime} \beta^{\prime}}
+$$
+
+
 # Testing `mdframed` environment
 <!-- Defined in `assets/custom.tex`
 \mdfdefinestyle{theoremstyle}{%

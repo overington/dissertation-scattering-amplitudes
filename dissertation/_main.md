@@ -52,13 +52,17 @@ output:
 
 # Four vectors
 
+# Pauli Matrices
+@import "40.pauli_matrices.md"
 
 
 # Spinors and transformations
-# Spinor helicity formalism (null vectors)
 @import "50.spinor.md"
 
+# Spinor helicity formalism (null vectors)
+
 # Little group and weights
+<!-- Working on -->
 @import "51.angular_momentum.md"
 
 # Determination of three-point amplitudes of massless particles
