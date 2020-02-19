@@ -55,6 +55,7 @@ $$
         \draw[densely dotted] (todotted.south west) -- (todotted.south east);
     }%
 }%
+\newcommand\eqq{\mathrel{\overset{\makebox[0pt]{\mbox{\small ?}}}{=}}}
 $$
 
 $$
