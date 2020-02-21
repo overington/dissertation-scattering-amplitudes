@@ -56,6 +56,7 @@ $$
     }%
 }%
 \newcommand\eqq{\mathrel{\overset{\makebox[0pt]{\mbox{\small ?}}}{=}}}
+\newcommand\abs[1]{\lvert #1 \rvert}
 $$
 
 $$

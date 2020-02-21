@@ -1,5 +1,5 @@
 ---
-title: "DRAFT: raw Computating On-Shell amplitude using BCFW"
+title: "DRAFT: raw Computing On-Shell amplitude using BCFW"
 date: 2019.09.23
 author:
   - name: Samuel Overington | ID 170431121
