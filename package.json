@@ -1,0 +1,26 @@
+{
+  "name": "Dissertation: Scattering Amplitudes",
+  "version": "0.2",
+  "description": "Third year dissertation",
+  "keywords": [
+    "physics",
+    "Theoretical",
+    "BCFW"
+  ],
+  "homepage": "https://www.samueloverington.com/",
+  "repository": "oh-/",
+  "author": "Samuel overington <s.c.overington@gmail.com> (https://www.samueloverington.com/)",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "glob-all": "^3.1.0",
+    "require-cson": "^0.1.0"
+  },
+  "consumedServices": {
+    "modular-snippets": {
+      "versions": {
+        "^1.0.0": "snippets.cson"
+      }
+    }
+  }
+}
