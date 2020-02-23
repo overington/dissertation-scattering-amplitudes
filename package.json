@@ -15,12 +15,5 @@
   "dependencies": {
     "glob-all": "^3.1.0",
     "require-cson": "^0.1.0"
-  },
-  "consumedServices": {
-    "modular-snippets": {
-      "versions": {
-        "^1.0.0": "snippets.cson"
-      }
-    }
   }
 }

@@ -45,10 +45,9 @@ $$
 $$
 \newcommand{\dvec}[1]{\dot{\vec{#1}}}
 \newcommand{\ddvec}[1]{\ddot{\vec{#1}}}
-\newcommand{\pdv}[1]{\frac{\partial #1}{\partial x}}
+\newcommand{\pdv}[1]{\frac{\partial }{\partial #1}}
 $$
 $$
-\makeatother
 \newcommand{\udots}[1]{%
     \tikz[baseline=(todotted.base)]{
         \node[inner sep=1pt,outer sep=0pt] (todotted) {#1};
