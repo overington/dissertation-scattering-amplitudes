@@ -40,5 +40,5 @@ output:
 # 29th October 2019
 @import "/dissertation/log/2019.10.29.md"
 
-# 12th November 2019
-@import "/dissertation/log/2019.11.12.md"
+# 19th November 2019
+@import "/dissertation/log/2019.11.19.md"
