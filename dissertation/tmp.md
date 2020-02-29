@@ -27,6 +27,12 @@ header-includes: |
 ---
 
 
+# Testing `physics`:
+$$
+  \require{physics}
+  \eval{x}_0^\infty
+$$
+
 # testing `tensor`:
   when placing a prime mark in `tensor`, you need to put it in the up/down part like so:
 

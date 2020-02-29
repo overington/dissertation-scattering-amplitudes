@@ -17,10 +17,20 @@
       "XXX",
       "IDEA",
       "NOTE",
-      "REVIEW"
+      "REVIEW",
+      "WORKING_ON"
     ]
   },
-  "lists": [],
+  "lists": [
+    {
+      "name": "WORKING_ON",
+      "hidden": false
+    },
+    {
+      "name": "TODO",
+      "hidden": false
+    }
+  ],
   "marked": {
     "gfm": true,
     "tables": true,
