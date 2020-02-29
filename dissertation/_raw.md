@@ -25,6 +25,7 @@ header-includes: |
   \usepackage{tensor}
   \usepackage{tikz}
   \usepackage{tikz-feynman}
+  \usepackage{stmaryrd}
 output:
   pdf_document:
     latex_engine: lualatex
