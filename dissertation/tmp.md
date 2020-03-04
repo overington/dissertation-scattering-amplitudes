@@ -25,11 +25,37 @@ header-includes: |
   \usepackage[compat=1.0.0]{tikz-feynman}
   \usepackage{feynmp}
 ---
+<!--
+import "assets/custom.md"
+-->
+
+
+# Testing my bracket commands
+$$
+\begin{aligned}
+  &\bsma{a}{m}{b}\\
+  &\bsa[c]{a}{b}\\
+  &\surround[p_a]{left}{right}\\
+  &\bss{\alpha}{\beta}\\
+  &\bss[]{\alpha}{\beta}\\
+\end{aligned}
+\qquad
+\begin{aligned}
+  \bsma{a}{m}{b} \\ %% [a|m|b>
+  \bsms{a}{m}{b} \\ %% [a|m|b>
+  \bas[c]{a}{b}  \\ %% <acb]
+  \bas{a}{b}{c}  \\ %% <ab]c
+  \bss[|]{a}{b}  \\ %% [a|b]
+  \baa{a}{b}     \\ %% <ab>
+  \surround[p_a]{left}{right}\\
+  \bss{\alpha}{\beta}\\
+  \bss[]{\alpha}{\beta}\\
+\end{aligned}
+$$
 
 
 # Testing `physics`:
 $$
-  \require{physics}
   \eval{x}_0^\infty
 $$
 
