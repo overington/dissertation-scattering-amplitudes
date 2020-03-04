@@ -1,0 +1,20 @@
+---
+title: "Scattering Amplitudes using BCFW recursion"
+author: Samuel Overington | ID 170431121
+date: 02-03-2020
+header-includes:
+  - \usepackage{lmodern,mathrsfs}
+  - \usepackage[skipabove=\topskip,skipbelow=\topskip]{mdframed}
+  - \usepackage{yfonts}
+  - \usepackage{bbold}
+  - \usepackage{amssymb}
+  - \usepackage{amsmath}
+  - \usepackage{cancel,ulem}
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{siunitx,physics}
+  - \usepackage{mattens}
+  - \usepackage{tensor}
+  - \usepackage{tikz}
+  - \usepackage{tikz-feynman}
+  - \usepackage{custom}
+---
