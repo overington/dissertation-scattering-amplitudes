@@ -3,7 +3,9 @@ main_file = presentation.md
 local_config = _config.yaml
 m4config = ~/.config/m4config
 
-default: FORCE
+default:
+	make ob
+pdf: FORCE
 	make preprocess
 	make main.pdf
 	make clean
