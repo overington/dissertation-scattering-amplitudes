@@ -1,5 +1,5 @@
 
-* Lagrangian / Relattivistic and non relatavistic mechanics
+* Lagrangian / Relativistic and non relativistic mechanics
   * The Lagrangian and the action
   * Lagrangian Mechanics
     * Einstein Equation
