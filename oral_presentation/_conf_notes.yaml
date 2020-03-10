@@ -4,7 +4,10 @@ author: Samuel Overington | ID 170431121
 date: 11-03-2020
 titlegraphic: 190330.eps
 incremental: false
+includes:  
+  in_header: header_pagenrs.tex
 header-includes:
+  - \setbeameroption{show notes}
   - \usepackage{lmodern,mathrsfs}
   - \usepackage[skipabove=\topskip,skipbelow=\topskip]{mdframed}
   - \usepackage{yfonts}
@@ -16,8 +19,8 @@ header-includes:
   - \usepackage{siunitx,physics}
   - \usepackage{mattens}
   - \usepackage{tensor}
-  - \usepackage{subcaption}
   - \usepackage{tikz}
+  - \usepackage{subcaption}
   - \usepackage{pgfplots}
   - \usepackage{tikz-feynman}
   - \usepackage{custom}
