@@ -1,12 +1,13 @@
-
+\begin{figure}
+\centering
 \feynmandiagram [vertical=i1 to o1] {
-\tikzfeynmanset{ blobAR/.style={ shape=circle, fill=white, }
-}
-i1 [particle=\(\hat{2}\)] -- b [blob]  -- o1 [particle=\(\hat{3}\)],
-i2 [particle=\(\hat{4}\)] -- a [blobAR, particle=AR] -- o2 [particle=\(\hat{1}\)],
-i1 -- [opacity=0] o2,
-i2 -- [opacity=0] o1,
-a -- [fermion] b
+  i1 [particle=\(\hat{2}\)] -- b [blob, particle=$A_R$, shape=circle,draw=black,
+fill=none,]  -- o1 [particle=\(\hat{3}\)],
+  i2 [particle=\(\hat{4}\)] -- a [blob, particle=$A_L$, shape=circle,draw=black,
+fill=none,] -- o2 [particle=\(\hat{1}\)],
+  i1 -- [opacity=0] o2,
+  i2 -- [opacity=0] o1,
+  a -- [fermion] b
 };
-%
-% f1 [particle=\(c\)] -- [fermion] o
+\caption{MHV amplitude}
+\end{figure}
