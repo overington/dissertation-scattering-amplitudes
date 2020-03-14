@@ -26,6 +26,9 @@ header-includes:
   \input{custom-commands}
 ---
 
+## mhv_5particle.tex
+\input{mhv_5particle.tex}
+
 ## feynman01.tex
 \input{feynman01.tex}
 

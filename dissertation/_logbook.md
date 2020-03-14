@@ -41,7 +41,7 @@ output:
     toc: true
     toc_depth: 3
 ---
-
+<!-- 
 # 23rd October 2019
 
 
@@ -73,7 +73,7 @@ output:
 # Tues, 4th February 2020: BCFW recursion
 
 @import "/dissertation/log/2020.02.04.md"
-
+ -->
 # Tues, 11th February 2020: MHV amplitudes
 
 @import "/dissertation/log/2020.02.11.md"
