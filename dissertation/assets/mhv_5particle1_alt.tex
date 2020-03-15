@@ -1,0 +1,25 @@
+% \begin{figure}
+% \centering
+\begin{tikzpicture}
+  \begin{feynman}[horizontal=L to R, every blob={/tikz/shape=circle,/tikz/draw=black,/tikz/fill=none}]
+    \vertex (L) [blob] {\(A_L\)};
+    \vertex [right of=L] (R) [blob] {\(A_R\)};
+
+    % Particle positions on Left
+    \vertex [below=of L] (i3) {3};
+    \vertex [below left=of L] (i4) {4};
+    \vertex [above=of L] (i5) {5};
+
+    % Particle positions on Right
+    \vertex [above=of R] (i1) {1};
+    \vertex [below=of R] (i2) {2};
+    \diagram* {
+      (L) [blob,shape=circle,draw=black] -- (R),
+      (i5) -- (L) -- {(i3), (i4)},
+      (i1) -- (R) -- (i2),
+    };
+  \end{feynman}
+
+\end{tikzpicture}
+% \caption{MHV amplitude}
+% \end{figure}

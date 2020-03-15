@@ -31,6 +31,7 @@ header-includes: |
   \usepackage{siunitx,physics}
   \usepackage{mattens}
   \usepackage{tensor}
+  \usepackage{subcaption}
   \usepackage{tikz}
   \usepackage{tikz-feynman}
   \input{assets/custom-commands}
