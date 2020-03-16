@@ -82,3 +82,12 @@ output:
 # Tues, 18th February 2020: MHV amplitudes (Deriving Simplets MHV amplitude)
 
 @import "/dissertation/log/2020.02.18.md"
+
+# Tuesday 25th February 2020: Meeting with Andreas Brandhuber
+
+Corrections from 19th November
+<!-- import "file.md" -->
+
+# Wednesday 11th March 2020: (Skype meeting) MHV amplitudes (continued)
+
+@import "/dissertation/log/2020.03.11.md"
