@@ -1,0 +1,22 @@
+% \centering
+\begin{tikzpicture}
+  \begin{feynman}[horizontal=L to R, every blob={/tikz/shape=circle,/tikz/draw=black,/tikz/fill=none}]
+    \vertex (L) [blob] {\(MHV^-\)};
+    \vertex [right of=L] (R) [blob] {\(\overbar{MHV}^+\)};
+
+    % Particle positions on Left
+    \vertex [above=of L] (i1)       {$\hat{1}^-$};
+    \vertex [below=of L] (i4)       {$4^+$};
+
+    % Particle positions on Right
+    \vertex [above=of R] (i2) {$\hat{2}^+$};
+    \vertex [below=of R] (i3) {$3^-$};
+    \diagram* {
+      (L) [blob,shape=circle,draw=black] -- [fermion, momentum=$\hat p$] (R),
+      (i4) -- (L) -- (i1),
+      (i2) -- (R) -- (i3),
+    };
+  \end{feynman}
+
+\end{tikzpicture}
+% \caption{4-point bar(MHV) amplitude}
