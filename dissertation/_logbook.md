@@ -57,8 +57,9 @@ output:
 # Tues, 19th November 2019
 
 @import "/dissertation/log/2019.11.19.md"
+ -->
 
-
+<!--
 # Tues, 26 November 2019: Feynman Diagrams
 
 @import "/dissertation/log/2019.11.26.md"
@@ -74,7 +75,6 @@ output:
 # Tues, 4th February 2020: BCFW recursion
 
 @import "/dissertation/log/2020.02.04.md"
- -->
 # Tues, 11th February 2020: MHV amplitudes
 
 @import "/dissertation/log/2020.02.11.md"
@@ -85,8 +85,9 @@ output:
 
 # Tuesday 25th February 2020: Meeting with Andreas Brandhuber
 
-Corrections from 19th November
-<!-- import "file.md" -->
+Corrections from 19th November notes
+import "file.md"
+ -->
 
 # Wednesday 11th March 2020: (Skype meeting) MHV amplitudes (continued)
 
