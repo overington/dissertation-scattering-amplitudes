@@ -144,6 +144,15 @@
 
 % ---------------------------------
 %  must come near the end of this file, or before the beginning of \begin{document}
+
+% \newcommand{\myequation}{\begin{equation}}
+% \newcommand{\myendequation}{\end{equation}}
+% \let\[\myequation
+% \let\]\myendequation
+
+\newcommand\addtag{\refstepcounter{equation}\tag{\theequation}}
+\newcommand\taglabel[1]{\addtag \label{#1}}
+
 \numberwithin{equation}{section}
 
 \listfiles

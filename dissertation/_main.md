@@ -46,54 +46,14 @@ output:
 \twocolumn
 # Introduction
 
-@import "00.introduction.md"
+@import "chapters/00-introduction.md"
 
 \onecolumn
 
-
-# Relativity
-@import "02.relativity.md"
-
-# Groups
-@import "03.groups.md"
+# Groups Algebras and Representations
+@import "chapters/10-groups_algebras_reprs.md"
 
 
-# Four vectors
 
-# Pauli Matrices
-@import "40.pauli_matrices.md"
-
-
-# Spinors and transformations
-@import "50.spinor.md"
-
-# Spinor helicity formalism (null vectors)
-
-# Little group and weights
-<!-- Working on -->
-@import "51.angular_momentum.md"
-<!-- LOGS from here -->
-# 23rd October 2019
-@import "/dissertation/log/2019.10.23.md"
-
-# 29th October 2019
-@import "/dissertation/log/2019.10.29.md"
-
-
-# Tues, 19th November 2019
-@import "/dissertation/log/2019.11.19.md"
-
-# Tues, 26 November 2019
-@import "/dissertation/log/2019.11.26.md"
-<!-- logs end here -->
-<!--
-# Determination of three-point amplitudes of massless particles
-
-# Introduction to Feynman diagrams  - reproducing amplitudes for Yang-Mills theory
-
-# Three-point amplitudes and factorisation
-# BCFW recursion relations in Yang-Mills and Gravity
- -->
-@import "99.bcfw.md"
 
 # Bibliography

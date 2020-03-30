@@ -3,7 +3,7 @@
   * The Lagrangian and the action
   * Lagrangian Mechanics
     * Einstein Equation
-  * Principal of relativity
+  * Principle of relativity
     * Reference frames:
     * Intervals:
 * Elements of the Lorentz group

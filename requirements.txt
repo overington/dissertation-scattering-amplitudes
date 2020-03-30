@@ -2,3 +2,4 @@ mistune
 sympy
 jupyterlab
 pandocfilters
+pandoc-fignos

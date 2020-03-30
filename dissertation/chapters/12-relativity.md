@@ -1,4 +1,4 @@
-<!--
+<!-- 
 @import "assets/custom.md"
  -->
 In order to begin understanding scattering amplitudes, we begin at the fundamental rules of physical systems, and their Interactions.
@@ -11,7 +11,7 @@ Let us first take a look at the Lagrangian equation, and how they differ from th
 
  - in order to account for relativistic physics, we need to introduce some changes. These changes are explored in the following:
 
-## The changes in the Lagrangian $L$ and Hamiltonian $H$
+## The changes in the Lagrangian $\Lg$ and Hamiltonian $H$
 
 Understanding interactions between free particles through, we inspect their classical form
 
@@ -81,7 +81,7 @@ Where we arrive at Einsteins formula, when setting c = 1
   H = E = \frac{m}{\sqrt{1-\dvec{x}^2}}
 \end{equation}
 
-This explains the principal of relatively according to Einsteins equations, and allows us to begin setting up the formalism for representing interactions which include relativistic properties.
+This explains the principle of relatively according to Einsteins equations, and allows us to begin setting up the formalism for representing interactions which include relativistic properties.
 
 ## Principle of relativity
 

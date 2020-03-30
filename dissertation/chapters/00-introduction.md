@@ -56,12 +56,14 @@ These methods build on using a colour decomposition of the gauge theory amplitud
 
 <!-- * Generalised Unitarity -->
 
+<!--
 ## Outline:
 
 The outline for the proposed project will take the following form:
 
 @import "outline.md"
-
+ -->
+ 
 <!--
 Original from Gabrielle
 *   Elements of the Lorentz group

@@ -1,45 +1,40 @@
 ---
 title: "test"
 author: Samuel Overington | ID 170431121
+numbersections: true
 output:
   pdf_document:
-    template: assets/template.tex
+    template: assets/template-eisvogel.latex
     path: ../thesis_output/test.pdf
 header-includes: |
-  \usepackage[T1]{fontenc}
+  \usepackage{lmodern,mathrsfs}
+  \usepackage{sectsty}
+  \usepackage[skipabove=\topskip,skipbelow=\topskip]{mdframed}
+  \usepackage{yfonts}
+  \usepackage{bbold}
+  \usepackage{amssymb}
   \usepackage{amsmath}
+  \usepackage{cancel,ulem}
+  \usepackage[utf8]{inputenc}
+  \usepackage{siunitx,physics}
+  \usepackage{mattens}
   \usepackage{tensor}
-  \usepackage{physics}
+  \usepackage{subcaption}
   \usepackage{tikz}
+  \usepackage{tikz-feynman}
+  \input{assets/custom-commands}
 ---
 
-$$
-  \tensor{\L}{^\alpha_\beta}
-$$
+# first
+\[
+  K = \frac{1}{2}mv^2
+\]
 
-xvex:
-$$
-\xvec{x}
-$$
+# second
+## point 1
+\[
+  K = \frac{1}{2}mv^2 \taglabel{eq:test}
+\]
 
-$$
-\pmqty{\pmat{1}}
-$$
 
-```latex {cmd=true}
-\documentclass{standalone}
-\begin{document}
-  Hello world!
-\end{document}
-```
-<!--
-```latex {cmd:true, hide:true}
-\documentclass{standalone}
-\usepackage[siunitx]{tikz}
-\begin{document}
-\begin{tikzpicture}
-  \draw (-1.5,0) -- (1.5,0);
-  \draw (0,-1.5) -- (0,1.5);
-\end{tikzpicture}
-\end{document}
-``` -->
+Here is a equation [\ref{eq:test}]
