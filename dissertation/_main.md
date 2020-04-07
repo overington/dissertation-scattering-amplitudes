@@ -43,14 +43,11 @@ output:
     toc: true
     toc_depth: 3
 ---
-\twocolumn
-# Introduction
 
-@import "chapters/00-introduction.md"
+<!-- import "chapters/00-introduction.md" -->
 
-\onecolumn
 
-# Groups Algebras and Representations
+# Some Basic Concepts: Groups, Algebras and Representations
 @import "chapters/10-groups_algebras_reprs.md"
 
 

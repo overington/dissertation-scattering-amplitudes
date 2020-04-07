@@ -1,6 +1,5 @@
 <!-- Abstract -->
 <!-- # General outline
-* A definition of Scattering amplitudes
 * How have they been calculated using Feynman diagrams
 * (How do they relate to Gauge theory)
 * Problem with current method of computation (using Feynman diagrams)
@@ -9,27 +8,44 @@
 Guage theories and spinnor matricies for Gluons and massless particles were
 -->
 
-<!-- Course page notes
+## Introduction
 
-Please submit a title and abstract of your project in a single 1-page PDF document.
+<!-- Introduction outline -->
 
-The abstract should include a Purpose / Problem Statement, a description of your approach or methods used, as well as a description of your results (obtained or anticipated) and their expected impact on other researchers.
-
-Undergraduate Research Conference Applications
-
-This abstract could be developed into an application to participate in an undergraduate research conferences (e.g., the British Conference on Undergraduate Research, the IoP Conference of Astronomy and Physics Students).  Please discuss this with your project supervisor if you are interested in participating and submitting an abstract.  
--->
+* A definition of Scattering amplitudes
+* Why are SAs used?
+*
 
 
 
-<!-- ## Scattering Amplitudes -->
+In Quantum Field Theory (QFT), a scattering amplitude is the mechanism for measuring and modelling the properties of fundamental particles and how they interact.
 
-In Quantum Field Theory (QFT), a scattering amplitude is the mechanism for predicting and measuring fundamental particle interactions by mapping the energy and momentum associated with each entering particle to exiting particles while preserving Einsteins energy-momentum relationship of:
+
+In order to begin understanding a scattering amplitude, we must first understand the rules by which we can describe an individual particles motion and then build up a langauge for how these motions interact in a system of particles.  We open here by exploring current methods available to us, in the forms of mathematical formalisms, and how we might use certain properties to expand on this knowledge, to 
+
+certain properties when joining one or more individual things, in order to represent systems, or groups of particles, and how they interact.
+
+ We begin by mapping the energy and momentum associated with each entering particle to exiting particles while preserving Einsteins energy-momentum relationship of:
 
 \begin{equation}
   \label{eq:einstein_energymomentum}
   E^2 = ( \vec{p} c )^2 + (mc^2 )^2
 \end{equation}
+
+
+currently available to us for exploring interactions from their fundamental rules in physical systems and building up the language we need in order to model how they interact. From this, we explore further formalisms which
+
+form of relativistic interactions, which themselves have been bootstrapped from classical mechanics.
+setting out the notation for which we will use throughout the duration of this paper, in order to be able to concisely explain
+
+In order to take into account relativistic effects, we begin here by working through the formalism of the Lorentz Group to arrive at the relativistic formalisms for
+
+the a special group called the Lorentz Group,
+
+Let us first take a look at the Lagrangian equation, and how they differ from their relativistic to non-relativistic formulations.
+
+ - in order to account for relativistic physics, we need to introduce some changes. These changes are explored in the following:
+
 
 <!-- ## Feynman Diagrams -->
 Traditionally, they have been computed using Feynman diagrams, which set the boundary conditions to the summed values of all entering particles and those exiting within the same interaction, such that they conserve this E-M relation between the entering and exiting particles at the macro level.
@@ -77,4 +93,3 @@ Original from Gabrielle
 *   BCFW recursion relations in Yang-Mills and Gravity
 -->
 
----

@@ -5,7 +5,7 @@ numbersections: true
 output:
   pdf_document:
     latex_engine: lualatex
-    template: assets/template.tex
+    template: assets/template-eisvogel.latex
     path: "../thesis_output/test.pdf"
     toc: true
     toc_depth: 3
@@ -24,23 +24,38 @@ header-includes: |
   \usepackage{tensor}
   \usepackage[compat=1.0.0]{tikz-feynman}
   \usepackage{feynmp}
+  \input{assets/custom-commands}
 ---
 <!--
-import "assets/custom.md"
+  import "assets/custom.md"
 -->
+# Testing aligning things
+
+
+$\RR$
+
+
+test
+
+/$$ccmanddmb`aV`bS\align}
+V/$$n:s/\$\$//ggvS\align
+
+\begin{align}
+E &= \frac{1}{2} mv^2\\
+p &= mv
+\end{align}
 
 
 # Testing my bracket commands
-$$
-\begin{aligned}
+\begin{align}
   &\bsma{a}{m}{b}\\
   &\bsa[c]{a}{b}\\
   &\surround[p_a]{left}{right}\\
   &\bss{\alpha}{\beta}\\
   &\bss[]{\alpha}{\beta}\\
-\end{aligned}
+\end{align}
 \qquad
-\begin{aligned}
+\begin{align}
   \bsma{a}{m}{b} \\ %% [a|m|b>
   \bsms{a}{m}{b} \\ %% [a|m|b>
   \bas[c]{a}{b}  \\ %% <acb]
@@ -50,36 +65,38 @@ $$
   \surround[p_a]{left}{right}\\
   \bss{\alpha}{\beta}\\
   \bss[]{\alpha}{\beta}\\
-\end{aligned}
-$$
+\end{align}
 
 
 # Testing `physics`:
-$$
+\[
   \eval{x}_0^\infty
-$$
+\]
+
+\begin{align}
+  testing
+\end{align}
 
 # testing `tensor`:
   when placing a prime mark in `tensor`, you need to put it in the up/down part like so:
 
-$$
+\[
 \tensor{\bar{\Psi}}{^{\prime}_{\dot{\alpha}}} \tensor{M}{_{\dot{\alpha}}^{\dot{\beta}}} \tensor{\bar{\Psi}}{_\beta}
-$$
+\]
 
 all good below
-$$
-\begin{aligned}
-  \tensor{\Psi}{^{\prime}_\alpha} &= \tensor{M}{_\alpha^\beta}\tensor{\Psi}{_\beta}\\
-\end{aligned}
-$$
 
-$$
+\begin{align}
+  \tensor{\Psi}{^{\prime}_\alpha} &= \tensor{M}{_\alpha^\beta}\tensor{\Psi}{_\beta}\\
+\end{align}
+
+\[
   \tensor{\Psi}{^\prime_\alpha}\\
   \epsilon_{\alpha\beta} \to\\
   \tensor{M}{_\alpha^{\alpha^{\prime}}}\\
   \tensor{M}{_\beta^{\beta^{\prime}}}\\
 \epsilon_{\alpha^{\prime} \beta^{\prime}}
-$$
+\]
 
 
 # Testing `mdframed` environment
@@ -111,17 +128,17 @@ $$
 
 # Testing abreviated brackets  
 
-$$
+\[
   \lthd{i}(z) \equiv  \sabrv{i}{j}\\
   \sabr{\lambda}{i}{\psi}{j}
-$$
+\]
 
 # Testing Underline:
-$$
+
 \begin{aligned}
   \underline{\agl{i}{\eta}} \udots{$\sqr{\eta}{i}$} \to 0
 \end{aligned}
-$$
+
 
 <!--
   \underline{\agl{i}{\eta}} \udots{$\sqr{\eta}{i}$} \to 0

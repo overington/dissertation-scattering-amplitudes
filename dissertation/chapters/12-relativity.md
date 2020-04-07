@@ -1,69 +1,62 @@
 <!-- 
 @import "assets/custom.md"
  -->
-In order to begin understanding scattering amplitudes, we begin at the fundamental rules of physical systems, and their Interactions.
+## Relativity
 
-The language we need to build up the form of relativistic interactions is bootstrapped from classical mechanics, which don't take into account things like the finite speed of light.
-
-A working through the formalism to arrive at the relativistic formalisms for
-
-Let us first take a look at the Lagrangian equation, and how they differ from their relativistic to non-relativistic formulations.
-
- - in order to account for relativistic physics, we need to introduce some changes. These changes are explored in the following:
-
-## The changes in the Lagrangian $\Lg$ and Hamiltonian $H$
+### The changes in the Lagrangian \( \Lg \) and Hamiltonian \(H\)
 
 Understanding interactions between free particles through, we inspect their classical form
 
-$$
-\begin{aligned}
+\begin{align}
   \Lg_{\text{NR}} &= \frac{1}{2} m\dvec{x} &&\to& \Lg_{\text{Rel}} &= -m\sqrt{1-\dvec{x}^2}\\
   H_{\text{NR}} &= \frac{\vec{p}^2}{2m}+V(x) &&\to& H_{Rel} &= (something)
-\end{aligned}
-$$
+\end{align}
 
-To calculate this relation, we inspect the Lagrangian relation between its two component measurables (in an unspecific basis, these can be any two variables $\vec{p}, \vec{q}$, but to relate them to the classical equations involving momentum and position, we will be calling them $\vec{p}, \vec{x}$ )
+To calculate this relation, we inspect the Lagrangian relation between its two component measurables (in an unspecific basis, these can be any two variables \(\vec{p}, \vec{q}\), but to relate them to the classical equations involving momentum and position, we will be calling them \(\vec{p}, \vec{x}\))
 
-$$
+\begin{equation}
   p \equiv \pdv{\Lg}{\dvec{x}} = \frac{m\dvec{x}}{\sqrt{1-\dvec{x}^2}}
-$$
+\end{equation}
 
-## The time evolution of the system
+### The time evolution of the system
 
-Where $H = H(\vec{q}, \vec{p},t)$
+Where
+\begin{equation}
+  H = H(\vec{q}, \vec{p},t)
+\end{equation}
 
-$$
-\begin{aligned}
+\begin{align}
   \dvec{p} &= \dv{\vec{p}}{t} &= -\pdv{H}{\vec{q}}\\
   \dvec{q} &= \dv{\vec{q}}{t} &= +\pdv{H}{\vec{p}}
-\end{aligned}
-$$
+\end{align}
 
 Thus leaving us with the following set of equations:
 
-$H = T+V$:
-
-$$
-  H = \sum_i{\dvec{q}^i\pdv{L}{\dvec{q}^i} -L} = \sum_i{\dvec{q}^ip_i-L}
-$$
+\begin{align}
+  H &= T+V
+  &= \sum_i{\dvec{q}^i\pdv{L}{\dvec{q}^i} -L} = \sum_i{\dvec{q}^ip_i-L}
+\end{align}
 
 where
 
-$$
-p_i = \pdv{\L}{\dvec{q}^i}
-$$
+\begin{equation}
+  p_i = \pdv{\L}{\dvec{q}^i}
+\end{equation}
 
 leading to
-$$
-\begin{aligned}
+
+\begin{align}
   \H &= m\dvec{x}^2 - (-m\sqrt{1-\dvec{x}^2})\\
   &= \frac{m\dvec{x}}{\sqrt{1-\dvec{x}^2}}\dvec{x} +m\sqrt{1-\dvec{x}^2} \\
   &= \frac{\cancel{m\dvec{x}^2}+m-\cancel{m\dvec{x}^2}}{\sqrt{1-\dvec{x}^2}}\\
   &= \frac{m}{\sqrt{1-\dvec{x}^2}}
-\end{aligned}
-$$
+\end{align}
 
-Using the approximation we showed above, we can show that $H \to \frac{\vec{p}^2}{2m} = \frac{m\dvec{x}^2}{2}$
+Using the approximation we showed above, we can show that
+
+\begin{equation}
+  H \to \frac{\vec{p}^2}{2m} = \frac{m\dvec{x}^2}{2}
+\end{equation}
 
 For small velocities, where $\vec{x}\ll 1$, we can say:
 
@@ -83,7 +76,7 @@ Where we arrive at Einsteins formula, when setting c = 1
 
 This explains the principle of relatively according to Einsteins equations, and allows us to begin setting up the formalism for representing interactions which include relativistic properties.
 
-## Principle of relativity
+### Principle of relativity
 
 (Classical theory of fields, @Landau:1975aa )
 Inertial reference frame in which a body moves in respect to and without any other force enacting on it, proceeds at constant velocity.
@@ -93,20 +86,18 @@ Inertial reference frame in which a body moves in respect to and without any oth
 
 Two inertial reference frames are related by:
 
-$$
-  \Delta x = x-x'
-$$
+\begin{equation}
+  \Delta x = x-x\prime
+\end{equation}
 
-where $\dv{x}{t}=0 \to x$ and $x'$ have same inertial property.
+where \(\dv{x}{t}=0 \to x\) and \(x\prime\) have same inertial property.
 
 
 ### Intervals:
 
 Event: described by the place where it occurred and times
 
-$$
-\begin{aligned}
+\begin{align}
   e_1 &= [t,x,y,z]\\
-  \text{worldline }&= [t\to t', f(x,y,z)-f'(x,y,z)]
-\end{aligned}
-$$
+  \text{worldline }&= [t\to t\prime, f(x,y,z)-f\prime(x,y,z)]
+\end{align}
