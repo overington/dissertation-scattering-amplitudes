@@ -5,7 +5,8 @@
 
 ### The Lorentz Group
 
-[@Landau:1975aa, pp. 9-10] (TODO: get interesting points)
+[@Landau:1975aa, pp. 9-10] 
+<!-- #TODO: Lorrentz Group definition get interesting points -->
 
 >Our purpose is now to Obtain the formula of transformation from one inertial reference system to another, That is, A formula by means of which,Knowing the coordinates $x,y,z,t,$ of a certain events in the system $K$, We can find the coordinates $x\prime,y\prime,z\prime,t\prime,$ of the same event in another inertial system $K\prime$
 

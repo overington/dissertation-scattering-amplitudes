@@ -50,6 +50,53 @@ output:
 # Some Basic Concepts: Groups, Algebras and Representations
 @import "chapters/10-groups_algebras_reprs.md"
 
+**23th October 2019**
+
+@import "/dissertation/log/2019.10.23.md"
+
+**29th October 2019**
+
+@import "/dissertation/log/2019.10.29.md"
+
+
+**Tues, 19th November 2019**
+
+@import "/dissertation/log/2019.11.19.md"
+
+
+**Tues, 26 November 2019: Feynman Diagrams**
+
+@import "/dissertation/log/2019.11.26.md"
+
+
+**Tues, 21st January 2020 (general notes)**
+
+@import "/dissertation/log/2020.01.21.md"
+
+
+**Tues, 28th January 2020 (general notes on dissertation)**
+
+@import "/dissertation/log/2020.01.28.md"
+
+
+**Tues, 4th February 2020: BCFW recursion**
+
+@import "/dissertation/log/2020.02.04.md"
+
+
+**Tues, 11th February 2020: MHV amplitudes**
+
+@import "/dissertation/log/2020.02.11.md"
+
+
+**Tues, 18th February 2020: MHV amplitudes (Deriving Simplets MHV amplitude)**
+
+@import "/dissertation/log/2020.02.18.md"
+
+
+# Wednesday 11th March 2020: (Skype meeting) MHV amplitudes (continued)
+
+@import "/dissertation/log/2020.03.11.md"
 
 
 

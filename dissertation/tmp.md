@@ -29,16 +29,17 @@ header-includes: |
 <!--
   import "assets/custom.md"
 -->
-# Testing aligning things
 
+
+# Testing aligning things
 
 $\RR$
 
 
 test
 
-/$$ccmanddmb`aV`bS\align}
-V/$$n:s/\$\$//ggvS\align
+<!-- /$$ccmanddmb`aV`bS\align}
+V/$$n:s/\$\$//ggvS\align -->
 
 \begin{align}
 E &= \frac{1}{2} mv^2\\
@@ -98,6 +99,12 @@ all good below
 \epsilon_{\alpha^{\prime} \beta^{\prime}}
 \]
 
+\begin{equation}
+P^\mu \to \tensor{\Lambda}{^\mu_\nu} p^\nu \equiv p^{\prime \nu}
+\end{equation}
+
+
+
 
 # Testing `mdframed` environment
 <!-- Defined in `assets/custom.tex`
@@ -135,9 +142,9 @@ all good below
 
 # Testing Underline:
 
-\begin{aligned}
+\begin{align}
   \underline{\agl{i}{\eta}} \udots{$\sqr{\eta}{i}$} \to 0
-\end{aligned}
+\end{align}
 
 
 <!--

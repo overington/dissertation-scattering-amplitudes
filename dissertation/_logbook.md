@@ -46,7 +46,7 @@ output:
 
 @import "/dissertation/log/2019.10.23.md"
 
-
+<!--
 # 29th October 2019
 
 @import "/dissertation/log/2019.10.29.md"
@@ -90,3 +90,4 @@ output:
 # Wednesday 11th March 2020: (Skype meeting) MHV amplitudes (continued)
 
 @import "/dissertation/log/2020.03.11.md"
+-->
