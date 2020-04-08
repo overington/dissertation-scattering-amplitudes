@@ -8,7 +8,7 @@
 Understanding interactions between free particles through, we inspect their classical form
 
 \begin{align}
-  \Lg_{\text{NR}} &= \frac{1}{2} m\dvec{x} &&\to& \Lg_{\text{Rel}} &= -m\sqrt{1-\dvec{x}^2}\\
+  \Lg_{\text{NR}} &= \frac{1}{2} m\dvec{x}^2 &&\to& \Lg_{\text{Rel}} &= -m\sqrt{1-\dvec{x}^2}\\
   H_{\text{NR}} &= \frac{\vec{p}^2}{2m}+V(x) &&\to& H_{Rel} &= (something)
 \end{align}
 

@@ -9,10 +9,10 @@
 
 >Our purpose is now to Obtain the formula of transformation from one inertial reference system to another, That is, A formula by means of which,Knowing the coordinates $x,y,z,t,$ of a certain events in the system $K$, We can find the coordinates $x\prime,y\prime,z\prime,t\prime,$ of the same event in another inertial system $K\prime$
 
->In classical mechanics this question is resolved very simply. Because of the absolute nature of time we there have $t = t\prime$; if, furthermore, the coordinate axes are chosen as usual (axes $X, X\prime$ coincident $Y, Z$ axes are parallel to $Y\prime, Z\prime$, motion along $X, X\prime$) then the coordinates $y,z$ clearly are equal to $y\prime,z\prime$, while the coordinates $x$ and $x\prime$ differ by the distance traversed by one system relative to the other. If the velocity of the $K\prime$ system relative to $K$ is $V$, then this distance is $V_t$. Thus:
+>In classical mechanics this question is resolved very simply. Because of the absolute nature of time we there have $t = t\prime$; if, furthermore, the coordinate axes are chosen as usual (axes $X, X\prime$ coincident $Y, Z$ axes are parallel to $Y\prime, Z\prime$, motion along $X, X\prime$) then the coordinates $y,z$ clearly are equal to $y\prime,z\prime$, while the coordinates $x$ and $x\prime$ differ by the distance traversed by one system relative to the other. If the velocity of the $K\prime$ system relative to $K$ is $V$, then this distance is $Vt$. Thus:
 
 \[
-  x = x\prime +V_t,\qquad y = y\prime, \qquad z = z\prime, t=t\prime
+  x = x\prime +Vt,\qquad y = y\prime, \qquad z = z\prime, t=t\prime
   \taglabel{eq:galileotransoformation}
 \]
 
