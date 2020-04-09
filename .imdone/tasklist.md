@@ -1,9 +1,20 @@
 File edits:
 
-- [ ] dissertation/log/2019.10.23.md
-  - Lorenz transformation definitions
+- [x] dissertation/log/2019.10.23.md
+  - Contents:
+    - Lorenz Transformations
+    - Spinor Transformations
+    - Characteristic polynomials
+    - Determinants
+    - Levi Civita symbol
+    - Spinors
 
 - [ ] dissertation/log/2019.10.29.md
+  - Contents:
+    - Invariance
+    - Gauge redundancy
+
+
 - [ ] dissertation/log/2019.11.19.md
 - [ ] dissertation/log/2019.11.26.md
 - [ ] dissertation/log/2020.01.21.md

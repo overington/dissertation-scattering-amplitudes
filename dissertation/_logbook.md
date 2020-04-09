@@ -46,12 +46,12 @@ output:
 
 @import "/dissertation/log/2019.10.23.md"
 
-<!--
 # 29th October 2019
 
 @import "/dissertation/log/2019.10.29.md"
 
 
+<!--
 # Tues, 19th November 2019
 
 @import "/dissertation/log/2019.11.19.md"
