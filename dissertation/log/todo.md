@@ -1,11 +1,3 @@
-2020.01.28.md:7: - Relativistic  $\to$ Symmetries
-2020.01.28.md:8: - Clarify notation for Hamiltonian / Lagrangian ($q,p \to x/\dot{x}$). Where $q,p$ is more general.
-2020.01.28.md:10:    - Set of transformations $G$ that have the combination of two:
-2020.01.28.md:11:    $$ a \otimes b \in G \qquad \begin{cases}
-2020.01.28.md:13:    \end{cases}$$
-2020.01.28.md:15:    - $\exists \one: A \otimes \one = A$
-2020.01.28.md:16:    - $\exists A^{-1}: AA^{-1} = \one$
-2020.01.28.md:18:    - Invariance of $x^\mu x_\mu$
 2020.02.18.md:8:$$A_{MHV}(1^- 2^- 3^+ 4^+) = \frac{\ag{12}^4}{\ag{12}\ag{23}\ag{34}\ag{41}}$$
 2020.02.18.md:11:$$
 2020.02.18.md:20:$$
