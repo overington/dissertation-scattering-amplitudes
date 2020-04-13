@@ -1,0 +1,37 @@
+---
+title: "LOG BOOK: (DRAFT) Scattering Amplitudes"
+subtitle:  Novel new methods of calculation, using BCFW recursion
+date: \today
+author: Samuel Overington | ID 170431121
+institute: |
+  School of Physics and Astronomy,
+  Queen Mary University of London
+numbersections: true
+titlepage: true,
+titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "360049"
+titlepage-rule-height: 0
+titlepage-background: "assets/background.pdf"
+logo: assets/qmullogo-white.eps
+# fontsize: 12pt
+# geometry: margin=2cm
+bibliography: bibliography-scattering_amplitudes.bib
+header-includes:
+  - \usepackage{lmodern,mathrsfs}
+  - \usepackage{sectsty}
+  - \usepackage[skipabove=\topskip,skipbelow=\topskip]{mdframed}
+  - \usepackage{yfonts}
+  - \usepackage{bbold}
+  - \usepackage{amssymb}
+  - \usepackage{amsmath}
+  - \usepackage{cancel,ulem}
+  - \usepackage[utf8]{inputenc}
+  - \usepackage{siunitx,physics}
+  - \usepackage{mattens}
+  - \usepackage{tensor}
+  - \usepackage{subcaption}
+  - \usepackage{tikz}
+  - \usepackage{tikz-feynman}
+  - \usepackage{stmaryrd}
+  - \input{/Users/samuel/Documents/devices/2019-20/project/dissertation/assets/custom-commands.tex}
+---
