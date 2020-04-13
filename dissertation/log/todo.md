@@ -1,22 +1,3 @@
-2020.02.11.md:8: - $\agl{\quad}{} \sqr{\quad}{}$
-2020.02.11.md:9: - $\RR$ Minkowski implies vanishing of one implies vanishing of other
-2020.02.11.md:16:$$
-2020.02.11.md:22:$$
-2020.02.11.md:26:In order to calculate this MHV amplitude, we need to find a way of simplifying this, by using the methods that we have been building up to so far. Lets try by first choosing vertexes $5$ and $1$ make a complex shift. We now have two choices:
-2020.02.11.md:28:$$
-2020.02.11.md:34:$$
-2020.02.11.md:35:$$
-2020.02.11.md:41:$$
-2020.02.11.md:46:$$
-2020.02.11.md:57:$$
-2020.02.11.md:59:$$
-2020.02.11.md:66:$$
-2020.02.11.md:70:$$
-2020.02.11.md:79:$$
-2020.02.11.md:86:  \caption{Amplitude corresponding to simple pole $z_p$}
-2020.02.11.md:99:$$
-2020.02.11.md:106:$$
-2020.02.11.md:108:This leaves us with an Amplitude $\sA(z) \approx z^3$, which at large $z: (z-z_p)^3 \approx z^3$
 2020.01.28.md:7: - Relativistic  $\to$ Symmetries
 2020.01.28.md:8: - Clarify notation for Hamiltonian / Lagrangian ($q,p \to x/\dot{x}$). Where $q,p$ is more general.
 2020.01.28.md:10:    - Set of transformations $G$ that have the combination of two:
