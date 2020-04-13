@@ -18,7 +18,8 @@
       "IDEA",
       "NOTE",
       "REVIEW",
-      "WORKING_ON"
+      "WORKING_ON",
+      "UPTO"
     ]
   },
   "lists": [
@@ -28,6 +29,10 @@
     },
     {
       "name": "TODO",
+      "hidden": false
+    },
+    {
+      "name": "UPTO",
       "hidden": false
     }
   ],
