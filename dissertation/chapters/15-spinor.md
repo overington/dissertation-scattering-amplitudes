@@ -1,5 +1,5 @@
 ## Spinor Helicity formalism and Pauli Matrices properties:
-## Spinor helicity formalism $\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}$:
+## Spinor helicity formalism \(\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}\):
 
 <!--
 >We shall now introduce the highly useful spinor helicity formalism for the description of scattering amplitudes of massless particles. It provides a uniform description of the on-shell degrees of freedom (momentum and polarization) for the scatter- ing states of all helicities (gluons, fermions, scalars) of massless particles. It also renders the analytic expressions of scattering amplitudes in an often much more compact form compared to the standard four-vector notation.
@@ -10,22 +10,18 @@ The spinor helicity formalism is a very useful description of scattering amplitu
 This method also simplifies the scattering amplitude, by rendering the analytic expressions in a form which does which is much more compact then the standard four-vector notation
 [@Plefka:2014aa, pp 15]
 
-$$
-\begin{aligned}
+\begin{align}
   \commutator{\frac{\sigma^i}{2}}{\frac{\sigma^j}{2}} & = i\epsilon^{ijk}\frac{\sigma^k}{2}
-\end{aligned}
-$$
+\end{align}
 
 
-<!-- Properties $SU(2)$: -->
+<!-- Properties \(SU(2)\): -->
 
-$$
-\begin{aligned}
+\begin{align}
   \rho^\mu &= 2\times 2 \qq{matrix}\\
   \sigma^0 &= \one_2\\
   \sigma^i &= \qq{Pauli spin matrices}\\
-\end{aligned}
-$$
+\end{align}
 
 \begin{equation}
   \label{eq:paulispin_innerprod}
@@ -34,13 +30,11 @@ $$
 
 where:
 
-$$
-\begin{aligned}
+\begin{align}
   \det(p^\mu \sigma_\mu ) & \equiv \vec{p}^2 \\
   \qq{Where, massless particles} p^2 &= 0\\
   (\rho^0)^2 - (\vec(p))^2 &= 0
-\end{aligned}
-$$
+\end{align}
 
 These relations here set the stage for being able to work with massless particles.
 
@@ -52,44 +46,38 @@ These relations here set the stage for being able to work with massless particle
 
 <!-- New From Here 16th Feb 2020 -->
 
-### Facts about $\sigma_\mu$:
+### Facts about \(\sigma_\mu\):
 
 When using the  Minkowski spacetime metric, we represent as following:
-$$
-\begin{aligned}
+
+\begin{align}
   \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, \vec{\sigma} \right)\\
   \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -\vec{\sigma} \right)\\
-\end{aligned}
-$$
+\end{align}
 
 With the Euclidian metric, we represent as following:
 
-$$
-\begin{aligned}
+\begin{align}
   \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, i\vec{\sigma} \right)\\
   \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -i\vec{\sigma} \right)\\
-\end{aligned}
-$$
+\end{align}
 
 So that:
 
-$$
-\begin{aligned}
+\begin{align}
     P_{\alpha \dot{\alpha}} &= p^\mu \sigma_{\mu\ \alpha \dot{\alpha}}\\
     \bar{P}^{\dot{\alpha} \alpha} &= p^\mu \bar{\sigma}_\mu^{\ \dot{\alpha}\alpha}
-\end{aligned}   
-$$
+\end{align}   
 
-Then $\epsilon_{\alpha\beta}$ similar to Levi-Cevita.
-$$
+Then \(\epsilon_{\alpha\beta}\) similar to Levi-Cevita.
+
+\begin{equation}
   \epsilon_{12} = -\epsilon_{21}
-$$
+\end{equation}
 
-Introducing the baracket notation: $\langle \quad \rangle$ and $[ \quad ]$
+Introducing the baracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
 
-$$
-\begin{aligned}
+\begin{align}
   \rho^\mu \sigma_\mu &= \rho^0 \sigma_0 + \vec{p}\cdot \vec{\sigma}\\
   \rho_{\alpha \dot{\alpha}}&= \ld{\alpha}\ltd{\alpha}
-\end{aligned}
-$$
+\end{align}

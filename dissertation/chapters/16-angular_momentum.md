@@ -4,28 +4,24 @@
 
 ## Angular Momentum properties:
 
-$$
-\begin{aligned}
+\begin{align}
   \vec{J} &= \vec{x} \times \vec{p}\\
-  &= xp_y - yp_x\\
-\end{aligned}
-$$
+  &= xp_y - yp_x
+\end{align}
 
 Using the a commutator:
-$$
-\begin{aligned}
+
+\begin{align}
   \commutator{J^1}{J^2} &= \commutator{x^2p^3 - x^3p^2}{x^3p^1 - x^1p^3}\\
   &= (x^2p^3 - x^3p^2)(x^3p^1 - x^1p^3) - (x^3p^1 - x^1p^3)(x^2p^3 - x^3p^2)
-\end{aligned}
-$$
+\end{align}
 
 (Only commutator with same index are non-zero)
-$$
-\begin{aligned}
+
+\begin{align}
   \commutator{J_i}{J_i} &= 0\\
   \commutator{J_i}{J_j} &\ne 0\\
-\end{aligned}
-$$
+\end{align}
 
 This leads to the formal relation of angular momentum:
 
@@ -44,47 +40,40 @@ This related transformation and sum to Noethers theorem
 \end{equation}
 
 
-## $SU$ Group:
-### $SU(2)$
+## \(SU\) Group:
+### \(SU(2)\)
 
-$$
-\begin{aligned}
+\begin{align}
   SU(2) \to U(N) &= N\times N matrix\\
    &= U^\dagger U = \one \qq{Unitary}
-\end{aligned}
-$$
+\end{align}
 
-$SU(N)$ are a special subset of unitary matrices ($\det U = \pm 1$)
+\begin{(SU(N)\end{(} are a special subset of unitary matrices (\(\det U = \pm 1\))
 
-Taylor expansion of $U$:
+Taylor expansion of \(U\):
 
-$$
-\begin{aligned}
+\begin{align}
   U &= e^{iA}\\
   e^x &= 1 + \frac{x^2}{2} + \frac{x^3}{3} \dots
-\end{aligned}
-$$
+\end{align}
 
 Impose the following conditions:
-$$
-\begin{aligned}
+
+\begin{align}
   \det{e^{iA}} = \one \implies \det{M} &= e^{\Tr (\log{M})} \\
    &= e^{\Tr (\log{(\exp(iA) )} ) }\\
    &= e^{\Tr (iA)}\\
    &= e^{i \Tr (A)} \implies \Tr (A) = 0
-\end{aligned}
-$$
+\end{align}
 
-Condition: $U^\dagger U = \one$
-Special unitarity: add $\det A = \pm 1 \to SU(N)$
+Condition: \(U^\dagger U = \one\)
+Special unitarity: add \(\det A = \pm 1 \to SU(N)\)
 
-$$
-\begin{aligned}
+\begin{align}
   U &= e^{iA}\\
   A^\dagger &= A \qq{Unitary, hermitian}\\
   \Tr A &= 0
-\end{aligned}
-$$
+\end{align}
 
 This implies we can write:
 
@@ -94,17 +83,15 @@ This implies we can write:
 \end{equation}
 
 where:
-$$
-\begin{aligned}
+
+\begin{equation}
   e^{i\alpha^a \frac{\sigma^a}{2}} = \exp(\sum_{a=1}^3 i\alpha^a \frac{\sigma^a}{2})
-\end{aligned}
-$$
+\end{equation}
 
 ### Proofs:
-$$
-\begin{aligned}
+
+\begin{align}
   U^dagger U &= \one\\
   (U_1U_2)^\dagger(U_1U_2) &= \one\\
   U^\dagger_2 U^\dagger_1 U_1 U_2 & = \one
-\end{aligned}   
-$$
+\end{align}   

@@ -58,7 +58,7 @@ Using the approximation we showed above, we can show that
   H \to \frac{\vec{p}^2}{2m} = \frac{m\dvec{x}^2}{2}
 \end{equation}
 
-For small velocities, where $\vec{x}\ll 1$, we can say:
+For small velocities, where \(\vec{x}\ll 1\), we can say:
 
 \begin{equation}
   \label{eq:lagrange_smallapprox}

@@ -5,11 +5,11 @@
 \end{equation}
 
 
-$$
-  \sigma^1 = \pmqty{\pmat{1}},
-  \sigma^2 = \pmqty{\pmat{2}},
-  \sigma^3 = \pmqty{\pmat{3}}
-$$
+\begin{align}
+  \sigma^1 &= \pmqty{\pmat{1}},
+  \sigma^2 &= \pmqty{\pmat{2}},
+  \sigma^3 &= \pmqty{\pmat{3}}
+\end{align}
 
 Squaring each of the pauli matrices produces the identity matrix:
 
@@ -19,13 +19,14 @@ Squaring each of the pauli matrices produces the identity matrix:
 \end{equation}
 
 Proof:
-$$
+
+\begin{equation}
 \left(\sigma^1 \right)^2 = \pmqty{\pmat{1}}^2 = \pmqty{\imat{2}}
-$$
+\end{equation}
 
-### Multiplication $\to$ identity matrix:
+### Multiplication \(\to\) identity matrix:
 
-there is a recursive relation, when multiplying the $i^{\text{th}}$ matrix by the $j^{\text{th}}$:
+there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by the \(j^{\text{th}}\):
 
 \begin{equation}
   \label{eq:pauli_group}
@@ -47,6 +48,7 @@ The trace of two pauli matrices multiplied together
   \Tr \left(\sigma_i \sigma_j \right) = 2\delta^{ij}
 \end{equation}
 where
-$$
+
+\begin{equation}
 \sigma_i \sigma_j = \delta^{ij} \one_2 + i\epsilon^{ijk}\sigma^{k}
-$$
+\end{equation}
