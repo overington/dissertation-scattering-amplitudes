@@ -62,9 +62,7 @@ Combined:
 
 
 (Fundamentally we are searching for a massless particles, where \(p^2 = m^2 = 0\))
-
-### Pauli Matrices
-
+## Pauli Matrices
 \begin{equation}
   \label{eq:momentum_massless_particles}
   p^2 = p_\mu p^mu = 0, \qq{and} p_0^2 - \vec{p}^2 = 0
@@ -90,7 +88,7 @@ Proof:
 \left(\sigma^1 \right)^2 = \pmqty{\pmat{1}}^2 = \pmqty{\imat{2}}
 \end{equation}
 
-#### Multiplication \(\to\) identity matrix:
+### Multiplication \(\to\) identity matrix:
 
 there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by the \(j^{\text{th}}\):
 
@@ -100,16 +98,14 @@ there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by 
 \end{equation}
 
 
-#### commutation and anti commutation:
-
+### commutation and anti commutation:
 They have the following anti/commutator relations
 \begin{equation}
   \label{eq:pauli_commutator}
   \commutator{\sigma^i}{\sigma^j} = i\epsilon^{ijk}\sigma^k = \anticommutator{\sigma^j}{\sigma^i}
 \end{equation}
 
-#### Trace of multiplication:
-
+### Trace of multiplication:
 The trace of two pauli matrices multiplied together
 \begin{equation}
   \label{eq:pauli_trace}
