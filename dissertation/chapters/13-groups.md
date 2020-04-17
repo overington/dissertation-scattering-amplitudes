@@ -209,7 +209,9 @@ and must satisfy \(R^TR = \one\):
 \end{array} \right]
 \end{equation}
 
-### Transformations:
+## Transformations:
+
+### What type of transformation is this?
 
 A velocity transformation
 
