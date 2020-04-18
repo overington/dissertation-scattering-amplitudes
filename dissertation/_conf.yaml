@@ -6,13 +6,16 @@ author: Samuel Overington | ID 170431121
 institute: |
   School of Physics and Astronomy,
   Queen Mary University of London
+toc: true
+toc-depth: 3
 numbersections: true
-titlepage: true,
+titlepage: true
 titlepage-text-color: "FFFFFF"
 titlepage-rule-color: "360049"
 titlepage-rule-height: 0
 titlepage-background: "assets/background.pdf"
 logo: assets/qmullogo-white.eps
+
 # fontsize: 12pt
 # geometry: margin=2cm
 bibliography: bibliography-scattering_amplitudes.bib
