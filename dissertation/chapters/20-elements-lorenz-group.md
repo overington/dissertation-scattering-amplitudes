@@ -269,7 +269,7 @@ This method also simplifies the scattering amplitude, by rendering the analytic 
 \begin{align}
   \rho^\mu &= 2\times 2 \qq{matrix}\\
   \sigma^0 &= \one_2\\
-  \sigma^i &= \qq{Pauli spin matrices}\\
+  \sigma^i &= \qq{Pauli spin matrices}
 \end{align}
 
 \begin{equation}
