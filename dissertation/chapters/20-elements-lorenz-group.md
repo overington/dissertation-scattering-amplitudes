@@ -375,6 +375,7 @@ This related transformation and sum to Noethers theorem
 
 
 ## \(SU\) Group:
+
 ### \(SU(2)\)
 
 \begin{align}
