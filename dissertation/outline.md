@@ -1,13 +1,15 @@
 
-* Lagrangian / Relativistic and non relativistic mechanics
-  * The Lagrangian and the action
-  * Lagrangian Mechanics
-    * Einstein Equation
-  * Principle of relativity
-    * Reference frames:
-    * Intervals:
-* Elements of the Lorentz group
-  * Associative:
+1. Introduction
+2. Elements of the Lorentz group
+  * Lagrangian / Relativistic and non relativistic mechanics
+    * The Lagrangian and the action
+    * Lagrangian Mechanics
+      * Einstein Equation
+    * Principle of relativity
+      * Reference frames:
+      * Intervals:
+    * Associative:
+
   * Unitary:
     * Invariance under transformation:
     * Metric:
@@ -16,7 +18,7 @@
   * Transformations:
 
 
-* Four vectors
+3. Four vectors
   * Angular Momentum properties:
   * Noethers Theorem
   * $SU$ Group:
