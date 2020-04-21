@@ -1,3 +1,4 @@
+
 <!-- begin:dissertation/log/2020.02.18.md -->
 
 ## Deriving simplest 4-point MHV amplitude
@@ -250,3 +251,271 @@ Slide equations:
 \end{align}  
 
 <!-- end:dissertation/log/2020.02.18.md -->
+## Deriving 3 point amplitudes
+<!-- begin:dissertation/log/2020.03.11.md -->
+
+- Derive \(\rm MHV\) amplitude
+- Perform a shift for a 4-point amplitude.
+- Negative helicity
+
+\begin{equation}
+  (\rm MHV) \to A(1^- 2^+ 3^- 4^+) = \frac{
+    \ag{13}^4
+  }{
+    \ag{12}\ag{23}\ag{34} \ag{41}
+  }
+\end{equation}
+
+We have the choice here:
+
+\begin{equation}
+\begin{cases}
+  \hat{\tilde{\lambda}_i} &= \tilde{\lambda}_i + z \lambda_j\\
+  \hat{\lambda}_j &= \lambda_j - z \lambda_i
+\end{cases}
+\end{equation}
+
+Leaving us with:
+
+\begin{equation}
+  \ag{\hat 1 3} = \ag{13} + z\ag{23}
+\end{equation}
+
+We will now investigate the behaviour of this object at large \(z\), and begin by choosing \(i=1, j = 2\)
+
+\begin{align}
+  \hat{\tilde{\lambda}}_1 &= \tilde{\lambda}_1 + z \tilde{\lambda}_2\\
+  \hat{\lambda}_2 &= \lambda_2 - z\lambda_1
+\end{align}
+
+Searching for the shift of \(\lambda_2\)
+
+\begin{align}
+  \ag{12} \to \ag{1 \hat 2} &= \ag{1 \lambda_2 - z\lambda_1}\\
+  &= \ag{12} - \cancelto{0}{z\ag{11}} \\
+  &= \ag{12}
+\end{align}
+
+The other leg:
+
+\begin{equation}
+  \ag{\hat 2 3} = \ag{23} - z\ag{13}
+\end{equation}
+
+This leaves us with the following amplitudes:
+
+\begin{figure}
+
+\begin{subfigure}[t]{.5\linewidth}
+  \centering
+  \input{assets/mhv_4particle4.tex}
+  \caption{\,}\label{fig:mhv_4particle4}
+\end{subfigure}
+\begin{subfigure}[t]{.5\linewidth}
+  \centering
+  \input{assets/mhv_4particle4_alt.tex}
+  \caption{\,}\label{fig:mhv_4particle4_alt}
+\end{subfigure}
+\caption{Amplitude example}
+\end{figure}
+
+ - In real Minkowski, three point doesn't exist
+ - Only angle or square brackets can be zero, but not at the same time.
+ - Two particle invariance (2 half + 3 squares )
+
+ refering to ~fig \ref{fig:mhv_4particle4}, we can see that it is null at the polling \(z\), and therefore the product of the brackets must go to zero:
+
+\begin{equation}
+ \underbrace{
+    \ag{\hat 2 3 }
+   }_{\text{Must equal }0} \sq{32} = 0 = (\hat{p}_2 + p_3)^2
+\end{equation}
+
+ The angle brakets (\(\ag{\hat 2 3}\)) must be equal to zero because of the line between the two shells. The condition for blobs to be on-shell are zero
+
+ This means that the right hand leg in ~fig \ref{fig:mhv_4particle4} must go to zero:
+
+\begin{equation}
+ \frac{
+   \ag{3 \hat p }^3
+   }{
+     \ag{\hat 2 3}\ag{\hat p 2}
+   } = \frac{0^3}{0^2}
+\end{equation}
+
+ This shows us that \ref{fig:mhv_4particle4} is not physically possible, as the amplitude is only made of square brackets (\(+-+\)). This could be zero if square is 0, but square brackets can't be zero. Because we are shifting the particle \(\lambda_2\). \(\rm MHV\) \(2^- 1^+\) means angle brackets. One of these will always go to zero.
+
+##  Example ~Fig. \ref{fig:mhv_4particle4_alt}
+
+Try to write down what the \(\rm MHV\) diagram with the brackets. Start the brackets.
+
+
+\begin{figure}[t]
+  \centering
+  \input{assets/mhv_4particle4_alt.tex}
+  \caption{Non vanishing Diagram}\label{fig:mhv_4particle4_alt_nonvanishing}
+\end{figure}
+
+To writ this amplitude:
+
+\begin{align}
+A_L &= \frac{
+    \ag{\hat 1 \hat p}^3
+    }{
+      \ag{\hat p 4} \ag{4 \hat 1}
+    } \underbrace{
+      = \frac{ \ag{1 \hat p}^3 }{ \ag{\hat p 4} \ag{4 1} }
+      }_{
+       \text{because \(\lambda_1\) is not shifted}
+       }
+\end{align}
+
+And the amplitude on the right is \(\overline{\rm MHV}\):
+
+\begin{equation}
+  A_R = \frac{
+    \sq{\hat{p} \hat{2}}^3
+    }{
+      \sq{3 \hat p} \sq{\hat 2 p}
+    } = \frac{
+      \sq{\hat p 2}
+      }{
+        \sq{3 \hat p} \sq{23}
+      }
+\end{equation}
+
+\begin{equation}
+  A(1^- 2^+ 3^- 4^+) = \frac{
+    \ag{1 \hat p}^3
+  }{
+    \ag{\hat p 3} \ag{41}
+} \frac{i}{p^2_{23}}
+\frac{
+  \sq{\hat p 2}
+  }{
+    \sq{3 \hat p} \sq{23}
+  }
+\end{equation}
+
+Where \(p_{23}\) is the momentum between \(A_L\) and \(A_R\)
+
+\begin{equation}
+  p_{23}^2 = (p_2 + p_3)^2 = \ag{23}\sq{32}
+\end{equation}
+
+Putting this all together, all we need to understand is \(\hat{p}\)
+
+We have to find the spinors of \(\hat{p}\) at the positions of the poles:
+
+\begin{equation}
+  \hat{p} = \lambda_{\hat{p}}\tilde{\lambda}_{\hat{p}}
+\end{equation}
+
+The position of the pole in z is found by requiring \(\hat{p}\) to be on-shell.
+
+
+\begin{figure}[t]
+  \centering
+  \input{assets/mhv_4particle4_altnonvanishing.tex}
+  \caption{Non vanishing Diagram}\label{fig:mhv_4particle4_alt_nonvanishing}
+\end{figure}
+
+Where we have two equivalent conditions:
+
+\begin{align}
+  \ag{\hat 2 3}\sq{32} &= 0\\
+  \ag{41} \sq{\hat 1 4} &= 0
+\end{align}
+
+From these two equations, we have two possibilities:
+
+\begin{align}
+  \ag{\hat 2 3} &= 0 \implies &\ag{23} - z\ag{13} = 0\\
+  \sq{\hat 1 4} &= 0 \implies &\sq{14} + z\sq{s4} = 0
+\end{align}
+
+And solving these two equations simultaneously:
+
+\begin{equation}
+  z = \frac{\ag{23}}{\ag{13}} \qquad z = \frac{-\sq{14}}{\sq{24}}
+\end{equation}
+
+Here the two \(z\) are the same, so we have found two equations that are equal.  When two mathematical objects are equal, we can divide one by the other and their ratio must equal one:
+
+\begin{equation}
+  - \frac{\ag{23}}{\ag{13}} \cdot \frac{\sq{24}}{\sq{14}} \eqq 1
+\end{equation}
+
+Let us interrogate the ratio a little further, and we can replace with the momenta \(p\)
+
+\begin{align}
+  &\frac{(-) \bsma{4}{2}{3}
+  }{
+      \bsma{4}{
+        \underbrace{ 1 }_{p_1} }{3}
+    } &= - \frac{
+    \bsma{4}{2}{3}
+    }{
+      (-)\bsma{4}{2+ 3+4}{3}
+    }\\
+   &\qquad p_1 = -p_2 -p_3 - p_4   
+  &&(-)\bsma{4}{2+ \cancel{3}+\cancel{4}}{3}
+\end{align}
+
+Summary:
+We have two values of \(z\), which look different, but are actually the same. We now have to find \(\ag{\,}\sq{\,}\)
+
+\begin{align}
+  \hat{p} &= \hat{p}_2 + p_3 &= \lambda_2\tilde{\lambda}_2 - z\lambda_1\tilde{\lambda}_2 + \lambda_3 \tilde{\lambda}_3\\
+  &= (\lambda_2 - z\lambda_1)\tilde{\lambda}_2+ \lambda_3\tilde{\lambda}_3
+\end{align}
+
+Using in our \(z = -\frac{\sq{14}}{\sq{24}}\), and \(\hat{\lambda}_2=\lambda_2 + \frac{\sq{14}}{\sq{24}}\lambda_1\)
+
+\begin{align}
+  \hat{\lambda}_2 &= \lambda_2 + \frac{\sq{14}}{\sq{24}}\lambda_1\\
+  &= \frac{
+    \lambda_2\sq{24} + \lambda_1 \sq{14}
+    }{
+      \sq{24}
+    }\\
+  \text{which is the same as } &= \frac{
+    (p_2 + p_1)|\, 4\, ]
+    }{
+      \sq{24}
+    }\\
+    \text{with momentum conservation }& = \frac{
+      -(p_3 + p_4) |\, 4\, ]
+      }{
+        \sq{24}
+      } \qq{(\(p_4\) next to 4 gives 0)}\\
+      \text{becoming } &= -\lambda_3 \frac{\sq{34}}{\sq{24}}
+\end{align}
+
+Finally:
+
+\begin{equation}
+  \hat{\lambda}_2 = \lambda_3 \frac{\sq{34}}{\sq{24}}
+\end{equation}
+
+Plugging this back into the original expression, this becomes:
+
+\begin{align}
+  \hat{p} &= \underbrace{
+    \lambda_3
+    }_{\lambda_{\hat{p}}}
+       \underbrace{
+      \left [
+        -\frac{\sq{34}}{\sq{24}} \tilde{\lambda}_2 + \tilde{\lambda}_3
+      \right ]
+        }_{\tilde{\lambda}_{\hat{p}}}\\
+  \lambda_{\hat{p}} &= \lambda_3\\
+  \tilde{\lambda}_{\hat{p}} &= \tilde{\lambda}_3 - \frac{\sq{34}}{\sq{24}} \tilde{\lambda}_2
+\end{align}
+
+<!--
+   - --- 
+   - Taking these spinors written in BCFW form:
+   -->
+
+<!-- end:dissertation/log/2020.03.11.md -->

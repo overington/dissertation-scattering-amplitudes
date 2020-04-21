@@ -16,7 +16,7 @@ Structure:
 # dissertation/log/2019.10.23.md
 
 - [x] edited
-- [ ] moved into chapters
+- [x] moved into chapters
 
   - Lorenz Transformations
   - Spinor Transformations
@@ -28,7 +28,7 @@ Structure:
 # dissertation/log/2019.10.29.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
 
@@ -40,55 +40,74 @@ Structure:
 # dissertation/log/2019.11.19.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
+
+    -  Contraction using \(\left[ \quad  \right]\) and \(\langle \quad \rangle\) notation
+    -  Creating Amplitudes for a three particle interaction:
+    -  Examples
+     -  Simple using \(\sqr{\quad}{\ }\):
+     -  Simple using \(\agl{\quad}{ }\):
 
 # dissertation/log/2019.11.26.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
+
+  - Determining three point amplitudes
+  - Notation
+  - Feynman Rule Vertex
 
 # dissertation/log/2020.01.21.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters (not moved)
 
 ## Contents:
+
+notes:
+
+ - Spinor Helicity formalism -> Makes simplicity manifest
+ - Dynamics: ie Why amplitudes are simple.
+ - New methods are simple
+ - what is the dot product in terms of spinors.
 
 # dissertation/log/2020.01.28.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
 
 # dissertation/log/2020.02.04.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
+
+ - Intro to Yang Mills (I think)
 
 # dissertation/log/2020.02.11.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
 
 # dissertation/log/2020.02.18.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
 
 # dissertation/log/2020.03.11.md
 
 [ ] edited
-[ ] moved into chapters
+[x] moved into chapters
 
 ## Contents:
