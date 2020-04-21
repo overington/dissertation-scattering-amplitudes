@@ -172,7 +172,7 @@ Note:
  2. Invariant quantities in relativity. What is the set of linear transformations that make the __metric__ invariant?
 
     - \(\eta \to \Lambda \eta \Lambda=\eta\)
-    - Lorenz group definitions.
+    - Lorentz group definitions.
 
     \begin{equation}
       \overbrace{\mqty(\dmat{a,b})}^{+}  \overbrace{\mqty(\dmat{1,-1})}^{sp}  \overbrace{\mqty(\dmat{a,b})}^{+}
@@ -184,6 +184,6 @@ Note:
       v' = \frac{\dd{x} + \beta \dd{x_0}}{\dd{x_0} + \beta \dd{x}}
     \end{equation} (Galilean transformation)
 
- 3. Lorenz transformation \(SO(1,3) \to SL(2,\CC)\times SL(2,\CC)\). Arriving at Lorenz invariant transformation \(\agl{1}{\dot{2}} \equiv \tensor{\lambda}{_1^\alpha}\tensor{\lambda}{_{2\dot{\alpha}}}\)
+ 3. Lorentz transformation \(SO(1,3) \to SL(2,\CC)\times SL(2,\CC)\). Arriving at Lorentz invariant transformation \(\agl{1}{\dot{2}} \equiv \tensor{\lambda}{_1^\alpha}\tensor{\lambda}{_{2\dot{\alpha}}}\)
 
  <!-- end:dissertation/log/2020.01.21.md -->

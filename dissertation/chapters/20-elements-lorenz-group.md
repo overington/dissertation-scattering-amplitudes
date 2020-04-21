@@ -1,6 +1,7 @@
+
 # Elements of the Lorentz group
 
-Here we will introduce some basic concepts: Groups, Algebras and Representations of the Lorenz Group
+Here we will introduce some basic concepts: Groups, Algebras and Representations of the Lorentz Group
 
 ## Moving Beyond Galilean Relativity
 
@@ -119,15 +120,15 @@ Event: described by the place where it occurred and times
 
 <!-- begin:dissertation/log/2019.10.23.md -->
 
-### Lorenz Transformations
+### Lorentz Transformations
 
 Why \(x_{\dot{\alpha} \alpha}\)  What is this object?
 
-For the Lorenz transformation:
+For the Lorentz transformation:
 
 <!-- #TODO: Write definition of Lorentz Group -->
 
-\begin{definition}[Lorenz Transformations]
+\begin{definition}[Lorentz Transformations]
   \begin{equation}
     P^\mu \to \tensor{\Lambda}{^\mu_\nu} p^\nu \equiv p^{\prime \nu}
   \end{equation}
@@ -157,7 +158,7 @@ For the Lorenz transformation:
     \underbrace{SO(1,3)}_{\qq{group}} \to \underbrace{SL(2, \CC)\times SL(2,\CC)}_{\qq{group} \mathbb{Z_2}}
   \end{equation}
 
-  The Lorenz Group \(SO(1,3) \) is isomorephic to \(SL(2,\CC)\cross SL(2,\CC) \)
+  The Lorentz Group \(SO(1,3) \) is isomorephic to \(SL(2,\CC)\cross SL(2,\CC) \)
 
 \end{definition}
 
