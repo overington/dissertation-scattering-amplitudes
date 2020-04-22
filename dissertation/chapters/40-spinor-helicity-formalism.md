@@ -171,7 +171,7 @@ Note:
  1. Einstein Equation \(E^2 = (pc)^2 + (mc^2)^2\)
  2. Invariant quantities in relativity. What is the set of linear transformations that make the __metric__ invariant?
 
-    - \(\eta \to \Lambda \eta \Lambda=\eta\)
+    - \(\eta \to \Lambda^T \eta \Lambda=\eta\)
     - Lorentz group definitions.
 
     \begin{equation}

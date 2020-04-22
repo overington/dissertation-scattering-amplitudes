@@ -162,8 +162,6 @@ A transformation that is a representation of this group is are known as the **Sp
 \begin{definition}[Spinor Transformations]
 The spinors transform as follows:
 
-\(\alpha\)
-
 \begin{align}
   \tensor{\Psi}{^{\prime}_\alpha} &= \tensor{M}{_\alpha^\beta}\tensor{\Psi}{_\beta}\\
   \tensor{\bar{\Psi}}{^{\prime}_{\dot{\alpha}}} &= \tensor{M}{_{\dot{\alpha}}^{\dot{\beta}}}\tensor{\bar{\Psi}}{_\beta}\\

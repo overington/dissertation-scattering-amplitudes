@@ -1,6 +1,6 @@
 ---
-title: "LOG BOOK: (DRAFT) Scattering Amplitudes"
-subtitle:  Novel new methods of calculation, using BCFW recursion
+title: "(DRAFT) Scattering Amplitudes"
+subtitle:  New and novel methods scattering amplitude calculation using BCFW recursion
 date: \today
 author: Samuel Overington | ID 170431121
 institute: |
@@ -15,9 +15,6 @@ titlepage-rule-color: "360049"
 titlepage-rule-height: 0
 titlepage-background: "assets/background.pdf"
 logo: assets/qmullogo-white.eps
-
-# fontsize: 12pt
-# geometry: margin=2cm
 bibliography: bibliography-scattering_amplitudes.bib
 header-includes:
   - \usepackage{lmodern,mathrsfs}

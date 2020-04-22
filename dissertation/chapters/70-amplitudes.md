@@ -65,7 +65,7 @@ Likewise, the remaining \(p_i\) can be found by cyclicly permutation.
 
 \begin{align}
   \epsilon^{+}_{\alpha\dot{\alpha}} & \equiv  \frac{\xi_{\alpha} \tilde{k}_{\dot{\alpha}}}{\agl{\xi}{k}} \sqrt{2}\\
-  \epsilon^{-}_{\alpha\dot{\alpha}} & \equiv - \frac{\tilde{\xi}_{\dot{\alpha}} k_{\alpha}}{\sqr{\tilde{\xi}}{\tilde{k}}}\sqrt{2}\\
+  \epsilon^{-}_{\alpha\dot{\alpha}} & \equiv - \frac{\tilde{\xi}_{\dot{\alpha}} k_{\alpha}}{\sqr{\tilde{\xi}}{\tilde{k}}}\sqrt{2}
 \end{align}
 
 \end{definition}
@@ -80,18 +80,28 @@ We use this definition to simplify the following case:
 
 Now here we illustrate the case for MHV (Maximum Helicity Violation), where we are choosing as many as possible combinations that can be reduced to 0 on inspection without further need to calculation:
 
-\begin{align}
-  A(1,2,3) = 2 \left [ (p_i \cdot \epsilon^3)(\epsilon^1 \cdot \epsilon^2) +
-  (p_2 \cdot \epsilon^1)(\epsilon^2 \cdot \epsilon^3)
-  (p_3 \cdot \epsilon^1)(\epsilon^1 \cdot \epsilon^3)
-  \right ]
-\end{align}
+
+\begin{definition}[MHV Amplitude]
+
+A Maximally Helicity Violating Amplitude is an interaction between \(n\)
+massless bosons, where \(n-2\) of the amplitude legs have a particular helicty,
+and the remaining two particles have the opposite helicity.
+
+  \begin{equation}
+    A(1,2,3) = 2 \left [ (p_i \cdot \epsilon^3)(\epsilon^1 \cdot \epsilon^2) +
+    (p_2 \cdot \epsilon^1)(\epsilon^2 \cdot \epsilon^3)
+    (p_3 \cdot \epsilon^1)(\epsilon^1 \cdot \epsilon^3)
+    \right ]
+  \end{equation}
+\end{definition}
+
+### Worked example of an MHV Amplitude
 
 Using
 
 \begin{align}
   \epsilon_1^- &= \frac{\tilde{\xi}_{\dot{\alpha}} 1_{\alpha} }{ \sqr{\xi}{1}}\\
-  \epsilon_2^- &= \frac{\tilde{\xi}_{\dot{\alpha}} 2_{\alpha} }{ \sqr{\xi}{2}}\\
+  \epsilon_2^- &= \frac{\tilde{\xi}_{\dot{\alpha}} 2_{\alpha} }{ \sqr{\xi}{2}}
 \end{align}
 
 We are now looking for \(\epsilon_1^{1^-} \cdot \epsilon_2^{2^-}\)
@@ -100,7 +110,7 @@ Deriving gluon three-point amplitudes from Feynman rules, colour order:
 
 \begin{align}
   2 \cdot \epsilon_2 \epsilon_3 &= \tensor{{\epsilon_{(2)}}}{^{\dot{\alpha}\alpha}} \tensor{{\epsilon_{(3)}}}{_{\alpha \alpha}}\\
-  &= \sqrt{2}\sqrt{2} \ 2^{\dot{\alpha}} \underbrace{\tensor{{k_3}}{_{\dot{\alpha}}} \tensor{{k_2}}{^{\alpha}} \tensor{3}{_{\alpha}}}_{Contraction}\\
+  &= \sqrt{2}\sqrt{2} \ 2^{\dot{\alpha}} \underbrace{\tensor{{k_3}}{_{\dot{\alpha}}} \tensor{{k_2}}{^{\alpha}} \tensor{3}{_{\alpha}}}_{contraction}\\
   &= -2\sqr{k_3}{2} \agl{k_2}{3}
 \end{align}
 
@@ -218,7 +228,7 @@ We multiply polarisation by each vertex. Hence momentum is conserved
 choose helicities (for same) Polarisation vector:
 
 \begin{align}
-  \epsilon^{\alpha\dot{\alpha}}_+(\lambda) &= -\sqrt{2}\frac{\ltu{\alpha} \mu^{\alpha}}{\baa{\lambda}{\mu}} \\
+  \epsilon^{\alpha\dot{\alpha}}_+(\lambda) &= -\sqrt{2}\frac{\ltu \mu^{\alpha}}{\baa{\lambda}{\mu}} \\
   \epsilon^{\alpha\dot{\alpha}}_-(\lambda) &= \sqrt{2}\frac{\lu{\alpha} \tilde{\mu}^{\dot{\alpha}}}{\bss{\lambda}{\mu}}
 \end{align}
 
@@ -239,31 +249,39 @@ The phenomenologist way of writing:
 \begin{align}
   a^\mu &= \frac{1}{2} \bams{a}{\mu}{a} \equiv \frac{1}{2} a^\alpha \tilde{a}^{\dot{\alpha}}\tensor{{\sigma_mu}}{_{\alpha\dot{\alpha}}}\\
   2(a \cdot b) &= 2 \frac{1}{2} \frac{1}{2} \bams{a}{\mu}{a}\bams{b}{\mu}{b}\\
-  &= 2 \baa{a}{b}\bss{b}{b}
+  &= 2 \baa{a}{b}\bss{b}{a}
 \end{align}
 
 
 <!-- end:dissertation/log/2019.11.26.md -->
 
 
-# Introduction to Feynman diagrams - reproducing amplitudes for Yang-Mills theory
-
-<!-- begin:dissertation/log/2020.02.04.md -->
+# BCFW recursion relations in Yang-Mills and Gravity
 
 [@Plefka:2014aa, pp 35-39]
 
-The BCFW recursion relations rely on an understanding of the behaviour of the function \(A_n(z)\) in the complex \(z\) plane.
+The BCFW recursion relations rely on an understanding of the behaviour of the
+function \(A_n(z)\) in the complex \(z\) plane.
 
 The derivation proceeds in three steps.
 
-* First, the locations of the poles of \(A_n(z)\) are analyzed.]
+* First, the locations of the poles of \(A_n(z)\) are analyzed.
 * Then, it is shown that the residues of the poles correspond to products of lower-point tree amplitudes.
 * Finally, the large \(z\) behaviour of \(A_n(z)\) is determined.
 
 
-Using complex analysis, we want to inspect the amplitude \(A_n(z)\). This is because the sum of tree-level Feynman diagrams are gauge invariant, and therefore when they are deformed by \(z\), they remain unchanged. Therefore we can choose the Feynman gauge for the following discussion, without loss of generality. It is clear that \(An(z)\) is a rational function of the \( \ld{i} \),\(\lmt_i\) and \(z\). Moreover, \(An(z = 0)\) can only have poles where the denominators of Feynman propagators become zero.
+Using complex analysis, we want to inspect the amplitude \(A_n(z)\). This is
+because the sum of tree-level Feynman diagrams are gauge invariant, and
+therefore when they are deformed by \(z\), they remain unchanged. Therefore we
+can choose the Feynman gauge for the following discussion, without loss of
+generality. It is clear that \(An(z)\) is a rational function of the
+\(\ld{i}\),\(\lmt_i\) and \(z\). Moreover, \(An(z = 0)\) can only have poles where the
+denominators of Feynman propagators become zero.
 
-When inspecting a function using complex analysis, we try to simplify the function such that there is only one variable in which to take into the complex plane. Taking our scattering amplitude, we reduce it such that our only variable becomes the moment of a particle:
+When inspecting a function using complex analysis, we try to simplify the
+function such that there is only one variable in which to take into the complex
+plane. Taking our scattering amplitude, we reduce it such that our only
+variable becomes the moment of a particle:
 
 \begin{equation}
   (p_i +p_{i+1} + p_{i+2} + \dots )^2 \equiv \ \dij
@@ -271,8 +289,9 @@ When inspecting a function using complex analysis, we try to simplify the functi
 
 Where we have the following quantities:
 
+
 \begin{align}
-  S &= (p_1 + p_2)^2\\
+  s &= (p_1 + p_2)^2\\
   t &= (p_2 + p_3)^2\\
   u &= (p_1 + p_1)^2 \\
   p_4 &= -p_1 -p_2 -p_3 -p_4  \Rightarrow A(S,t,u)
@@ -283,11 +302,11 @@ Gauge theory, n-point amplitudes. We now deform our amplitude in such a way that
 \begin{align}
   A(p_1, \dots, p_n) &\to \begin{cases}
     p_i \to p_i(z)\\
-    p_j \to p_j(z)\\
+    p_j \to p_j(z)
   \end{cases}
 \end{align}
 
-Which leaves our amplitude in a state with only complexified momenta \(p_i(z)\) and \(p_i(z)\)
+Which leaves our amplitude in a state with only complexified momenta \(p_i(z) \qq{and} p_i(z)\)
 
 \begin{align}
   \sA(z) &= A(-p_1, p_2, \cdots, p_i(z), \cdots, p_j(z), \cdots  p_n  )\\
@@ -295,7 +314,7 @@ Which leaves our amplitude in a state with only complexified momenta \(p_i(z)\) 
 \end{align}
 .
 
-This process can be particularly useful when exploring massless particles \(\left( \sum p_i^2 = 0 \right) \); however this is not a constrain, and also works just as well with massive particles.
+This process can be particularly useful when exploring massless particles \(\left ( \sum p_i^2 = 0 \right )\); however this is not a constrain, and also works just as well with massive particles.
 
 We are left with a transformation:
 
@@ -329,8 +348,8 @@ This leads to:
 This is useful for us, as we may thus choose \(\eta\) to be any value we would like; so to simplify this equation, we choose \(\eta = 0\), and we are left with:
 
 \begin{align}
-  2(p_i \cdot \eta) &= 0 &\Leftrightarrow & \agl{i}{\eta} \sqr{\eta}{i} & =0\\
-  2(p_j \cdot \eta) &= 0 &\Leftrightarrow & \agl{j}{\eta} \sqr{\eta}{j} & =0
+  2(p_i \cdot \eta) &= 0 \Leftrightarrow  \agl{i}{\eta} \sqr{\eta}{i}  =0\\
+  2(p_j \cdot \eta) &= 0 \Leftrightarrow  \agl{j}{\eta} \sqr{\eta}{j}  =0
 \end{align}
 
 This is already a well known solution (from the 60s - find ref ), where we are keeping spacetime such that:
@@ -356,9 +375,10 @@ Taking complex Minkowski:
 \end{aligned} \right \} \qq{2 options}
 \end{equation}
 
-\begin{equation}
-  \eta = \ld{i} \lmtd{j}  \qq{or} \eta = \ld{j} \lmtd{i}
-\end{equation}
+\begin{align}
+  \qq{either} \eta &= \ld{i} \lmtd{j} \\
+  \qq{or} \eta &= \ld{j} \lmtd{i}
+\end{align}
 
 Where implies that the we are left with:
 
@@ -372,7 +392,7 @@ Where implies that the we are left with:
 p_i \to p_i(z) &= p_i +z \eta\\
   &= \ld{i}\lmtd{i} + z\ld{i}\lmtd{j}\\
   &= \ld{i}(\lmtd{i} + z\lmtd{j})\\
-  &\equiv \ld{i} \lthd{i}(z)
+  &\equiv \ld{i} \lthd{i}(z)\\
 \end{aligned}
 \qquad \qquad
 \begin{aligned}
@@ -381,7 +401,7 @@ p_j \to p_j(z) &= p_j -z \eta\\
   &= (\ld{j} - z\ld{i})\lmtd{j}\\
   &\equiv \lh_j \lmtd{j}(z)
 \end{aligned}
-\addtag
+\taglabel{eq:complexmomentum}
 \]
 
 Leaving us with the two quantities:
@@ -418,6 +438,7 @@ This has the simplification that there are no constant terms \((\cancelto{0}{C}+
 This is referred to as the pole to third power.
 
 ## Feynman Diagrams
+
 What are the singularities:
 
 \begin{center}  
@@ -446,7 +467,11 @@ rewriting this:
   &= \sum_p \frac{C_p}{z-z_p}
 \end{align}
 
-Where we have used the substitution: \(z_p=\frac{p^2}{2(p\cdot\eta)}\)
+Where we have used the substitution:
+
+\begin{equation}
+  z_p=\frac{p^2}{2(p\cdot\eta)}
+\end{equation}
 
 ## Understanding Singularities
 
@@ -454,9 +479,11 @@ Where we have used the substitution: \(z_p=\frac{p^2}{2(p\cdot\eta)}\)
   A(1,2,\cdots,n) \xrightarrow{\quad p^2\to 0 \quad} \sum_n A_L\frac{i}{p^2}A_R
 \end{equation}
 
-<!-- #TODO: Feynman Diagram (understanding singularities:) -->
 
-\input{assets/feynman02.tex}
+<!-- #TODO: Feynman diagram  -->
+\begin{center}  
+  \input{assets/feynman02.tex}
+\end{center}
 
 Where:
 
@@ -470,7 +497,7 @@ Then:
 \begin{align}
   z \to z_p &\equiv \frac{-p^2}{2(p\cdot \eta)}\\
   \hat{p}^2(z) &\to 0\\
-  \therefore \frac{1}{\hat{p}^2(x)} &= \frac{1}{2(p\cdot \eta)[z-z_p]}\\
+  \therefore \frac{1}{\hat{p}^2(x)} &= \frac{1}{2(p\cdot \eta)[z-z_p]}
 \end{align}
 
 \begin{align}
@@ -489,8 +516,8 @@ Then:
 
 For example:
 
-<!-- #TODO: Feynman Diagram,  -->
-\begin{center}
+<!-- #TODO: Feynman Diagrams -->
+\begin{center}  
   \input{assets/feynman03.tex}
 \end{center}
 
@@ -501,13 +528,10 @@ For example:
 
 \begin{equation}
   2p\eta \qq{such that}\eta : \begin{cases}
-    \ld{1}\lmtd{2} \to 2(p\cdot \eta) &= \left < 1 | p | 2 \right ] \\
-    \ld{2}\lmtd{1} \to 2(p\cdot \eta) &= \left < 2 | p | 1 \right ] \\
+    \ld{1}\lmtd{2} \to 2(p\cdot \eta) &= \bams{1}{p}{2} \\
+    \ld{2}\lmtd{1} \to 2(p\cdot \eta) &= \bams{2}{p}{1}
   \end{cases}
 \end{equation}
-
-<!-- end:dissertation/log/2020.02.04.md -->
-
 
 # Three-point amplitudes and factorisation
 
@@ -521,7 +545,7 @@ For example:
  - \(\agl{\quad}{} \sqr{\quad}{}\)
  - \(\RR\) Minkowski implies vanishing of one implies vanishing of other
 
-## Shifted particles
+## Example of shifted poles
 
 Looking at all possible diagrams:
 (continued from last amplitude).
