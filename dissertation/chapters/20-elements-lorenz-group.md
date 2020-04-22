@@ -3,7 +3,7 @@
 
 Here we will introduce some basic concepts: Groups, Algebras and Representations of the Lorentz Group
 
-## Moving Beyond Galilean Relativity
+## Moving Beyond Galilean Mechanics
 
 In order for us to begin understanding interactions between free particles, we
 will first inspect their classical form and the systems by which such
@@ -65,18 +65,19 @@ leading to
   &= \frac{m}{\sqrt{1-\dvec{x}^2}}
 \end{align}
 
-Using the approximation we showed above, we can show that
-
-\begin{equation}
-  H \to \frac{\vec{p}^2}{2m} = \frac{m\dvec{x}^2}{2}
-\end{equation}
-
 For small velocities, where \(\vec{x}\ll 1\), we can say:
 
 \begin{equation}
   \label{eq:lagrange_smallapprox}
   \sqrt{1-\dvec{x}^2} \approx 1-\frac{\dvec{x}^2}{2} + \dots [\qq{Limit}]
 \end{equation}
+
+Using this approximation, we derive:
+
+\begin{equation}
+  H \to \frac{\vec{p}^2}{2m} = \frac{m\dvec{x}^2}{2}
+\end{equation}
+
 
 
 ### Einstein Equation
@@ -110,10 +111,9 @@ where \(\dv{x}{t}=0 \to x\) and \(x\prime\) have same inertial property.
 
 Event: described by the place where it occurred and times
 
-\begin{align}
-  e_1 &= [t,x,y,z]\\
-  \text{worldline }&= [t\to t\prime, f(x,y,z)-f\prime(x,y,z)]
-\end{align}
+\begin{equation}
+  e_1 = [t,x,y,z]
+\end{equation}
 
 
 ## Transformations:
@@ -134,13 +134,6 @@ For the Lorentz transformation:
   \end{equation}
 
   Expanding on this, the can arrive at the following explanation:
-
-  \begin{equation}
-    P_{\alpha \dot{\alpha}} = \ld{\alpha}\ld{\dot{\alpha}} = \begin{pmatrix}
-      p^0 +p^3 & p^1 - ip^2\\
-      p^1 + ip^2 & p^0 - p^2
-    \end{pmatrix}
-  \end{equation}
 
   \begin{align}
     P_{\alpha \dot{\alpha}} &= \rho^{\mu}\sigma_{\mu \alpha \dot{\alpha}} \to MPM^\dagger
@@ -330,7 +323,7 @@ There exists these two values
   x^\mu &\to \tensor{\Lambda}{^\mu_\nu} x^\nu
 \end{align}
 
-To prove that this quantity os a 4-vector:
+To prove that this quantity of a 4-vector:
 
 \begin{align}
   v^\mu &= \dv{x^\mu}{\tau} \to  \dv{x^\mu}{x} \\
@@ -451,17 +444,18 @@ where:
 
 \begin{align}
   \det(p^\mu \sigma_\mu ) & \equiv \vec{p}^2 \\
-  \qq{Where, massless particles} p^2 &= 0\\
-  (\rho^0)^2 - (\vec(p))^2 &= 0
+  \qq{Where, for a massless particle} p^2 &= 0\\
+  (\rho^0)^2 - (\vec{p})^2 &= 0
 \end{align}
 
 These relations here set the stage for being able to work with massless particles.
 
-
-\begin{equation}
-  \label{eq:spinor_helicity_formalism}
-  (p^\mu \sigma_\mu)_{\alpha \dot\alpha} = \lambda_\alpha \tilde{\lambda}_{\dot\alpha}
-\end{equation}
+\begin{definition}[Spinor Helicity Formalism]
+  \begin{equation}
+    \label{eq:spinor_helicity_formalism}
+    (p^\mu \sigma_\mu)_{\alpha \dot\alpha} = \lambda_\alpha \tilde{\lambda}_{\dot\alpha}
+  \end{equation}
+\end{definition}
 
 <!-- New From Here 16th Feb 2020 -->
 
@@ -553,7 +547,7 @@ This related transformation and sum to Noethers theorem
    &= U^\dagger U = \one \qq{Unitary}
 \end{align}
 
-\begin{(SU(N)\end{(} are a special subset of unitary matrices (\(\det U = \pm 1\))
+\((SU(N)\) are a special subset of unitary matrices (\(\det U = \pm 1\))
 
 Taylor expansion of \(U\):
 
@@ -596,7 +590,7 @@ where:
 ### Proofs:
 
 \begin{align}
-  U^dagger U &= \one\\
+  U^{\dagger} U &= \one\\
   (U_1U_2)^\dagger(U_1U_2) &= \one\\
   U^\dagger_2 U^\dagger_1 U_1 U_2 & = \one
-\end{align}   
+\end{align}

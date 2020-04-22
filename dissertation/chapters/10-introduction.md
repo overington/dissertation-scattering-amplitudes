@@ -34,9 +34,10 @@ expand on this knowledge, to
 certain properties when joining one or more individual things, in order to
 represent systems, or groups of particles, and how they interact.
 
- We begin by mapping the energy and momentum associated with each entering
- particle to exiting particles while preserving Einsteins energy-momentum
- relationship of:
+We begin by mapping the Einsteins conservative energy and momentum associated
+with each entering particle to exiting particles using *De Broglie dispersion
+relations*, which connects the energy, momentum, and mass of particles through
+relativistic dispersion relation:
 
 \begin{equation}
   \label{eq:einstein_energymomentum}
@@ -47,6 +48,8 @@ represent systems, or groups of particles, and how they interact.
 currently available to us for exploring interactions from their fundamental
 rules in physical systems and building up the language we need in order to
 model how they interact. From this, we explore further formalisms which
+
+<!-- TODO:discussion of einstein energy momentum dispersion relation -->
 
 form of relativistic interactions, which themselves have been bootstrapped from
 classical mechanics.
@@ -85,7 +88,7 @@ with **On-Shell** particles at the boundaries.
 
 <!-- Graph that out and you get a parabolic surface for massive particles, and a cone for massless particles, like photons. This is known as the mass shell. The momentum of a real particle can be represented by a vector lying along the shells’ surface. The point is that real particles have momentum vectors that are on the shell – not inside it, but on it. -->
 
-This method is flexible as it is gauge variant; a property which is useful for
+This method is flexible as it is gauge invariant; a property which is useful for
 simple particle interactions, however it becomes problematic for computing
 interactions involving numerous particles as the complexity of computation
 quickly grows @Bern:2012aa. (For example a quark-quark interaction might
