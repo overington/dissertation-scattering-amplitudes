@@ -25,16 +25,23 @@
     * $SU(2)$
   * $\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}$:
 
-* Spinor helicity formalism (null vectors)
-* Spinors and transformations
+4. Little group and weights
+
+5. Spinor helicity formalism (null vectors)
+6. Spinors and transformations
   * Spinor Helicity formalism and Pauli Matrices properties:
     * Multiplication $\to$ identity matrix:
     * commutation and anti commutation:
     * Trace of multiplication:
 
-* Little group and weights
 
-* Determination of three-point amplitudes of massless particles
-* Introduction to Feynman diagrams - reproducing amplitudes for Yang-Mills theory
-* Three-point amplitudes and factorisation
-* BCFW recursion relations in Yang-Mills and Gravity
+
+7. Determination of three-point amplitudes of massless particles
+8. Introduction to Feynman diagrams - reproducing amplitudes for Yang-Mills theory
+9. Three-point amplitudes and factorisation
+10. BCFW recursion relations in Yang-Mills and Gravity
+
+
+
+\newcommand{\lmtd}[1][\alpha]{\td{#1}}
+\newcommand{\td}[2][\lambda]{\tilde{{#1}}_{\dot{#2}}}

@@ -1,3 +1,0 @@
-
-# Little group and weights
-

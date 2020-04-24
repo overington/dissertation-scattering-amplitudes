@@ -1,6 +1,9 @@
+\newpage
+
 # Determination of three-point amplitudes of massless particles
 
 <!-- begin:dissertation/log/2019.11.26.md -->
+
 ## Determining three point amplitudes
 
 \begin{figure}
@@ -9,7 +12,7 @@
   \caption{}
 \end{figure}
 
-Vertex, using a cyclic rotation:
+The expression of the vertex is:
 
 \begin{align}
   iV_{\mu_1, \mu_2, \mu_3}^{a_1, a_2, a_3} &= ig \left [
@@ -27,7 +30,7 @@ Amplitude, using the polarisation vector \(\epsilon_{\alpha\dot{\alpha}}\):
 \begin{aligned}
   V_{
     \mu_1 \mu_2 \mu_3
-    } = \evaluated{
+    } \evaluated{
       \epsilon_{(1)}^{\mu_1} \epsilon_{(2)}^{\mu_2} \epsilon_{(3)}^{\mu_3}
       }_{
         p_1^2 = p_2^2 = p_3^2 = 0
@@ -40,17 +43,28 @@ Amplitude, using the polarisation vector \(\epsilon_{\alpha\dot{\alpha}}\):
 [A]
 \end{equation}
 
-*   Using this method, we will always have momentum conservation such that \(p_1 + p_2 + p_3 = 0\)
-*   Momentum is always transverse to polarisation \(p\cdot \epsilon(p) = 0\)
-
-Transverse:
+Here we also have to impose momentum conservation such that
 
 \begin{equation}
-  \epsilon(p) \approx \frac{
-    \ld{\alpha}\tilde{\eta}_{\dot{\alpha}}
-    }{ \sqr{\lambda}{\eta}
-  }  = 0
+  p_1 + p_2 + p_3 = 0
 \end{equation}
+
+Momentum is always transverse to polarisation (see Definition \ref{def:polarisation_vec)
+
+\begin{equation}
+  p\cdot \epsilon(p) = 0
+\end{equation}
+
+The expression of the polarisation vectors
+
+\begin{definition}[Polarisation Vector, reference spinor]
+
+\begin{align}
+  \epsilon^{+}_{\alpha\dot{\alpha}} & \equiv  \frac{\xi_{\alpha} \tilde{k}_{\dot{\alpha}}}{\agl{\xi}{k}} \sqrt{2}\\
+  \epsilon^{-}_{\alpha\dot{\alpha}} & \equiv - \frac{\tilde{\xi}_{\dot{\alpha}} k_{\alpha}}{\sqr{\tilde{\xi}}{\tilde{k}}}\sqrt{2}
+\end{align}
+\label{def:polarisation_vecotr_ref}
+\end{definition}
 
 Simplifying \([A]\):
 
@@ -59,18 +73,11 @@ Simplifying \([A]\):
   &= (2p_1 +p_3)\cdot \epsilon_3\\
   &= 2(p_1 \cdot \epsilon_3)
 \end{align}
+
 Likewise, the remaining \(p_i\) can be found by cyclicly permutation.
 
-\begin{definition}[Polarisation Vector, reference spinor]
 
-\begin{align}
-  \epsilon^{+}_{\alpha\dot{\alpha}} & \equiv  \frac{\xi_{\alpha} \tilde{k}_{\dot{\alpha}}}{\agl{\xi}{k}} \sqrt{2}\\
-  \epsilon^{-}_{\alpha\dot{\alpha}} & \equiv - \frac{\tilde{\xi}_{\dot{\alpha}} k_{\alpha}}{\sqr{\tilde{\xi}}{\tilde{k}}}\sqrt{2}
-\end{align}
-
-\end{definition}
-
-We use this definition to simplify the following case:
+We use the definition \ref{def:polarisation_vecotr_ref} to simplify the following case:
 
 \begin{align}
   \tensor{{\epsilon_1}}{_{\alpha\dot{\alpha}}} \cdot \tensor{{\epsilon_2}}{^{\alpha\dot{\alpha}}} &= 2(\epsilon_1\cdot \epsilon_2)\\
