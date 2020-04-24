@@ -250,13 +250,13 @@ And this is precisely \(\epsilon_{\alpha\beta} \det(M) = \epsilon_{\alpha\beta}\
 \begin{definition}[Spinors]
   Raising and lowering spinor indices
 
-\begin{align*}
-  \ld{\alpha} &= \epsilon_{\alpha\beta} \lu{\beta} &
+\begin{align}
+  \ld{\alpha} &= \epsilon_{\alpha\beta} \lu{\beta} \\
   \lu{\alpha} &\equiv \epsilon^{\alpha\beta} \ld{\beta} \\
-  \lmtd{\dot\alpha} &= \epsilon_{\dot{\alpha}\dot{\beta}} \ltu{\beta} &
-  \ltu{\alpha} &\equiv \epsilon^{\dot{\alpha}\dot{\beta}} \lmtd{\dot\beta}
+  \lmtd[\alpha] &= \epsilon_{\dot{\alpha}\dot{\beta}} \ltu[\beta] \\
+  \ltu &\equiv \epsilon^{\dot{\alpha}\dot{\beta}} \lmtd[\beta]
   \label{eq:spinors}
-\end{align*}
+\end{align}
 \end{definition}
 
 Proof:
@@ -346,6 +346,8 @@ Combined:
 
 (Fundamentally we are searching for a massless particles, where \(p^2 = m^2 = 0\))
 
+## Spinor Helicity formalism and Pauli Matrices properties:
+
 ### Pauli Matrices
 
 \begin{definition}[Pauli Matrices]
@@ -406,8 +408,7 @@ where
 \sigma_i \sigma_j = \delta^{ij} \one_2 + i\epsilon^{ijk}\sigma^{k}
 \end{equation}
 
-
-## Spinor Helicity formalism and Pauli Matrices properties:
+<!-- aaabbbccc -->
 
 ## Spinor helicity formalism \(\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}\):
 
