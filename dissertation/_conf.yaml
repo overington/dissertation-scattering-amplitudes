@@ -16,6 +16,7 @@ titlepage-rule-height: 0
 titlepage-background: "assets/background.pdf"
 logo: assets/qmullogo-white.eps
 bibliography: bibliography-scattering_amplitudes.bib
+csl: vancouver-brackets.csl
 header-includes:
   - \usepackage{lmodern,mathrsfs}
   - \usepackage{sectsty}

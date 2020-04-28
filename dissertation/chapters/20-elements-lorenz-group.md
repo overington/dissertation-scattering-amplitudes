@@ -1,19 +1,7 @@
+# Elements of the Lorentz group (from classical mechanics to relativistic physics)
 
-# Elements of the Lorentz group
 
-Here we will introduce some basic concepts: Groups, Algebras and Representations of the Lorentz Group
-
-## Moving Beyond Galilean Mechanics
-
-In order for us to begin understanding interactions between free particles, we
-will first inspect their classical form and the systems by which such
-interactions have been be described; using reference systems or co-ordinates.
-This fist step will allow us to set a time and spatial dimensions of the
-system, and allow us to compare two systems in relation to one another, and
-measure the change in this relation as one of the systems evolves over time
-in relation to the other.
-
-### The changes in the Lagrangian \( \Lg \) and Hamiltonian \(H\)
+## The Lagrangian \( \Lg \) and Hamiltonian \(H\), and their time derivatitve
 
 \begin{align}
   \Lg_{\text{NR}} &= \frac{1}{2} m\dvec{x}^2\\
@@ -89,32 +77,6 @@ Where we arrive at Einsteins formula, when setting c = 1
 \end{equation}
 
 This explains the principle of relatively according to Einsteins equations, and allows us to begin setting up the formalism for representing interactions which include relativistic properties.
-
-### Principle of relativity
-
-(Classical theory of fields, @Landau:1975aa )
-Inertial reference frame in which a body moves in respect to and without any other force enacting on it, proceeds at constant velocity.
-
-
-### Reference frames:
-
-Two inertial reference frames are related by:
-
-\begin{equation}
-  \Delta x = x-x\prime
-\end{equation}
-
-where \(\dv{x}{t}=0 \to x\) and \(x\prime\) have same inertial property.
-
-
-### Intervals:
-
-Event: described by the place where it occurred and times
-
-\begin{equation}
-  e_1 = [t,x,y,z]
-\end{equation}
-
 
 ## Transformations:
 

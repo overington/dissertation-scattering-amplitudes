@@ -55,16 +55,14 @@ Momentum is always transverse to polarisation (see Definition \ref{def:polarisat
   p\cdot \epsilon(p) = 0
 \end{equation}
 
-The expression of the polarisation vectors
-
-\begin{definition}[Polarisation Vector, reference spinor]
+Using our definition of polarisation vectors from Equation \ref{eq:polarisation_vecotr_ref}, we can see that the expression of the polarisation vector for this particular vertex becomes:
 
 \begin{align}
+\label{eq:polarisation_vecotr_simple_amplitude1}
   \epsilon^{+}_{\alpha\dot{\alpha}} & \equiv  \frac{\xi_{\alpha} \tilde{k}_{\dot{\alpha}}}{\agl{\xi}{k}} \sqrt{2}\\
+\label{eq:polarisation_vecotr_simple_amplitude2}
   \epsilon^{-}_{\alpha\dot{\alpha}} & \equiv - \frac{\tilde{\xi}_{\dot{\alpha}} k_{\alpha}}{\sqr{\tilde{\xi}}{\tilde{k}}}\sqrt{2}
 \end{align}
-\label{def:polarisation_vecotr_ref}
-\end{definition}
 
 Simplifying \([A]\):
 
@@ -77,7 +75,7 @@ Simplifying \([A]\):
 Likewise, the remaining \(p_i\) can be found by cyclicly permutation.
 
 
-We use the definition \ref{def:polarisation_vecotr_ref} to simplify the following case:
+We use the Equations \ref{eq:polarisation_vecotr_simple_amplitude1} and \ref{eq:polarisation_vecotr_simple_amplitude2} to simplify the following case:
 
 \begin{align}
   \tensor{{\epsilon_1}}{_{\alpha\dot{\alpha}}} \cdot \tensor{{\epsilon_2}}{^{\alpha\dot{\alpha}}} &= 2(\epsilon_1\cdot \epsilon_2)\\

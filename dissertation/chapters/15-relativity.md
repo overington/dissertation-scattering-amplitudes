@@ -106,9 +106,10 @@ also have a maximum velocity. This is a universal constant \(c\), the constant v
 Due to the fact that this velocity is such a large number, we are not used to
 dealing with bodies traveling at this speed in our everyday lives; mostly we
 are dealing with velocities where \(v \ll c \).  For such velocities, the
-classical (or Newtonian) mechanics is a good approximation (where \(c \to \infty \)), and does
-not need to take into account any changes until the velocity of a freely moving
-body approaches that order of magnitude i.e. where \(v \aprox c\).
+classical (or Newtonian) mechanics is a good approximation (where \(c \to
+\infty \)), and does not need to take into account any changes until the
+velocity of a freely moving body approaches that order of magnitude i.e. where
+\(v \aprox c\).
 
 
 ## Transformations
