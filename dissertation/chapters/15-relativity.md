@@ -1,12 +1,7 @@
----
-nocite: |
-  @Landau:1975aa
----
-
 <!-- ## Building a scattering amplitude / Relativity -->
 # The Relativity Principle
 
-In order to begin understanding them, we must first understand the
+In order to begin understanding such interactions, we must first understand the
 rules by which we can describe an individual particles motion and then build up
 a language for how these motions interact in a system of particles.  We open
 here by exploring current methods available to us, in the forms of mathematical
@@ -14,10 +9,8 @@ formalisms, and how we might use certain properties to expand on this
 knowledge, in order to represent systems, or groups of particles, and how they
 interact.
 
- - in order to account for relativistic physics, we need to introduce some changes. These changes are explored in the following:
 
-
-### Principle of relativity
+## Principle of relativity
 
 
 
@@ -34,7 +27,7 @@ of relativity.
 For example, taking a look at two frames of reference (see Figure
 \ref{fig:frames_of_ref}); we have two frames \(K, K\prime\) with orthogonal
 axes \(\vec{x},\vec{y},\vec{z}\) and
-\(\vec{x\prime},\vec{y\prime},\vec{z\prime}\).
+\(\vec{x}\prime,\vec{y}\prime,\vec{z}\prime\).
 
 \begin{figure}
 \begin{center}
@@ -71,8 +64,17 @@ axes \(\vec{x},\vec{y},\vec{z}\) and
   which might be with a velocity of 0.  Any frame in constant motion with this frame is thus also
   an inertial frame of reference.
 
+  The two inertial reference frames \(K\), and  \(K\prime\) from Figure \ref{fig:frames_of_ref} are related by:
+
+  \begin{equation}
+    \Delta \vec{x} = \vec{x}-\vec{x}\prime
+  \end{equation}
+
+  where \(\dv{x}{t}=0 \to x\) and \(x\prime\) have same inertial property.
 
 \end{definition}
+
+
 
 The equations expressing the laws of nature are invariant with respect to
 transformations of coordinates and time from one inertial system to another.
@@ -95,7 +97,8 @@ effects of any such change or interaction must propagate out with a maximum
 finite velocity, which we will refer to as the \textit{maximum velocity of
 propagation}. This in turn implies that any such behavior of freely moving
 bodies within this frame will be limited to the same rules, and therefore must
-also have a maximum velocity. This is a universal constant \(c\), the constant velocity of light in a vacuum:
+also have a maximum velocity. This is a universal constant \(c\), the constant
+velocity of light in a vacuum:
 
 
 \begin{equation}
@@ -103,16 +106,67 @@ also have a maximum velocity. This is a universal constant \(c\), the constant v
 \end{equation}
 
 
-Due to the fact that this velocity is such a large number, we are not used to
-dealing with bodies traveling at this speed in our everyday lives; mostly we
-are dealing with velocities where \(v \ll c \).  For such velocities, the
-classical (or Newtonian) mechanics is a good approximation (where \(c \to
-\infty \)), and does not need to take into account any changes until the
-velocity of a freely moving body approaches that order of magnitude i.e. where
-\(v \aprox c\).
+<!-- c is large numnber, therefore classical approximation c->intfy is good
+approximation -->
+
+Due to the fact that this velocity is such a large number, and that in our
+every day dealings of velocities, it would be an irregular occurrence for
+freely moving bodies to be traveling at such speeds; mostly we are dealing with
+velocities where \(v \ll c \).  For such velocities, classical mechanics, or
+the Newtonian limit is a fair approximation (where \(c \to \infty \)), and does
+not need to take into account any changes needed to account for differences in
+the mechanics of interactions, until the velocity of the freely moving body
+approaches that order of magnitude i.e. where \(v \approx c\).  Such
+differences were introduced in in the \textit{principle of relativity of Einstein} in
+1905. Mechanics based on this principle are named \textit{Relativistic}.
+
+Some differences between Classical and Relativistic mechanics:
+
+ - **Space**: the classical definition of distances between points only takes
+ on a meaning when we properly specify which from which system we have made
+ that reference. Relative 
+
+ - **Time**: in classical mechanics time is an absolute property of the
+ universe; and is independent of the frame of reference, as well as the
+ coordinate system in which an event is measured,
+
+meaning that two independent events which happen In Re
+
+NOTES:
+
+We now turn our attention towards the question of how to construct a method of
+transforming from one set of coordinates to another, 
+<!-- UPTO:HERE -->
+or one frame of reference
+
+to another.  We need to make a way that we can make a measuremaent and it truly
+doesn't matter which frame of reference we were in, or coordinate system we
+have used to take this measurement... we need to find a way of keeping this
+measurement constant irrespective of the coordinate system or frame from which
+we are makeing the measurement.
+
+In classical mechanics, the "distance" betweem two points depend only on the
+spatial dinstance between them being kept constant; so a distance in this sense
+is purly spatially relative. In relativistic physics, this distance relies on
+both spatial and time coordinates being kept constant.
 
 
-## Transformations
+
+### Spacetime intervals
+
+Event: described by the place where it occurred and times
+
+\begin{equation}
+  e_1 = [t,x,y,z]
+\end{equation}
+
+### Spacetime transformations
+
+
+
+# TOEDIT:
+
+### Transformations
 
 groups of
 particles; such that their positions and velocities may be described by
@@ -142,46 +196,27 @@ classical mechanics, moving between intertial reference frames is relatively
 simple becuase of the static nature of time, events int the two reference
 frames can be calcuculated  The Galileo Transformation [see @Landau:1975aa] 
 
-### Relative distances
+#### Relative distances
 
 
-## Spacetime intervals
-
-## Spacetime transformations
-
-
-## Moving Beyond Galilean Mechanics
+### Moving Beyond Galilean Mechanics
 
 
 
-using reference systems or co-ordinates.  This fist step will allow us to set a
+Using reference systems or co-ordinates.  This fist step will allow us to set a
 time and spatial dimensions of the system, and allow us to compare two systems
 in relation to one another, and measure the change in this relation as one of
 the systems evolves over time in relation to the other.
 
 
 
-### Reference frames:
-
-Two inertial reference frames are related by:
-
-\begin{equation}
-  \Delta x = x-x\prime
-\end{equation}
-
-where \(\dv{x}{t}=0 \to x\) and \(x\prime\) have same inertial property.
 
 
-### Intervals:
 
-Event: described by the place where it occurred and times
+#### Einsteins dispersion relation
 
-\begin{equation}
-  e_1 = [t,x,y,z]
-\end{equation}
+<!-- previously this section was named Interactions -->
 
-
-<!-- Interactions -->
 At the heart of an interaction between free particles, is the Einsteins
 conservative energy and momentum associated with each entering particle to
 exiting particles using *De Broglie dispersion relations*, which connects the
