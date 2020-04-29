@@ -1,4 +1,6 @@
+
 <!-- ## Building a scattering amplitude / Relativity -->
+
 # The Relativity Principle
 
 In order to begin understanding such interactions, we must first understand the
@@ -120,36 +122,94 @@ approaches that order of magnitude i.e. where \(v \approx c\).  Such
 differences were introduced in in the \textit{principle of relativity of Einstein} in
 1905. Mechanics based on this principle are named \textit{Relativistic}.
 
-Some differences between Classical and Relativistic mechanics:
+We now turn our attention towards constructing a method of transforming between
+any set of arbitrary coordinates, or any arbitrary frame of reference, such
+that the choice of either is irrelevant of which frame of reference the
+measurement was made, and "distances" are kept constant.  In order to do this,
+we need to define what we mean by a distance, and then explore how we keep them
+unchanged under certain types of transformation.
+
+
+In classical mechanics, the "distance" between two points depend only on the
+spatial distance between them being kept constant; so a distance in this sense
+is purely spatially dependant.  In relativistic physics, this distance relies
+on both spatial and time coordinates being kept constant, and is referred to as
+a spacetime \textit{interval}.
+
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\def\tick{0.05};
+\coordinate(O) at (0, 0, 0);
+\coordinate(X) at (7, 0, 0);
+\coordinate(Y) at (0, 3, 0);
+\coordinate(Z) at (0, 0, 3);
+\coordinate(r0) at (-1,2,2);
+\coordinate(r1) at (2,1,-2);
+\draw [thick,->]  (O) -- (X)  node[below]{\small $\vec{x}$}; % X
+\draw [thick,->]  (O) -- (Y)  node[above]{\small $\vec{y}$}; % Y
+\draw [thick,->]  (O) -- (Z)  node[left]{\small $\vec{z}$}; % Z
+\draw [thick](r0) -- (r1) node[midway, above]{\(\vec{r}\)};
+\draw [color=ImperialRed, -{Latex}] (O) -- (r0) node[above left]{\small \(\vec{r}_0\)};
+\draw [dashed,color=BitterSweet] (0,0,0)
+    -- (-1,0,0)  node[midway,below]{\small \(r_{0x}\)}
+    -- (-1,2,0)  node[midway,right]{\small \(r_{0y}\)}
+    -- (r0)      node[midway,above]{\small \(r_{0z}\)};
+\draw [PrussianBlue, -{Latex}] (O) -- (r1) node[above right]{\small \(\vec{r}_1\)};
+\draw [dashed,SteelBlue] (0,0,0)
+    -- (0,0,-2)  node[midway,above]{\small \(r_{1z}\)}
+    -- (2,0,-2)  node[midway,below]{\small \(r_{1x}\)}
+    -- (r1)      node[midway, right,left]{\small \(r_{1y}\)};
+\end{tikzpicture}
+\end{center}
+\caption{Distance \(\vec{r} = \vec{r_1} - \vec{r_0}\), broken into their respective components \((r_{0x},r_{0y},r_{0z})\) and \( (r_{1x},r_{1y},r_{1z})\)}%
+\label{fig:vec_addition}
+\end{figure}
+
+These two differences between classical and relativistic mechanics can be
+summed up as:
 
  - **Space**: the classical definition of distances between points only takes
  on a meaning when we properly specify which from which system we have made
- that reference. Relative 
+ that reference. In classical mechanics, we can absolute distances between two
+ points by vector addition (See Figure \ref{fig:vec_addition}), where the
+ distance \(\vec{r}\) between any two points \(\vec{r_0}\) and \(\vec{r_1}\)
+ can be calculated using the vector sum as in the following equation:
 
- - **Time**: in classical mechanics time is an absolute property of the
+\begin{align}
+  \vec{r} &= \vec{r_1} - \vec{r_0}\\
+  \vec{r_{0}} &= \vec{r_{0x}} + \vec{r_{0y}} + \vec{r_{0z}} \\
+  \vec{r_{1}} &= \vec{r_{1x}}+ \vec{r_{1y}}+ \vec{r_{1z}}
+\end{align}
+
+  This is made possible through Pythagorean or vector addition. Where the
+  magnitudes or length of each vector can be found using each scalar value like
+  so for \(\vec{r_0}\), (and likewise for \(\vec{r_1}\) ):
+
+\begin{equation}
+  \abs{\vec{r_0}} &= \sqrt{r_{0x}^2 + r_{0y}^2 + r_{0z}^2}
+\end{equation}
+
+- **Time**: in classical mechanics time is an absolute property of the
  universe; and is independent of the frame of reference, as well as the
- coordinate system in which an event is measured,
+ coordinate system in which an event is measured; meaning that two independent
+ events which happen simultaneously in one frame of reference; the even will
+ occur like this in all other frames; this is given the term \textit{absolute
+ time}, which was predicted to not be the case by Einsteins principal of
+ relativity, and since then, has has been proved incorrect by experimental and
+ observed data.
 
-meaning that two independent events which happen In Re
-
-NOTES:
-
-We now turn our attention towards the question of how to construct a method of
-transforming from one set of coordinates to another, 
-<!-- UPTO:HERE -->
-or one frame of reference
-
-to another.  We need to make a way that we can make a measuremaent and it truly
-doesn't matter which frame of reference we were in, or coordinate system we
-have used to take this measurement... we need to find a way of keeping this
-measurement constant irrespective of the coordinate system or frame from which
-we are makeing the measurement.
-
-In classical mechanics, the "distance" betweem two points depend only on the
-spatial dinstance between them being kept constant; so a distance in this sense
-is purly spatially relative. In relativistic physics, this distance relies on
-both spatial and time coordinates being kept constant.
-
+Here we turn to the changes in some property over time, and explore the
+principle that of simultaneous changes, and how they might effect one another.
+Accordingly; these effects in classical mechanics would be propagated
+immediately, which contradicts our previous findings: the universal maximum
+velocity of preparation we arrived at in equation \ref{eq:c_velocity}. So we
+infer from this that there is no \textit{absolute time}, and that the
+measurement of a time interval is different depending on the frame of reference
+by which we have made the measurement. This also has an impact on simultaneity
+of events, meaning that measuring two events happening at the same time in one
+frame, would not necessarily happen simultaneously in all others.
 
 
 ### Spacetime intervals
