@@ -12,7 +12,7 @@ knowledge, in order to represent systems, or groups of particles, and how they
 interact.
 
 
-## Principle of relativity
+## Maximum velocity of propagation
 
 
 
@@ -27,7 +27,7 @@ the same form, in all other inertial frames of reference. This is the principle
 of relativity.
 
 For example, taking a look at two frames of reference (see Figure
-\ref{fig:frames_of_ref}); we have two frames \(K, K\prime\) with orthogonal
+\ref{fig:frames_of_ref}); we have two frames \(G, G\prime\) with orthogonal
 axes \(\vec{x},\vec{y},\vec{z}\) and
 \(\vec{x}\prime,\vec{y}\prime,\vec{z}\prime\).
 
@@ -52,7 +52,7 @@ axes \(\vec{x},\vec{y},\vec{z}\) and
   }
 \end{tikzpicture}
 \end{center}
-\caption{Two inertial frames of reference, \(K\) and \(K\prime\)}%
+\caption{Two inertial frames of reference, \(G\) and \(G\prime\)}%
 \label{fig:frames_of_ref}
 \end{figure}
 
@@ -66,7 +66,7 @@ axes \(\vec{x},\vec{y},\vec{z}\) and
   which might be with a velocity of 0.  Any frame in constant motion with this frame is thus also
   an inertial frame of reference.
 
-  The two inertial reference frames \(K\), and  \(K\prime\) from Figure \ref{fig:frames_of_ref} are related by:
+  The two inertial reference frames \(G\), and  \(G\prime\) from Figure \ref{fig:frames_of_ref} are related by:
 
   \begin{equation}
     \Delta \vec{x} = \vec{x}-\vec{x}\prime
@@ -84,7 +84,9 @@ This means that the equation describing any law of nature, when written in
 terms of coordinates and time in different inertial reference systems, has one
 and the same form. 
 
-The laws of nature are identical in all inertial systems of reference. Experiments show that instantaneous interactions interactions are impossible principle of relativity is valid [See @Landau:1975aa]
+The laws of nature are identical in all inertial systems of reference.
+Experiments show that instantaneous interactions interactions are impossible
+principle of relativity is valid [See @Landau:1975aa]
 
 
 In their classical form, the any changes or interactions which happen to a body
@@ -97,7 +99,7 @@ Experiments have shown [For example see @Einstein:1916aa; translation
 @Bose:2016aa; @Abbott:2016aa ] that this is not the case, and that in fact the
 effects of any such change or interaction must propagate out with a maximum
 finite velocity, which we will refer to as the \textit{maximum velocity of
-propagation}. This in turn implies that any such behavior of freely moving
+propagation}. This in turn implies that any such behaviour of freely moving
 bodies within this frame will be limited to the same rules, and therefore must
 also have a maximum velocity. This is a universal constant \(c\), the constant
 velocity of light in a vacuum:
@@ -113,7 +115,7 @@ approximation -->
 
 Due to the fact that this velocity is such a large number, and that in our
 every day dealings of velocities, it would be an irregular occurrence for
-freely moving bodies to be traveling at such speeds; mostly we are dealing with
+freely moving bodies to be travelling at such speeds; mostly we are dealing with
 velocities where \(v \ll c \).  For such velocities, classical mechanics, or
 the Newtonian limit is a fair approximation (where \(c \to \infty \)), and does
 not need to take into account any changes needed to account for differences in
@@ -178,7 +180,7 @@ summed up as:
  can be calculated using the vector sum as in the following equation:
 
 \begin{align}
-  \vec{r} &= \vec{r_1} - \vec{r_0}\\
+  \vec{r} &= \vec{r_1} - \vec{r_0} \label{eq:vector_addition}\\
   \vec{r_{0}} &= \vec{r_{0x}} + \vec{r_{0y}} + \vec{r_{0z}} \\
   \vec{r_{1}} &= \vec{r_{1x}}+ \vec{r_{1y}}+ \vec{r_{1z}}
 \end{align}
@@ -188,17 +190,17 @@ summed up as:
   so for \(\vec{r_0}\), (and likewise for \(\vec{r_1}\) ):
 
 \begin{equation}
-  \abs{\vec{r_0}} &= \sqrt{r_{0x}^2 + r_{0y}^2 + r_{0z}^2}
+  \abs{\vec{r_0}} = \sqrt{r_{0x}^2 + r_{0y}^2 + r_{0z}^2} \label{eq:vector_magnitude}
 \end{equation}
 
-- **Time**: in classical mechanics time is an absolute property of the
- universe; and is independent of the frame of reference, as well as the
- coordinate system in which an event is measured; meaning that two independent
- events which happen simultaneously in one frame of reference; the even will
- occur like this in all other frames; this is given the term \textit{absolute
- time}, which was predicted to not be the case by Einsteins principal of
- relativity, and since then, has has been proved incorrect by experimental and
- observed data.
+ - **Time**: in classical mechanics time is an absolute property of the
+  universe; and is independent of the frame of reference, as well as the
+  coordinate system in which an event is measured; meaning that two independent
+  events which happen simultaneously in one frame of reference; the even will
+  occur like this in all other frames; this is given the term \textit{absolute
+  time}, which was predicted to not be the case by Einstein's principal of
+  relativity, and since then, has has been proved incorrect by experimental and
+  observed data.
 
 Here we turn to the changes in some property over time, and explore the
 principle that of simultaneous changes, and how they might effect one another.
@@ -212,19 +214,105 @@ of events, meaning that measuring two events happening at the same time in one
 frame, would not necessarily happen simultaneously in all others.
 
 
-### Spacetime intervals
+## Spacetime intervals
 
-Event: described by the place where it occurred and times
+In order for us to preserve our maximum velocity of preparation within
+Einstein's Relativity, we will now explore the invariance of \(c\). To begin
+with, we will introduce some new definitions:
+
+\textit{Intervals} are described as the distance between two \textit{events},
+where an event is a \textit{point}, which is described by both spatial and
+temporal coordinates.  Using the coordinate system from Figures
+\ref{fig:vec_addition} and \ref{fig:frames_of_ref}, this would be \(x, y, z\)
+with \(t\) for time.
 
 \begin{equation}
-  e_1 = [t,x,y,z]
+  e = (x,y,z,t) \label{eq:event}
 \end{equation}
 
-### Spacetime transformations
+When a collection of points corresponding to the same body form sequential
+events, they are called \textit{world points}, and taken to its limit, i.e.
+\(\in [-\infty, \infty]\), then this describes the body at all points in time,
+and is called a \textit{world line}.
+
+The velocity at which any event can make an effect on any other body, both
+withing the frame or any other frame must not exceed \(c\). By incorporating
+the temporal coordinates of the event \(e\) from equation \ref{eq:event}. Here
+we may build on our equation for vector addition \ref{eq:vector_addition}, by
+adding the distance that would be traveled in time\(t\). Here we will simplify
+things,  by assuming that the body is travelling the maximum velocity possible
+\(c\), so that the whole "distance" \(s\) the body will travel is:
+
+\begin{align}
+  \vec{r} &= \vec{r_1} - \vec{r_0}\\
+  \vec{r_0} &= (r_{0x}, r_{0y}, r_{0z}, r_{0t})\\
+  \vec{r_1} &= (r_{1x}, r_{1y}, r_{1z}, r_{1t})\\
+  s &= \sqrt{ (r_{1x} - r_{0x})^2 + (r_{1y} - r_{0y})^2 + (r_{1z} - r_{0z})^2} \label{eq:s_spatial}\\
+  &= \sqrt{c^2 (r_{1t} - r_{0t})^2} \label{eq:s_temporal}
+\end{align}
+
+If we combine the two equations \ref{eq:s_spatial} and \ref{eq:s_temporal}, we
+see that they are equal and therefore by taking one from the other \((s_s -
+s_t)\); we get the null sum:
+
+
+\begin{equation}
+  0 =  (r_{1x} - r_{0x})^2 + (r_{1y} - r_{0y})^2 + (r_{1z} - r_{0z})^2 - 
+    c^2 (r_{1t} - r_{0t})^2
+\end{equation}
+
+If taking the same measurement from a different frame of reference (For example
+see Figure \ref{fig:frames_of_ref}), this becomes
+
+\begin{equation}
+  0 =  (r\prime_{1x} - r\prime_{0x})^2 + (r\prime_{1y} - r\prime_{0y})^2 + (r\prime_{1z} - r\prime_{0z})^2 - 
+    c^2 (r\prime_{1t} - r\prime_{0t})^2
+\end{equation}
+
+If this is generalised to any vectors, such that we can define the interval:
+
+\begin{equation}
+  \vec{s} = \sqrt{ c^2 (r\prime_{1t} - r\prime_{0t})^2 - (r\prime_{1x} - r\prime_{0x})^2 + (r\prime_{1y} - r\prime_{0y})^2 + (r\prime_{1z} - r\prime_{0z})^2 } \label{eq:4d_interval}
+\end{equation}
+
+and in its infinitesimal form:
+
+\begin{equation}
+\dd[2]{\vec{s}} = c^2 \dd[2]{\vec{r_t}} - \dd[2]{\vec{r_{x}}} - \dd[2]{\vec{r_{y}}} - \dd[2]{\vec{r_{z}}} \label{eq:minkowski_metric}
+\end{equation}
+
+
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}[scale=1, transform shape, every text node part/.style={align=center}]
+  \fill [pattern=north east lines] (-2,2) -- (0,0) -- (-2,-2) -- (2,-2) -- (0,0) -- (2,2);
+  \draw [thick,<->] (-3, 0) node[text width=3cm, right]{Absolutely Seperated} -- (3,0) node[text width=3cm, left]{Absolutely Seperated};
+  \draw [thick,<->] (0, -2.2) node[below]{Absolute Past} -- (0,2.2) node[above]{Absolute Future};
+  \draw [thick] (-2,-2) -- (0,0)  -- (2,2);
+  \draw [thick] (2,-2) -- (0,0) -- (-2, 2);
+\end{tikzpicture}
+\end{center}
+\caption{Spacetime diagram, showing light cone}%
+\label{fig:light_cone}
+\end{figure}
+
+
+
+<!-- tosummmarise -->
+
+Another important observation to point due to the maximum velocity of
+propagation \(c\); any event can only effect another only if the interval between
+them is time-like, that is: xxx; this follows immediately from the fact that no interaction
+can propagate at a velocity greater than our maximum velocity of propagation
+\(c\,
+
 
 
 
 # TOEDIT:
+
+## Spacetime transformations
+
 
 ### Transformations
 
