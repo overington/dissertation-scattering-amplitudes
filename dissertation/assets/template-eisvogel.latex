@@ -944,6 +944,7 @@ $if(beamer)$
 $endif$
 $if(abstract)$
 \begin{abstract}
+{\centering \Large \textbf{Abstract}\\}
 $abstract$
 \end{abstract}
 $endif$

@@ -7,20 +7,17 @@ institute: |
   School of Physics and Astronomy, \newline
   Queen Mary University of London
 abstract: |
+  A new and novel method of calculating scattering amplitudes is reviewed called
+  BCFW recursion relation [@Britto:2005ab]; so named for its authors Ruth Britto,
+  Freddy Cachazo, Bo Feng and Edward Witten. It is a useful tool in analysing
+  scattering amplitudes, where at each stage of calculation, all interactions
+  between particles remain on-shell; eliminating the need to use virtual
+  particles.
 
-A new and novel method of calculating scattering amplitudes is reviewed called
-BCFW recursion relation [@Britto:2005ab]; so named for its authors Ruth Britto,
-Freddy Cachazo, Bo Feng and Edward Witten. It is a useful tool in analysing
-scattering amplitudes, where at each stage of calculation, all interactions
-between particles remain on-shell; eliminating the need to use virtual
-particles.
-
-MHV verticies are used to explore the method of calculation of gluons, and
-massless particle interactions, and noted that such methods are not limited to
-massless particles, but are versatile in their applications and may be used in
-a wide variety of interactions.
-
-
+  MHV verticies are used to explore the method of calculation of gluons, and
+  massless particle interactions, and noted that such methods are not limited to
+  massless particles, but are versatile in their applications and may be used in
+  a wide variety of interactions.
 toc: true
 toc-depth: 3
 numbersections: true
