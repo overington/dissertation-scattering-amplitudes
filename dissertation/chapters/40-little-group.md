@@ -35,3 +35,66 @@ In 3+1 dimensions, the little group for a massive particle is the rotation group
 
 
 @Banerjee:2002aa
+
+
+## \(SU\) Group:
+
+### \(SU(2)\)
+
+\begin{align}
+  SU(2) \to U(N) &= N\times N matrix\\
+   &= U^\dagger U = \one \qq{Unitary}
+\end{align}
+
+\((SU(N)\) are a special subset of unitary matrices (\(\det U = \pm 1\))
+
+Taylor expansion of \(U\):
+
+\begin{align}
+  U &= e^{iA}\\
+  e^x &= 1 + \frac{x^2}{2} + \frac{x^3}{3} \dots
+\end{align}
+
+Impose the following conditions:
+
+\begin{align}
+  \det{e^{iA}} = \one \implies \det{M} &= e^{\Tr (\log{M})} \\
+   &= e^{\Tr (\log{(\exp(iA) )} ) }\\
+   &= e^{\Tr (iA)}\\
+   &= e^{i \Tr (A)} \implies \Tr (A) = 0
+\end{align}
+
+Condition: \(U^\dagger U = \one\)
+Special unitarity: add \(\det A = \pm 1 \to SU(N)\)
+
+\begin{align}
+  U &= e^{iA}\\
+  A^\dagger &= A \qq{Unitary, hermitian}\\
+  \Tr A &= 0
+\end{align}
+
+This implies we can write:
+
+\begin{equation}
+  \label{eq:unitary_group}
+  U = e^{i\alpha^a \frac{\sigma^a}{2}}, \quad a = (1,2,3)
+\end{equation}
+
+where:
+
+\begin{equation}
+  e^{i\alpha^a \frac{\sigma^a}{2}} = \exp(\sum_{a=1}^3 i\alpha^a \frac{\sigma^a}{2})
+\end{equation}
+
+### Proofs:
+
+\begin{align}
+  U^{\dagger} U &= \one\\
+  (U_1U_2)^\dagger(U_1U_2) &= \one\\
+  U^\dagger_2 U^\dagger_1 U_1 U_2 & = \one
+\end{align}
+
+
+
+<!-- begin:2019.11.19.md -->
+

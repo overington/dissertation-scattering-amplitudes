@@ -308,3 +308,41 @@ Combined:
 
 (Fundamentally we are searching for a massless particles, where \(p^2 = m^2 = 0\))
 
+## Angular Momentum properties:
+
+\begin{align}
+  \vec{J} &= \vec{x} \times \vec{p}\\
+  &= xp_y - yp_x
+\end{align}
+
+Using the a commutator:
+
+\begin{align}
+  \commutator{J^1}{J^2} &= \commutator{x^2p^3 - x^3p^2}{x^3p^1 - x^1p^3}\\
+  &= (x^2p^3 - x^3p^2)(x^3p^1 - x^1p^3) - (x^3p^1 - x^1p^3)(x^2p^3 - x^3p^2)
+\end{align}
+
+(Only commutator with same index are non-zero)
+
+\begin{align}
+  \commutator{J_i}{J_i} &= 0\\
+  \commutator{J_i}{J_j} &\ne 0\\
+\end{align}
+
+This leads to the formal relation of angular momentum:
+
+\begin{equation}
+  \label{eq:angmomentum_commutator}
+  \commutator{J^i}{J^j} = i \hbar J^{ijk} \sigma^k J^k
+\end{equation}
+
+This related transformation and sum to Noethers theorem
+
+## Noethers Theorem
+
+\begin{equation}
+  \label{eq:noethers_theorem}
+  I = \sum_r \pdv{\L}{\dot{q}_r}\delta q_r
+\end{equation}
+
+

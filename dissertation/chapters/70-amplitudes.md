@@ -4,15 +4,24 @@
 
 <!-- begin:dissertation/log/2019.11.26.md -->
 
-## Determining three point amplitudes
+## Determining three point MHV amplitudes
+
+\begin{definition}[MHV Amplitude]
+
+  A Maximally Helicity Violating Amplitude is an interaction between \(n\)
+  massless bosons, where \(n-2\) of the amplitude legs have a particular
+  helicty, and the remaining two particles have the opposite helicity.
+
+\end{definition}
 
 \begin{figure}
   \centering
   \input{assets/amplitude_3pointsimple2.tex}
-  \caption{}
+  \caption{Simple three point vertex}
+  \label{fig:amplitude_3pointsimple2}
 \end{figure}
 
-The expression of the vertex is:
+The expression of the vertex is in Figure \ref{fig:amplitude_3pointsimple2}
 
 \begin{align}
   iV_{\mu_1, \mu_2, \mu_3}^{a_1, a_2, a_3} &= ig \left [
@@ -49,13 +58,15 @@ Here we also have to impose momentum conservation such that
   p_1 + p_2 + p_3 = 0
 \end{equation}
 
-Momentum is always transverse to polarisation (see Definition \ref{def:polarisation_vec)
+Momentum is always transverse to polarisation (see Definition \ref{def:polarisation_vector})
 
 \begin{equation}
   p\cdot \epsilon(p) = 0
 \end{equation}
 
-Using our definition of polarisation vectors from Equation \ref{eq:polarisation_vecotr_ref}, we can see that the expression of the polarisation vector for this particular vertex becomes:
+Using our definition of polarisation vectors from Equation
+\ref{eq:polarisation_vector_ref}, we can see that the expression of the
+polarisation vector for this particular vertex becomes:
 
 \begin{align}
 \label{eq:polarisation_vecotr_simple_amplitude1}
@@ -64,18 +75,18 @@ Using our definition of polarisation vectors from Equation \ref{eq:polarisation_
   \epsilon^{-}_{\alpha\dot{\alpha}} & \equiv - \frac{\tilde{\xi}_{\dot{\alpha}} k_{\alpha}}{\sqr{\tilde{\xi}}{\tilde{k}}}\sqrt{2}
 \end{align}
 
-Simplifying \([A]\):
+Simplifying \([A]\), and using for instance:
 
 \begin{align}
-  -p_2 &= p_1 + p_3\\
-  &= (2p_1 +p_3)\cdot \epsilon_3\\
+  (p_1-p_2)\cdot \epsilon_3 &= (2p_1 +p_3)\cdot \epsilon_3\\
   &= 2(p_1 \cdot \epsilon_3)
 \end{align}
 
 Likewise, the remaining \(p_i\) can be found by cyclicly permutation.
 
 
-We use the Equations \ref{eq:polarisation_vecotr_simple_amplitude1} and \ref{eq:polarisation_vecotr_simple_amplitude2} to simplify the following case:
+We use the Equations \ref{eq:polarisation_vecotr_simple_amplitude1} and
+\ref{eq:polarisation_vecotr_simple_amplitude2} to simplify the case for \(1^+ 2^+ 3^-\):
 
 \begin{align}
   \tensor{{\epsilon_1}}{_{\alpha\dot{\alpha}}} \cdot \tensor{{\epsilon_2}}{^{\alpha\dot{\alpha}}} &= 2(\epsilon_1\cdot \epsilon_2)\\
@@ -83,24 +94,19 @@ We use the Equations \ref{eq:polarisation_vecotr_simple_amplitude1} and \ref{eq:
   &= \sqr{1}{2} \agl{k}{k} = 0
 \end{align}
 
-Now here we illustrate the case for MHV (Maximum Helicity Violation), where we are choosing as many as possible combinations that can be reduced to 0 on inspection without further need to calculation:
+Now here we illustrate the case for MHV (Maximum Helicity Violation), where we
+are choosing as many as possible combinations that can be reduced to 0 on
+inspection without further need to calculation:
 
 
-\begin{definition}[MHV Amplitude]
 
-A Maximally Helicity Violating Amplitude is an interaction between \(n\)
-massless bosons, where \(n-2\) of the amplitude legs have a particular helicty,
-and the remaining two particles have the opposite helicity.
+\begin{equation}
+  A(1,2,3) = 2 \left [ (p_i \cdot \epsilon^3)(\epsilon^1 \cdot \epsilon^2) +
+  (p_2 \cdot \epsilon^1)(\epsilon^2 \cdot \epsilon^3)
+  (p_3 \cdot \epsilon^1)(\epsilon^1 \cdot \epsilon^3)
+  \right ]
+\end{equation}
 
-  \begin{equation}
-    A(1,2,3) = 2 \left [ (p_i \cdot \epsilon^3)(\epsilon^1 \cdot \epsilon^2) +
-    (p_2 \cdot \epsilon^1)(\epsilon^2 \cdot \epsilon^3)
-    (p_3 \cdot \epsilon^1)(\epsilon^1 \cdot \epsilon^3)
-    \right ]
-  \end{equation}
-\end{definition}
-
-### Worked example of an MHV Amplitude
 
 Using
 

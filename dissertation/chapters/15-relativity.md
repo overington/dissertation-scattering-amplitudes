@@ -286,8 +286,9 @@ and in its infinitesimal form:
 \begin{center}
 \begin{tikzpicture}[scale=1, transform shape, every text node part/.style={align=center}]
   \fill [pattern=north east lines] (-2,2) -- (0,0) -- (-2,-2) -- (2,-2) -- (0,0) -- (2,2);
-  \draw [thick,<->] (-3, 0) node[text width=3cm, right]{Absolutely Seperated} -- (3,0) node[text width=3cm, left]{Absolutely Seperated};
-  \draw [thick,<->] (0, -2.2) node[below]{Absolute Past} -- (0,2.2) node[above]{Absolute Future};
+  \draw [thick,<->] (-3, 0) node[text width=3cm, right]{Absolutely Seperated} -- (3,0) node[below left]{$x$} node[text width=3cm, left]{Absolutely Seperated};
+  \draw [thick,<->] (0, -2.2) node[below]{Absolute Past} -- (0,2.2);
+  \draw (0,2.2) node[right]{$t$} +(0,0.3)node[above]{Absolute Future};
   \draw [thick] (-2,-2) -- (0,0)  -- (2,2);
   \draw [thick] (2,-2) -- (0,0) -- (-2, 2);
 \end{tikzpicture}
@@ -296,9 +297,6 @@ and in its infinitesimal form:
 \label{fig:light_cone}
 \end{figure}
 
-
-
-<!-- tosummmarise -->
 
 Another important observation to point due to the maximum velocity of
 propagation \(c\); any event can only effect another only if the interval between
