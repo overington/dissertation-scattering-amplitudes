@@ -50,7 +50,7 @@ between the entering and exiting particles at the macro level.
 
 
 
-![Each Feynman diagram provides an intuitive way to visualize one possible way that particles might interact. The trouble is that there are countless other ways, too.  A quark-quark interaction might produce more than one gluon or involve more than one virtual-particle loop, or both. The calculations quickly become unmanageable.  [Figure taken from @Bern:2012aa]\label{fig:feynmandiagram_loops}](assets/sa-loops.pdf "Tree Level Loops"){ height=50% }
+![Each Feynman diagram provides an intuitive way to visualize one possible way that particles might interact. The trouble is that there are countless other ways, too.  A quark-quark interaction might produce more than one gluon or involve more than one virtual-particle loop, or both. The calculations quickly become unmanageable.  Figure and caption taken from [@Bern:2012aa]\label{fig:feynmandiagram_loops}](assets/sa-loops.pdf "Tree Level Loops"){ height=50% }
 
 
 <!-- ## Feynman and BCFW recursion methods -->

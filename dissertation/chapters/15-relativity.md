@@ -170,7 +170,7 @@ a spacetime \textit{interval}.
 \end{figure}
 
 These two differences between classical and relativistic mechanics can be
-summed up as:
+summed up in the the following two topics (**space**, and **time**)
 
  - **Space**: the classical definition of distances between points only takes
  on a meaning when we properly specify which from which system we have made
@@ -304,7 +304,7 @@ Another important observation to point due to the maximum velocity of
 propagation \(c\); any event can only effect another only if the interval between
 them is time-like, that is: xxx; this follows immediately from the fact that no interaction
 can propagate at a velocity greater than our maximum velocity of propagation
-\(c\,
+\(c\),
 
 
 
