@@ -15,7 +15,7 @@ A polarisation vector \(\vec{\epsilon}\) may be found from a momentum vector
 \(\vec{k} =\) such that they are orthogonal as in:
 
 \begin{equation}
-  \vec{\epsilon} ( \vec{k} ) \cdot \vec{k}=0 \ref{eq:polarisation_vector_ref}
+  \vec{\epsilon} ( \vec{k} ) \cdot \vec{k}=0 \label{eq:polarisation_vector_ref}
 \end{equation}
 
 \begin{figure}
@@ -49,6 +49,7 @@ We will use covariant 4-vector notation with \(\mu\) index to represent in \(\al
   \epsilon^{(+)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } B)\\
   \epsilon^{(-)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } A)
 \end{align}
+\end{definition}
 
 Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that the corresponding \(\lambda\) or \(\tilde\lambda\) are not parralell:
 
@@ -82,8 +83,6 @@ Where this is a gauge freedom:
 \begin{equation}
   \epsilon^{(+)}_{\alpha\dot{\alpha}}  + \# \ld{\alpha} \lmtd = \epsilon
 \end{equation}
-
-\end{definition}
 
 
 ## Pauli Matrices
@@ -217,7 +216,7 @@ So that:
 \begin{align}
     P_{\alpha \dot{\alpha}} &= p^\mu \sigma_{\mu\ \alpha \dot{\alpha}}\\
     \bar{P}^{\dot{\alpha} \alpha} &= p^\mu \bar{\sigma}_\mu^{\ \dot{\alpha}\alpha}
-\end{align}   
+\end{align}
 
 Then \(\epsilon_{\alpha\beta}\) similar to Levi-Cevita.
 

@@ -12,14 +12,59 @@ form \(r^\alpha\), where the index \(\alpha \in 0,1,2,3\), where
   r^3 &= z
 \end{align}
 
-Referring back to equation \ref{eq:vector_magnitude} and \ref{eq:s_spatial}, the square of the four-dimensional "length" of \(r^\alpha\) is given by:
+Referring back to equation \ref{eq:vector_magnitude} and \ref{eq:s_spatial},
+the square of the four-dimensional "length" of \(r^\alpha\) is given by:
 
 \begin{equation}
 (r^0)^2 - (r^1)^2 - (r^2)^2 - (r^3)^2 \label{eq:fourvector-squared-length}
 \end{equation}
 
-Using this notation, the value doesn't change  under any rotations of the
-four-dimensional coordinate system, in particular under Lorentz transformation.
+Using this notation, any set of four quantities \(X^0,X^1,X^2,X^3\) which can be measured using such a
+four-dimensional coordinate system is called a four-vector, and their
+respective values don't change under any rotations of the four-dimensional
+coordinate system, in particular under Lorentz transformation:
+
+\begin{align}
+  X^0 &= \frac{ X\prime^0 + \frac{V}{c} X\prime^1 }{ \sqrt{ 1-\frac{V^2}{c^2} } } \\
+  X^1 &= \frac{ X\prime^1 + \frac{V}{c} X\prime^0 }{ \sqrt{ 1-\frac{V^2}{c^2} } } \\
+  X^2 &= X\prime^2\\
+  X^3 &= X\prime^3\\
+\end{align}
+
+The covariant and contravariant vectors are related thus:
+
+\begin{equation}
+  X_0 = X^0, X_1 = -X^1, X_2 = -X^2, X_3 = -X^3
+\end{equation}
+
+And the square of this quantity \((X)^2\) is the summ:
+
+\begin{equation}
+  \sum_{\alpha = 0}^3 X^\alpha X_\alpha = X^0 X_0 + X^1 X_1 +X^2 X_2
+\end{equation}
+
+The four-vector has a time component: \(X^0\), and space components:
+\(X^1,X^2,X^3\). And depending on the sign of its square:  when a four-vector
+is positive; it is \textit{timelike}, when it is negative; its
+\textit{spacelike}, or the null-vector and equal zero.
+
+The four-vector can also take a form, separating out the time dimension:
+
+\begin{align}
+  X^\alpha = (X^0, \vec{X})\\
+  \vec{X} = \begin{pmatrix}x\\y\\z\end{pmatrix}
+  X_\alpha = (X^0, -\vec{X})\\
+\end{align}
+
+Using this form, the square of a four-vector can be written as:
+
+\begin{equation}
+  X^\alpha X_\alpha = (X^0)^2 - \vec{X}^2
+\end{equation}
+
+We can build on this notation to include more dimensions; creating a tensor. A
+tensor is ranked. For example a vector is a rank 1 tensor, and a rank 2 tensor
+takes the form of 
 
 <!-- begin:2019.10.29.md -->
 
@@ -212,6 +257,14 @@ This leads to the formal relation of angular momentum:
 \end{equation}
 
 This related transformation and sum to Noethers theorem
+
+## Noethers Theorem
+
+\begin{equation}
+  \label{eq:noethers_theorem}
+  I = \sum_r \pdv{\L}{\dot{q}_r}\delta q_r
+\end{equation}
+
 
 
 ## Lorentz invariance using the covariant form of Maxwell's Equations of electrodynamics
