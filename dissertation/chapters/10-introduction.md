@@ -12,16 +12,35 @@ Guage theories and spinnor matricies for Gluons and massless particles were
 -->
 
 
-In Quantum Field Theory (QFT), a scattering amplitude is the mechanism for
-measuring and modelling the properties of fundamental particles and how they
-interact.
+
+A scattering amplitude is the mechanism for measuring and modelling the
+properties of fundamental particles and how they interact.  They are offer
+experimental evidence for high energy physics experiments in a particle
+accelerator such as the LHC where the measurements taken in a collision are the
+probability amplitudes of scattering processes.
 
 <!-- ## Feynman Diagrams -->
+
 
 Traditionally, they have been computed using Feynman diagrams, which set the
 boundary conditions to the summed values of all entering particles and those
 exiting within the same interaction, such that they conserve this E-M relation
-between the entering and exiting particles at the macro level.
+between the entering and exiting particles at the macro level. Calculating a
+scattering amplitude using the Feynman technique uses the Lagrangian
+formulation of quantum field theory, which relies on perturbative expansion and
+renormalisability.  Because of this, they can only be used to calculate
+interaction in the weak field and renormalisable interactions.
+
+In the early 1950's and 1960's, a new theory called the S-Matrix [see
+@Chew:1962aa] began making some headway into a possible replacement to the
+theory, which could be entirely constructed with its symmetries and from
+mathematical first principles: analyticity, unitarity, and crossing.
+
+After some initial success, S-Matrix theory was left in favour of quantum
+chromodynamics in the 1970's - 1980's, and it wasn't until very recently that
+new advancements research of massless particles, and the spinor helicity
+formalism, have enabled researches Ruth Britto, Freddy Cachazo, Bo Feng and
+Edward Witten to continue; developing the BCFW formalism.
 
 \begin{figure}
 \begin{center}
@@ -55,12 +74,12 @@ between the entering and exiting particles at the macro level.
 
 <!-- ## Feynman and BCFW recursion methods -->
 
-In this paper, we will explore a method of calculating scattering amplitudes
-called BCFW recursion [see @Britto:2005aa; @Britto:2005ab], this is a method
-which is built up from the Feynman method, these methods build on using
-a colour decomposition of the gauge theory amplitudes and on expressing them in
-a spinor helicity basis particularly suited for massless particles (as outlined
-in @Plefka:2014aa and other texts mentioned)
+In this paper, we will explore BCFW [see @Britto:2005aa; @Britto:2005ab] as a
+new method of calculating scattering amplitudes. This is a method which is
+built up from the Feynman method, these methods build on using a colour
+decomposition of the gauge theory amplitudes and on expressing them in a spinor
+helicity basis particularly suited for massless particles (as outlined in
+@Plefka:2014aa and other texts mentioned)
 
 
 The Feynman method makes use of virtual-particles, so called because they are
