@@ -138,7 +138,12 @@ When working with determinants, a common method of calculation and simplificatio
 
 \begin{definition}[Determinants]
 
-  The determinant is a the reduction of a \(\rank n\) tensor to a \(\rank 0\) or scalar value. It is computed from each of the tensors elements, only if each of the number of elements are equal. For example, for an \(n=2\) ranked tensor, the corresponding matrix \(A_{ij}\) where there are \(i=j\) elements. The quantity of the determinant is used in understanding certain properties of the linear transformations.
+  The determinant is a the reduction of a \(\rank n\) tensor to a \(\rank 0\)
+  or scalar value. It is computed from each of the tensors elements, only if
+  each of the number of elements are equal. For example, for an \(n=2\) ranked
+  tensor, the corresponding matrix \(A_{ij}\) where there are \(i=j\) elements.
+  The quantity of the determinant is used in understanding certain properties
+  of the linear transformations.
 
 \begin{equation}
   \det(A) = \abs{A} = \mdet{\xmat*{a}{2}{2}} = a_{11} a_{22} - a_{21}a_{12}
@@ -153,27 +158,35 @@ Using the Levi-Civita symbol, we can calculate a determinant as such:
 
 \begin{definition}[Levi Civita symbol]
 
-The Levi-Civita symbol reduces a tensor of \(\rank n\) to one of \(\rank 0\) (a scalar). It is denoted by \(\epsilon _{a_1, a_2, a_3,\cdots,a_n}\), where \(\epsilon\) has \(n\) subscripts, each of which identifies one of the objects.
+The Levi-Civita symbol reduces a tensor of \(\rank n\) to one of \(\rank 0\) (a
+scalar). It is denoted by \(\epsilon _{a_1, a_2, a_3,\cdots,a_n}\), where
+\(\epsilon\) has \(n\) subscripts, each of which identifies one of the objects.
 
-Depending on the reference order of its objects, the Levi-Civita symbol is defined to be:
- - \(+1 \qq{if} a_1, a_2, a_3,\cdots,a_n \) represents an even permutation.
- - \(−1 \qq{if} a_1, a_2, a_3,\cdots,a_n \) represents an odd permutation.
- - \( 0 \qq{if} a_1, a_2, a_3,\cdots,a_n \) does not represent a permutation (i.e., contains duplicate of any of its entries).
+Depending on the reference order of its objects, the Levi-Civita symbol is
+defined to be:
 
- \begin{equation}
+\begin{itemize}
+  \item \(+1 \qq{if} a_1, a_2, a_3,\cdots,a_n \) represents an even permutation.
+  \item \(−1 \qq{if} a_1, a_2, a_3,\cdots,a_n \) represents an odd permutation.
+  \item \( 0 \qq{if} a_1, a_2, a_3,\cdots,a_n \) does not represent a permutation (i.e., contains duplicate of any of its entries).
+\end{itemize}
+
+\begin{equation}
  \epsilon _{a_1, a_2, a_3,\cdots,a_n}= \begin{cases}
  +1 &= \qq{if} a_1, a_2, a_3,\cdots,a_n \qq{even permutation}\\
  -1 &= \qq{if} a_1, a_2, a_3,\cdots,a_n \qq{odd permutation}\\
  0 &= \qq{otherwise}
  \end{cases}
  \label{eq:levi_civita}
- \end{equation}
+\end{equation}
 
- For a tensor or \(\rank 2\), which is our most common use case, this can be reprenented by matrix as such:
-  \begin{equation}
+For a tensor or \(\rank 2\), which is our most common use case, this can be
+reprenented by matrix as such:
+
+\begin{equation}
     \epsilon_{\alpha \beta} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
      \label{eq:levi_civita_matrix}
-  \end{equation}
+\end{equation}
 
 \end{definition}
 

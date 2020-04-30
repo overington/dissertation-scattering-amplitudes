@@ -48,12 +48,12 @@ The four-vector has a time component: \(X^0\), and space components:
 is positive; it is \textit{timelike}, when it is negative; its
 \textit{spacelike}, or the null-vector and equal zero.
 
-The four-vector can also take a form, separating out the time dimension:
+The four-vector can also take a form, separating out the time dimension, and with \(i\in 1,2,3\):
 
 \begin{align}
-  X^\alpha = (X^0, \vec{X})\\
-  \vec{X} = \begin{pmatrix}x\\y\\z\end{pmatrix}
-  X_\alpha = (X^0, -\vec{X})\\
+  X^\alpha = (X^0, Xi^i)\\
+  X^i = \begin{pmatrix}x\\y\\z\end{pmatrix}
+  X_\alpha = (X^0, -X_i)\\
 \end{align}
 
 Using this form, the square of a four-vector can be written as:
@@ -63,8 +63,84 @@ Using this form, the square of a four-vector can be written as:
 \end{equation}
 
 We can build on this notation to include more dimensions; creating a tensor. A
-tensor is ranked. For example a vector is a rank 1 tensor, and a rank 2 tensor
-takes the form of 
+tensor is ranked. For example a vector is a rank 1 tensor, and a rank 2
+four-tensor takes the form of a \(4\times 4\) array of values, and can be
+compactly noted in three possible ways; a contravariant, covariant or mixed
+tensor:
+
+\begin{align}
+  \qq{contravariant} &= \tensor{X}{^{\alpha \beta}}\\
+  \qq{covariant}     &= \tensor{X}{_{\alpha \beta}}\\
+  \qq{mixed}         &= \tensor{X}{^{\alpha}_{\beta}}\\
+\end{align}
+
+Where it needs to be noted that two tensor objects are not necisarily equal
+when switching the covariant and contravarient indices around:
+
+\begin{equation}
+  \tensor{X}{_{\alpha}^{\beta}} \ne \tensor{X}{^{\alpha}_{\beta}}
+\end{equation}
+
+The connection between raising or lowering an index is a change in sign of the
+spatial coordinate (ie \(X^i, i\in 1,2,3\); as an illustration:
+
+\begin{equation}
+  \tensor{X}{_{00}} = \tensor{X}{^{00}}, \qquad \tensor{X}{_{01}} = \tensor{-X}{^{01}}
+\end{equation}
+
+A property of a tensor which will become useful later on is its symmetry: and
+can be easily observed through inspection.
+
+A symmetric tensor:
+
+\begin{equation}
+  \tensor{X}{^{\alpha \beta}} = \tensor{X}{^{\beta \alpha}}
+\end{equation}
+
+An antisymmetric tensor:
+
+\begin{equation}
+  \tensor{X}{^{\alpha \beta}} = - \tensor{X}{^{\beta \alpha}}
+\end{equation}
+
+A side product of a tensor being antisymmetric, is that all its diagonal components are equal to zero:
+
+\begin{equation}
+  \tensor{X}{^{\alpha \beta}} = - \tensor{X}{^{\beta \alpha}} =  \mqty(\dmat{0,0,0,0})
+\end{equation} 
+
+The unit four-tensor satisfies:
+
+\begin{equation}
+\delta^\alpha_\beta X^\alpha = X^\beta
+\end{equation}
+
+where we have the Kronecker delta:
+
+\begin{align}
+\delta^\alpha_\beta &= \begin{cases}1, \qq{if} \alpha = \beta \\ 0, \qq{if} \alpha \ne \beta \end{cases}\\
+  \Trace{\delta^\alpha_\beta} &= 4
+\end{align}
+
+There is a special tensor \(g\), called the \textit{metric tensor}, which has the property:
+
+\begin{equation}
+\tensor{g}{^{\alpha \beta}} = \tensor{g}{_{\alpha \beta}} = \mqty(\dmat[0]{1,-1,-1,-1}) 
+\end{equation}
+
+
+We may use this quantity to raise and lower indices in any four-vector like so:
+
+\begin{equation}
+  \tensor{g}{_{\alpha \beta}}X^\beta = X_\alpha, \tensor{g}{^{\alpha \beta}}X_\beta = X^\alpha
+\end{equation}
+
+and from this we can see that we can form a scalar product:
+
+\begin{equation}
+  X^\alpha X_\alpha = g_{\alpha \beta} X^\alpha X^\beta =  g^{\alpha \beta} X_\alpha X_\beta
+\end{equation}
+
 
 <!-- begin:2019.10.29.md -->
 
