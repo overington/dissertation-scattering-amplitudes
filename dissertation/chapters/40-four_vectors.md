@@ -1,5 +1,26 @@
 # Four-vectors
 
+Using our definition of an event from equation \ref{eq:event}, we would now
+like to build up the Four-vector notation in a four-dimensional space. The
+notation we will use will take the covariant form \(r_\alpha\) and a contravariant
+form \(r^\alpha\), where the index \(\alpha \in 0,1,2,3\), where
+
+\begin{align}
+  r^0 &= ct\\
+  r^1 &= x\\
+  r^2 &= y\\
+  r^3 &= z
+\end{align}
+
+Referring back to equation \ref{eq:vector_magnitude} and \ref{eq:s_spatial}, the square of the four-dimensional "length" of \(r^\alpha\) is given by:
+
+\begin{equation}
+(r^0)^2 - (r^1)^2 - (r^2)^2 - (r^3)^2 \label{eq:fourvector-squared-length}
+\end{equation}
+
+Using this notation, the value doesn't change  under any rotations of the
+four-dimensional coordinate system, in particular under Lorentz transformation.
+
 <!-- begin:2019.10.29.md -->
 
 <!-- #TODO: link to previous def that I have written  / Write definition of invariance -->
@@ -81,93 +102,117 @@ Similar to dotted spinors:
 
 <!-- #TODO: write definition for spinnors -->
 
-<!-- #UPTO: 14th april 10:52  -->
-
-
-## Polarisation vectors for massless particles
-
-We now examine the way to calculate the polarisation vector for gluons. This process can also be used in the calculation of any particle with similar properties. They have the follwing properties:
-
- - Massless
- - Spin 1
- - Two states of polarisation: helicity \(h=\pm 1\)
-
-\begin{definition}[Polarisation vector \(\vec{\epsilon}\)]
-  \label{def:polarisation_vector}
-
-A polarisation vector \(\vec{\epsilon}\) may be found from a momentum vector
-\(\vec{k} =\) such that they are orthogonal as in:
+\begin{definition}[Box operator]
 
 \begin{equation}
-  \vec{\epsilon} ( \vec{k} ) \cdot \vec{k}=0 \ref{eq:polarisation_vector_ref}
+  \Box \equiv \partial_\mu \partial^\mu \equiv \partial_0 \partial^0 +\partial_i \partial^i = \partial_j^2 - \nabla^2
+  \label{eq:box_operator}
 \end{equation}
 
-\begin{figure}
-  \centering
-  \begin{tikzpicture}[]
-    \coordinate (origin) at (0,0);
-    \coordinate (x) at (0,1);
-    \coordinate (y) at (1,0);
-    \coordinate (z) at ({0.7*cos(210)} ,{0.7*sin(210)} );
-    \draw[->] (origin) -- (x) node[anchor=south] {\(\vec{k}\)};
-    \draw[->] (origin) -- (y) node[anchor=west] {\(\vec{\epsilon}^{\small -}\)};
-    \draw[->] (origin) -- (z) node[anchor=north east] {\(\vec{\epsilon}^{\small +}\)};
-  \end{tikzpicture}
-\end{figure}
+It has the following properties:
 
-\begin{align}
-  \vec{k} &= \abs{\vec{k}} (0,0,1)\\
-  \epsilon^{+} &= \frac{1}{\sqrt{2}}(1,i,0)\\
-  \epsilon^{-} &= \frac{1}{\sqrt{2}}(1,-i,0)
-\end{align}
-
-In four-vector notation this becomes:
-
-\begin{align}
-  \epsilon^\mu(\vec{k}^{\pm})
-\end{align}
-
-We will use covariant 4-vector notation with \(\mu\) index to represent in \(\alpha\dot{\alpha}\) form:
-
-\begin{align}
-  \epsilon^{(+)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } B)\\
-  \epsilon^{(-)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } A)
-\end{align}
-
-Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that the corresponding \(\lambda\) or \(\tilde\lambda\) are not parralell:
-
-\begin{align}
-  \tilde\mu \not\parallel \tilde\lambda: \qquad
-    (A)&=&\frac{\ld{\alpha}\mtd{\alpha}}{\sqr{\tilde\lambda}{\tilde\mu}} \\
-  \mu \not\parallel \lambda: \qquad
-    (B)&=&\frac{\lmtd \mud{\alpha}}{\agl{\lambda}{\mu}}
-\end{align}
-
-We don't want denominator to vanish such that \(\frac{\#}{\agl{\lambda}{\lambda}\to 0}\), as this would cause it to divide by zero.
-
-So we will use:
-
-\begin{equation}
-\mud{\alpha} \to \mu^{'} = a \mu_\alpha + b \lambda_\alpha
-\end{equation}
-
-Therefore we choose \(\epsilon^{(+)}_{\alpha\dot{\alpha}}\) leaving us with:
-
-\begin{align}
-  \epsilon^{(+)}_{\alpha\dot{\alpha}} - \frac{
-    \ltd{\alpha} ( a \mu_\alpha + b \lambda_\alpha )
-  }{
-    a \agl{\lambda}{\mu} + \cancel{b \agl{\lambda}{\lambda}}
-  }
-\end{align}
-
-Where this is a gauge freedom:
-
-\begin{equation}
-  \epsilon^{(+)}_{\alpha\dot{\alpha}}  + \# \ld{\alpha} \lmtd = \epsilon
-\end{equation}
+\begin{itemize}
+  \item Using our equation for the \(\Box\) operator in equation \ref{eq:box_operator}, massless particles have the following property: \(\left( \Box + m^2 \right) \phi = 0\)
+  \item Transform for \(\partial_\mu: \partial_\mu e^{ikx}\) for massless particles (i.e. where  \(k^2 = m^2\)):
+\end{itemize}
 
 \end{definition}
+<!-- #UPTO: 14th april 10:52  -->
+
+## Tranformation of velocy
+
+A velocity transformation
+
+\begin{align}
+  \dv{x'^0}(x')     &= v\\
+  \implies \dd x'   &= \gamma(\dd x + \beta \dd x^0)\\
+  \implies \dd x'^0 &= \gamma(\dd x^0 + \beta \dd x)
+\end{align}
+
+For small velocities:
+
+\begin{align}
+S &= -mc^2 \int \dd t \sqrt{1-\frac{\dvec{x}^2}{c^2}}\\
+ &\simeq \frac{1- \dvec{x}^2 }{\left(2c^2\right)^2}
+\end{align}
+
+
+Using \(p^2 = m^2\):
+
+\begin{equation}
+  E(\dvec{x}) = \frac{m}{\sqrt{1-\dvec{x}^2}} \to m+m\frac{\dvec{x}^2}{2}
+\end{equation}
+
+
+Claim:
+
+\begin{align}
+  (E, \vec{p}) &= \qq{4-momentum}\\
+  &= \qq{4-velocity}
+\end{align}
+
+There exists these two values
+
+\begin{align}
+  p^\mu &\to \tensor{\Lambda}{^\mu_\nu} p^\nu \\
+  x^\mu &\to \tensor{\Lambda}{^\mu_\nu} x^\nu
+\end{align}
+
+To prove that this quantity of a 4-vector:
+
+\begin{align}
+  v^\mu &= \dv{x^\mu}{\tau} \to  \dv{x^\mu}{x} \\
+  \dv{x^\mu}{t} \dv{t}{\tau} &= \dv{x}{t}
+\end{align}
+
+
+
+Lagrangian using the following Taylor expansion:
+
+\begin{align}
+  \sqrt{1+\epsilon} &\sim 1+\frac{\epsilon}{2} \\
+  \frac{1}{1+\epsilon} &\sim 1-\epsilon
+\end{align}
+
+Combined:
+
+\begin{equation}
+  \frac{1}{\sqrt{1-\epsilon}} = 1+ \frac{\epsilon}{2}
+\end{equation}
+
+
+(Fundamentally we are searching for a massless particles, where \(p^2 = m^2 = 0\))
+
+## Angular Momentum properties:
+
+\begin{align}
+  \vec{J} &= \vec{x} \times \vec{p}\\
+  &= xp_y - yp_x
+\end{align}
+
+Using the a commutator:
+
+\begin{align}
+  \commutator{J^1}{J^2} &= \commutator{x^2p^3 - x^3p^2}{x^3p^1 - x^1p^3}\\
+  &= (x^2p^3 - x^3p^2)(x^3p^1 - x^1p^3) - (x^3p^1 - x^1p^3)(x^2p^3 - x^3p^2)
+\end{align}
+
+(Only commutator with same index are non-zero)
+
+\begin{align}
+  \commutator{J_i}{J_i} &= 0\\
+  \commutator{J_i}{J_j} &\ne 0\\
+\end{align}
+
+This leads to the formal relation of angular momentum:
+
+\begin{equation}
+  \label{eq:angmomentum_commutator}
+  \commutator{J^i}{J^j} = i \hbar J^{ijk} \sigma^k J^k
+\end{equation}
+
+This related transformation and sum to Noethers theorem
+
 
 ## Lorentz invariance using the covariant form of Maxwell's Equations of electrodynamics
 
@@ -236,7 +281,8 @@ with the field-strength tensor:
   F^{\mu\nu} &= \partial^\mu A^\nu - \partial^\nu A^\mu
 \end{align}
 
-Therefore if we set the following, it will lead to is a symmetry in gauge invariance.
+Therefore if we set the following, it will lead to is a symmetry in gauge
+invariance.
 
 Using
 

@@ -1,9 +1,92 @@
-
 # Spinor helicity formalism (null vectors)
 
-## Spinor Helicity formalism and Pauli Matrices properties:
+## Polarisation vectors for massless particles
 
-### Pauli Matrices
+We now examine the way to calculate the polarisation vector for gluons. This process can also be used in the calculation of any particle with similar properties. They have the follwing properties:
+
+ - Massless
+ - Spin 1
+ - Two states of polarisation: helicity \(h=\pm 1\)
+
+\begin{definition}[Polarisation vector \(\vec{\epsilon}\)]
+  \label{def:polarisation_vector}
+
+A polarisation vector \(\vec{\epsilon}\) may be found from a momentum vector
+\(\vec{k} =\) such that they are orthogonal as in:
+
+\begin{equation}
+  \vec{\epsilon} ( \vec{k} ) \cdot \vec{k}=0 \ref{eq:polarisation_vector_ref}
+\end{equation}
+
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[]
+    \coordinate (origin) at (0,0);
+    \coordinate (x) at (0,1);
+    \coordinate (y) at (1,0);
+    \coordinate (z) at ({0.7*cos(210)} ,{0.7*sin(210)} );
+    \draw[->] (origin) -- (x) node[anchor=south] {\(\vec{k}\)};
+    \draw[->] (origin) -- (y) node[anchor=west] {\(\vec{\epsilon}^{\small -}\)};
+    \draw[->] (origin) -- (z) node[anchor=north east] {\(\vec{\epsilon}^{\small +}\)};
+  \end{tikzpicture}
+\end{figure}
+
+\begin{align}
+  \vec{k} &= \abs{\vec{k}} (0,0,1)\\
+  \epsilon^{+} &= \frac{1}{\sqrt{2}}(1,i,0)\\
+  \epsilon^{-} &= \frac{1}{\sqrt{2}}(1,-i,0)
+\end{align}
+
+In four-vector notation this becomes:
+
+\begin{align}
+  \epsilon^\mu(\vec{k}^{\pm})
+\end{align}
+
+We will use covariant 4-vector notation with \(\mu\) index to represent in \(\alpha\dot{\alpha}\) form:
+
+\begin{align}
+  \epsilon^{(+)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } B)\\
+  \epsilon^{(-)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } A)
+\end{align}
+
+Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that the corresponding \(\lambda\) or \(\tilde\lambda\) are not parralell:
+
+\begin{align}
+  \tilde\mu \not\parallel \tilde\lambda: \qquad
+    (A)&=&\frac{\ld{\alpha}\mtd{\alpha}}{\sqr{\tilde\lambda}{\tilde\mu}} \\
+  \mu \not\parallel \lambda: \qquad
+    (B)&=&\frac{\lmtd \mud{\alpha}}{\agl{\lambda}{\mu}}
+\end{align}
+
+We don't want denominator to vanish such that \(\frac{\#}{\agl{\lambda}{\lambda}\to 0}\), as this would cause it to divide by zero.
+
+So we will use:
+
+\begin{equation}
+\mud{\alpha} \to \mu^{'} = a \mu_\alpha + b \lambda_\alpha
+\end{equation}
+
+Therefore we choose \(\epsilon^{(+)}_{\alpha\dot{\alpha}}\) leaving us with:
+
+\begin{align}
+  \epsilon^{(+)}_{\alpha\dot{\alpha}} - \frac{
+    \ltd{\alpha} ( a \mu_\alpha + b \lambda_\alpha )
+  }{
+    a \agl{\lambda}{\mu} + \cancel{b \agl{\lambda}{\lambda}}
+  }
+\end{align}
+
+Where this is a gauge freedom:
+
+\begin{equation}
+  \epsilon^{(+)}_{\alpha\dot{\alpha}}  + \# \ld{\alpha} \lmtd = \epsilon
+\end{equation}
+
+\end{definition}
+
+
+## Pauli Matrices
 
 \begin{definition}[Pauli Matrices]
 \begin{equation}
@@ -32,7 +115,7 @@ Proof:
 \left(\sigma^1 \right)^2 = \pmqty{\pmat{1}}^2 = \pmqty{\imat{2}}
 \end{equation}
 
-#### Multiplication \(\to\) identity matrix:
+### Multiplication \(\to\) identity matrix:
 
 there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by the \(j^{\text{th}}\):
 
@@ -42,7 +125,7 @@ there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by 
 \end{equation}
 
 
-#### commutation and anti commutation:
+### commutation and anti commutation:
 
 They have the following anti/commutator relations
 \begin{equation}
@@ -50,7 +133,7 @@ They have the following anti/commutator relations
   \commutator{\sigma^i}{\sigma^j} = i\epsilon^{ijk}\sigma^k = \anticommutator{\sigma^j}{\sigma^i}
 \end{equation}
 
-#### Trace of multiplication:
+### Trace of multiplication:
 
 The trace of two pauli matrices multiplied together
 \begin{equation}
@@ -166,24 +249,11 @@ Introducing the baracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
    2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_i}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
  \end{align}
 
-\begin{definition}[Box operator]
-
-\begin{equation}
-  \Box \equiv \partial_\mu \partial^\mu \equiv \partial_0 \partial^0 +\partial_i \partial^i = \partial_j^2 - \nabla^2
-  \label{eq:box_operator}
-\end{equation}
-
-\end{definition}
-
-It has the following properties:
-
-*   For massless particles: \(\left( \Box + m^2 \right) \phi = 0\)
-*   Transform for \(\partial_\mu: \partial_\mu e^{ikx}\) for massless particles (i.e. where  \(k^2 = m^2\)):
-
 ### Weyl Spinors and equations
 
 \begin{definition}[Weyl Equations]
 
+Using our definition from \ref{eq:box_operator}, we now define:
 \begin{align}
   i\partial_\mu \tensor{{\bar{\sigma}}}{^{\dot{\alpha}\alpha}} \Psi_{\alpha} = 0\\
   i\partial_\mu \tensor{\sigma}{_{\alpha \dot{\alpha}}} \tilde{\Psi}_{\alpha} = 0
