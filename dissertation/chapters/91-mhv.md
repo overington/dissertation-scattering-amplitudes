@@ -46,7 +46,7 @@ Of the \(\overline{MHV}\) and
 \caption{\(MHV\) amplitude calculations. One of these must go to zero, as there will only be one pole}
 \end{figure}
 
-The From the two amplitudes above ( \(\overline{MHV}\)  fig \ref{fig:mhv_4particle3} , and \(MHV\) fig \ref{fig:mhv_4particle3_alt})). We can immediately see that using the combinations of \(+\) and \(-\) on \(A_L\) and \(A_R\); only one of the objects is physically possible. We will now use this to calculate the position of the pole from the \(MHV\) amplitude:
+The From the two amplitudes above ( \(\overline{MHV}\)  fig \ref{fig:mhv_4particle3}, and \(MHV\) fig \ref{fig:mhv_4particle3_alt})). We can immediately see that using the combinations of \(+\) and \(-\) on \(A_L\) and \(A_R\); only one of the objects is physically possible. We will now use this to calculate the position of the pole from the \(MHV\) amplitude:
 
 \begin{align}
   z_p &= (p_3 + \hat{p}_4 (z_p))^2\\

@@ -22,7 +22,7 @@ interact.
 
 We will begin by inspecting the systems and rules by which interactions between
 free particles can be described, and build our theory from there.  We need to
-have a system by which we make measurements , and that measurement will take
+have a system by which we make measurements, and that measurement will take
 the same form, in all other inertial frames of reference. This is the principle
 of relativity.
 

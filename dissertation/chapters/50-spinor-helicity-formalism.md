@@ -24,7 +24,7 @@ A polarisation vector \(\vec{\epsilon}\) may be found from a momentum vector
     \coordinate (origin) at (0,0);
     \coordinate (x) at (0,1);
     \coordinate (y) at (1,0);
-    \coordinate (z) at ({0.7*cos(210)} ,{0.7*sin(210)} );
+    \coordinate (z) at ({0.7*cos(210)}, {0.7*sin(210)} );
     \draw[->] (origin) -- (x) node[anchor=south] {\(\vec{k}\)};
     \draw[->] (origin) -- (y) node[anchor=west] {\(\vec{\epsilon}^{\small -}\)};
     \draw[->] (origin) -- (z) node[anchor=north east] {\(\vec{\epsilon}^{\small +}\)};
