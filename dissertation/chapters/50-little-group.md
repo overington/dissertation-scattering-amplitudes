@@ -7,7 +7,7 @@
    &= U^\dagger U = \one \qq{Unitary}
 \end{align}
 
-\((SU(N)\) are a special subset of unitary matrices (\(\det U = \pm 1\))
+\((SU(N)\) are a special subset of unitary matrices (\(\det(U)= \pm 1\))
 
 Taylor expansion of \(U\):
 
@@ -19,7 +19,7 @@ Taylor expansion of \(U\):
 Impose the following conditions:
 
 \begin{align}
-  \det{e^{iA}} = \one \implies \det{M} &= e^{\Tr (\log{M})} \\
+  \det( e^{iA} ) = \one \implies \det( M ) &= e^{\Tr (\log{M})} \\
    &= e^{\Tr (\log{(\exp(iA) )} ) }\\
    &= e^{\Tr (iA)}\\
    &= e^{i \Tr (A)} \implies \Tr (A) = 0

@@ -38,7 +38,7 @@ there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by 
 
 \begin{equation}
   \label{eq:pauli_group}
-  \sigma^i\sigma^j = \delta^{ij}\one +i\epsilon^{ijk}\sigma{k}
+  \sigma^i\sigma^j = \delta^{ij}\one +i\epsilon^{ijk}\sigma^{k}
 \end{equation}
 
 
@@ -121,7 +121,7 @@ What do we need to solve \(\Psi_\alpha = \xi_\alpha e^{ikx}\):
 
 \begin{align}
   i\partial^{\dot{\alpha}\alpha} \left( \xi_\alpha e^{ikx}\right) &= i^2 k^{\dot{\alpha}\alpha}\xi_\alpha e^{ikx} \\
-  &= -\lu{\alpha} \ltu{\alpha} \xi_\alpha e^{ikx}
+  &= -\lu{\alpha} \ltu \xi_\alpha e^{ikx}
 \end{align}
 
 <!-- Properties \(SU(2)\): -->
@@ -251,7 +251,7 @@ Take the following:
 Both of these are antisymmetric:
 
 \begin{align}
-  \sqr{\lmt}{\tilde\mu} = \mtd{\alpha}\ltu{\alpha} &= \epsilon_{\dot{\alpha}\dot{\beta}}\mtu{\beta}\lu{\dot\alpha}\\
+  \sqr{\lmt}{\tilde\mu} = \mtd{\alpha}\ltu &= \epsilon_{\dot{\alpha}\dot{\beta}}\mtu{\beta}\lu{\dot\alpha}\\
   &= \mtu{\beta}(-\epsilon_{\dot{\beta}\dot{\alpha}} \ltu)\\
   &= -\ltd{\beta}\mtu{\beta}
 \end{align}
@@ -412,7 +412,7 @@ In order to move back and forth between a four-vector and a spinor, we introduce
   \begin{align}
     \agl{\lambda}{\chi} &\equiv& \lambda^\alpha \chi^\beta \epsilon_{\alpha\beta} &= \lambda^\alpha \chi_\alpha
     \\
-    \ltd{\alpha}\tilde{\chi}^{\dot{\alpha}} &=& \epsilon_{\dot{\alpha}\beta}\ltu{\beta}\ltu{\alpha} &\equiv \sqr{\tilde{\lambda}}{\tilde{\chi}}
+    \ltd{\alpha}\tilde{\chi}^{\dot{\alpha}} &=& \epsilon_{\dot{\alpha}\beta}\ltu[\beta]\ltu &\equiv \sqr{\tilde{\lambda}}{\tilde{\chi}}
     \\
     2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_i}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
   \end{align}
