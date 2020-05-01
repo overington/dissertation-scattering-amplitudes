@@ -1,0 +1,170 @@
+# TOEDIT:
+
+## Spacetime transformations
+
+
+### Transformations
+
+groups of
+particles; such that their positions and velocities may be described by
+coordinates. Next we must ensure two things:
+
+
+This is to ensure that the equations describing the laws of physics have the
+same form in all admissible frames of reference.
+
+This will ensure that there is no special place in space or time by which
+we can make the measurement that will be different from any other. It will also
+ensure that distances between points remain unchanged before and after this
+transformation. 
+
+
+ under a closed group of transformations acting on them.
+
+We will also make sure that this system of measurement and
+group of transformations remain unchanged when comparing 
+
+
+
+as well as in any other system out side of the current system.
+
+
+classical mechanics, moving between intertial reference frames is relatively
+simple becuase of the static nature of time, events int the two reference
+frames can be calcuculated  The Galileo Transformation [see @Landau:1975aa] 
+
+#### Relative distances
+
+
+### Moving Beyond Galilean Mechanics
+
+
+
+Using reference systems or co-ordinates.  This fist step will allow us to set a
+time and spatial dimensions of the system, and allow us to compare two systems
+in relation to one another, and measure the change in this relation as one of
+the systems evolves over time in relation to the other.
+
+
+
+
+
+
+#### Einsteins dispersion relation
+
+<!-- previously this section was named Interactions -->
+
+At the heart of an interaction between free particles, is the Einsteins
+conservative energy and momentum associated with each entering particle to
+exiting particles using *De Broglie dispersion relations*, which connects the
+energy, momentum, and mass of particles through relativistic dispersion
+relation:
+
+\begin{equation}
+  \label{eq:einstein_energymomentum}
+  E^2 = ( \vec{p} c )^2 + (mc^2 )^2
+\end{equation}
+
+
+currently available to us for exploring interactions from their fundamental
+rules in physical systems and building up the language we need in order to
+model how they interact. From this, we explore further formalisms which
+
+<!-- TODO:discussion of einstein energy momentum dispersion relation -->
+
+form of relativistic interactions, which themselves have been bootstrapped from
+classical mechanics.
+
+setting out the notation for which we will use throughout the duration of this
+paper, in order to be able to concisely explain
+
+In order to take into account relativistic effects, we begin here by working
+through the formalism of the Lorentz Group to arrive at the relativistic
+formalisms for
+
+the a special group called the Lorentz Group,
+
+Let us first take a look at the Lagrangian equation, and how they differ from
+their relativistic to non-relativistic formulations.
+
+# Elements of the Lorentz group (from classical mechanics to relativistic physics)
+
+
+## The Lagrangian \( \Lg \) and Hamiltonian \(H\), and their time derivatitve
+
+\begin{align}
+  \Lg_{\text{NR}} &= \frac{1}{2} m\dvec{x}^2\\
+  \to \Lg_{\text{Rel}} &= -m\sqrt{1-\dvec{x}^2}\\
+  H_{\text{NR}} &= \frac{\vec{p}^2}{2m}+V(x)\\
+  \to H_{Rel} &= (something)
+\end{align}
+
+To calculate this relation, we inspect the Lagrangian relation between its two
+component measurables (in an unspecific basis, these can be any two variables
+\(\vec{p}, \vec{q}\), but to relate them to the classical equations involving
+momentum and position, we will be calling them \(\vec{p}, \vec{x}\))
+
+\begin{equation}
+  p \equiv \pdv{\Lg}{\dvec{x}} = \frac{m\dvec{x}}{\sqrt{1-\dvec{x}^2}}
+\end{equation}
+
+### The time evolution of the system
+
+Where
+\begin{equation}
+  H = H(\vec{q}, \vec{p},t)
+\end{equation}
+
+\begin{align}
+  \dvec{p} &= \dv{\vec{p}}{t} &= -\pdv{H}{\vec{q}}\\
+  \dvec{q} &= \dv{\vec{q}}{t} &= +\pdv{H}{\vec{p}}
+\end{align}
+
+Thus leaving us with the following set of equations:
+
+\begin{align}
+  H &= T+V
+  &= \sum_i{\dvec{q}^i\pdv{L}{\dvec{q}^i} -L} = \sum_i{\dvec{q}^ip_i-L}
+\end{align}
+
+where
+
+\begin{equation}
+  p_i = \pdv{\L}{\dvec{q}^i}
+\end{equation}
+
+leading to
+
+\begin{align}
+  \H &= m\dvec{x}^2 - (-m\sqrt{1-\dvec{x}^2})\\
+  &= \frac{m\dvec{x}}{\sqrt{1-\dvec{x}^2}}\dvec{x} +m\sqrt{1-\dvec{x}^2} \\
+  &= \frac{\cancel{m\dvec{x}^2}+m-\cancel{m\dvec{x}^2}}{\sqrt{1-\dvec{x}^2}}\\
+  &= \frac{m}{\sqrt{1-\dvec{x}^2}}
+\end{align}
+
+For small velocities, where \(\vec{x}\ll 1\), we can say:
+
+\begin{equation}
+  \label{eq:lagrange_smallapprox}
+  \sqrt{1-\dvec{x}^2} \approx 1-\frac{\dvec{x}^2}{2} + \dots [\qq{Limit}]
+\end{equation}
+
+Using this approximation, we derive:
+
+\begin{equation}
+  H \to \frac{\vec{p}^2}{2m} = \frac{m\dvec{x}^2}{2}
+\end{equation}
+
+
+
+### Einstein Equation
+
+Where we arrive at Einsteins formula, when setting c = 1
+\begin{equation}
+  \label{eq:einstein}
+  H = E = \frac{m}{\sqrt{1-\dvec{x}^2}}
+\end{equation}
+
+This explains the principle of relatively according to Einsteins equations, and allows us to begin setting up the formalism for representing interactions which include relativistic properties.
+
+
