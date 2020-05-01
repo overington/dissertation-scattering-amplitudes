@@ -1,56 +1,6 @@
-# TOEDIT:
+# Elements of the Lorentz group (from classical mechanics to relativistic physics)
 
-## Spacetime transformations
-
-
-### Transformations
-
-groups of
-particles; such that their positions and velocities may be described by
-coordinates. Next we must ensure two things:
-
-
-This is to ensure that the equations describing the laws of physics have the
-same form in all admissible frames of reference.
-
-This will ensure that there is no special place in space or time by which
-we can make the measurement that will be different from any other. It will also
-ensure that distances between points remain unchanged before and after this
-transformation. 
-
-
- under a closed group of transformations acting on them.
-
-We will also make sure that this system of measurement and
-group of transformations remain unchanged when comparing 
-
-
-
-as well as in any other system out side of the current system.
-
-
-classical mechanics, moving between intertial reference frames is relatively
-simple becuase of the static nature of time, events int the two reference
-frames can be calcuculated  The Galileo Transformation [see @Landau:1975aa] 
-
-#### Relative distances
-
-
-### Moving Beyond Galilean Mechanics
-
-
-
-Using reference systems or co-ordinates.  This fist step will allow us to set a
-time and spatial dimensions of the system, and allow us to compare two systems
-in relation to one another, and measure the change in this relation as one of
-the systems evolves over time in relation to the other.
-
-
-
-
-
-
-#### Einsteins dispersion relation
+## Einsteins dispersion relation
 
 <!-- previously this section was named Interactions -->
 
@@ -87,7 +37,6 @@ the a special group called the Lorentz Group,
 Let us first take a look at the Lagrangian equation, and how they differ from
 their relativistic to non-relativistic formulations.
 
-# Elements of the Lorentz group (from classical mechanics to relativistic physics)
 
 
 ## The Lagrangian \( \Lg \) and Hamiltonian \(H\), and their time derivatitve
@@ -156,7 +105,6 @@ Using this approximation, we derive:
 \end{equation}
 
 
-
 ### Einstein Equation
 
 Where we arrive at Einsteins formula, when setting c = 1
@@ -166,5 +114,7 @@ Where we arrive at Einsteins formula, when setting c = 1
 \end{equation}
 
 This explains the principle of relatively according to Einsteins equations, and allows us to begin setting up the formalism for representing interactions which include relativistic properties.
+
+
 
 

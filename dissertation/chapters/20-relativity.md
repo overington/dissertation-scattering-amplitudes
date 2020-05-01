@@ -1,6 +1,9 @@
 
 <!-- ## Building a scattering amplitude / Relativity -->
 
+
+
+
 # The Relativity Principle
 
 In order to begin understanding such interactions, we must first understand the
@@ -10,6 +13,8 @@ here by exploring current methods available to us, in the forms of mathematical
 formalisms, and how we might use certain properties to expand on this
 knowledge, in order to represent systems, or groups of particles, and how they
 interact.
+
+At the heart of 
 
 
 ## Maximum velocity of propagation

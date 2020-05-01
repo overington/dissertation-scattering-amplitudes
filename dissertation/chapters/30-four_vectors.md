@@ -146,31 +146,56 @@ and from this we can see that we can form a scalar product:
 
 <!-- #TODO: link to previous def that I have written  / Write definition of invariance -->
 
-\begin{definition}[Invariance]
 
-Take the following:
+<!--
+   - ## Spacetime transformations
+   - 
+   - 
+   - groups of
+   - particles; such that their positions and velocities may be described by
+   - coordinates. Next we must ensure two things:
+   - 
+   - 
+   - This is to ensure that the equations describing the laws of physics have the
+   - same form in all admissible frames of reference.
+   - 
+   - This will ensure that there is no special place in space or time by which
+   - we can make the measurement that will be different from any other. It will also
+   - ensure that distances between points remain unchanged before and after this
+   - transformation. 
+   - 
+   - 
+   -  under a closed group of transformations acting on them.
+   - 
+   - We will also make sure that this system of measurement and
+   - group of transformations remain unchanged when comparing 
+   - 
+   - 
+   - 
+   - as well as in any other system out side of the current system.
+   - 
+   - 
+   - classical mechanics, moving between intertial reference frames is relatively
+   - simple becuase of the static nature of time, events int the two reference
+   - frames can be calcuculated  The Galileo Transformation [see @Landau:1975aa] 
+   - 
+   - #### Relative distances
+   -->
 
 
-\begin{align}
-  \lu{\alpha}\mud{\alpha} = \agl{\lambda}{\mu} &= \lu{\alpha}\muu{\beta}\tensor{\epsilon}{_{\alpha\beta}}\\
-  \lmtd \mtu{\alpha} &= \sqr{\lmt}{\tilde\mu}
-\end{align}
+### Moving Beyond Galilean Mechanics
 
-Both of these are antisymmetric:
 
-\begin{align}
-  \sqr{\lmt}{\tilde\mu} = \mtd{\alpha}\ltu{\alpha} &= \epsilon_{\dot{\alpha}\dot{\beta}}\mtu{\beta}\lu{\dot\alpha}\\
-  &= \mtu{\beta}(-\epsilon_{\dot{\beta}\dot{\alpha}} \ltu)\\
-  &= -\ltd{\beta}\mtu{\beta}
-\end{align}
 
-Where \(\lambda, \lmt\) are two types of spinors:
+Using reference systems or co-ordinates.  This fist step will allow us to set a
+time and spatial dimensions of the system, and allow us to compare two systems
+in relation to one another, and measure the change in this relation as one of
+the systems evolves over time in relation to the other.
 
-\begin{align}
-  \qq{Undotted:}& \lu{\alpha},   \ld{\alpha}\\
-  \qq{Dotted:}& \mu_{\dot\alpha}, \mu^{\dot\alpha}
-\end{align}
-\end{definition}
+
+
+
+
 
 ## Dot product:
 

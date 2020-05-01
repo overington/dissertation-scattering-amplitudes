@@ -170,6 +170,35 @@ normalised. This quantity is invariant under Lorentz transformation.
 
 \end{definition}
 
+## Spinors
+
+\begin{definition}[Spinors]
+  Raising and lowering spinor indices
+
+\begin{align}
+  \ld{\alpha} &= \epsilon_{\alpha\beta} \lu{\beta} \\
+  \lu{\alpha} &\equiv \epsilon^{\alpha\beta} \ld{\beta} \\
+  \lmtd[\alpha] &= \epsilon_{\dot{\alpha}\dot{\beta}} \ltu[\beta] \\
+  \ltu &\equiv \epsilon^{\dot{\alpha}\dot{\beta}} \lmtd[\beta]
+  \label{eq:spinors}
+\end{align}
+\end{definition}
+
+Proof:
+\begin{align}
+  \lu{\alpha\prime} &= \epsilon^{\alpha\beta}\tensor{M}{_\beta^\gamma}\ld{\gamma}\\
+  &= \underbrace{\epsilon^{\alpha\beta} \tensor{M}{_\beta^\gamma}}_{ \tensor{\left [ \left( M^T \right)^{-1} \right ]}{^{\alpha}_{\delta}} \lu{\delta}} \epsilon_{\gamma\delta} \lu{\delta}\\
+  \to \lu{\alpha'} &= \lu{\delta} \tensor{\left( M^{-1} \right)}{_{\delta} ^{\alpha}}\\
+  \tensor{\epsilon}{^{\alpha\beta}}\tensor{M}{_\beta^\gamma}\tensor{\epsilon}{_{\gamma\delta}} &\eqq \tensor{ \left( M^{-1} \right) }{_\delta^\alpha}
+\end{align}
+
+
+Calculating a Spinor, we have a consistency condition:
+
+\begin{equation}
+  \tensor{\epsilon}{^{\alpha\beta}} \tensor{\epsilon}{_{\beta\rho}} \equiv \tensor{\delta}{^\alpha_\rho}
+\end{equation}
+
 ## \(\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}\):
 
 We introduce here the new Spinor Helicity Fomalism that has the
@@ -178,7 +207,7 @@ following properties:
  - Makes simplicity manifest
  - Enables us to perform one operation for all massless particles with different helicities (gluons, fermions, scalars)
  - Drastically simplifies the expression of scattering amplitudes by providing a compact form, while keeping the invariance of the four-vector form.
- - The dispersion equation from \ref{eq:einstein_energymomentum} remains invariant  under transformation by the use of a metric. Using the spinor helicity formalism, we are able to keep the dispersion relation equivalently invariant.
+ - The dispersion equation from \ref{eq:einstein_energymomentum} remains invariant  under transformation  by the use of a metric. Using the spinor helicity formalism, we are able to keep the dispersion relation equivalently invariant (see Definition \ref{def:spinor_invariance}).
 
 <!--
    -     - \(\eta \to \Lambda^T \eta \Lambda=\eta\)
@@ -208,6 +237,31 @@ following properties:
   \hat{h} = -\frac{1}{2}\lambda \pdv{\lambda} + \frac{1}{2} \pdv{\tilde{\lambda}} \tilde{\lambda}
 \end{equation}
 
+\end{definition}
+
+\begin{definition}[Spinor Invariance]
+  \label{def:spinor_invariance}
+Take the following:
+
+\begin{align}
+  \lu{\alpha}\mud{\alpha} = \agl{\lambda}{\mu} &= \lu{\alpha}\muu{\beta}\tensor{\epsilon}{_{\alpha\beta}}\\
+  \lmtd \mtu{\alpha} &= \sqr{\lmt}{\tilde\mu}
+\end{align}
+
+Both of these are antisymmetric:
+
+\begin{align}
+  \sqr{\lmt}{\tilde\mu} = \mtd{\alpha}\ltu{\alpha} &= \epsilon_{\dot{\alpha}\dot{\beta}}\mtu{\beta}\lu{\dot\alpha}\\
+  &= \mtu{\beta}(-\epsilon_{\dot{\beta}\dot{\alpha}} \ltu)\\
+  &= -\ltd{\beta}\mtu{\beta}
+\end{align}
+
+Where \(\lambda, \lmt\) are two types of spinors:
+
+\begin{align}
+  \qq{Undotted:}& \lu{\alpha},   \ld{\alpha}\\
+  \qq{Dotted:}& \mu_{\dot\alpha}, \mu^{\dot\alpha}
+\end{align}
 \end{definition}
 
 <!-- New From Here 16th Feb 2020 -->
@@ -263,7 +317,6 @@ We will use covariant 4-vector notation with \(\mu\) index to represent in \(\al
   \epsilon^{(+)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } B)\\
   \epsilon^{(-)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } A)
 \end{align}
-\end{definition}
 
 Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that the corresponding \(\lambda\) or \(\tilde\lambda\) are not parralell:
 
@@ -273,6 +326,8 @@ Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that
   \mu \not\parallel \lambda: \qquad
     (B)&=&\frac{\lmtd \mud{\alpha}}{\agl{\lambda}{\mu}}
 \end{align}
+
+\end{definition}
 
 We don't want denominator to vanish such that \(\frac{\#}{\agl{\lambda}{\lambda}\to 0}\), as this would cause it to divide by zero.
 
@@ -350,17 +405,22 @@ Similar to dotted spinors:
 
 ## Contraction using \(\left[ \quad  \right]\) and \(\langle \quad \rangle\) notation
 
- In order to move back and forth between our
+In order to move back and forth between a four-vector and a spinor, we introduce a new notation, called the bracket notation:
 
- \begin{align}
-   \agl{\lambda}{\chi} &\equiv& \lambda^\alpha \chi^\beta \epsilon_{\alpha\beta} &= \lambda^\alpha \chi_\alpha
-   \\
-   \ltd{\alpha}\tilde{\chi}^{\dot{\alpha}} &=& \epsilon_{\dot{\alpha}\beta}\ltu{\beta}\ltu{\alpha} &\equiv \sqr{\tilde{\lambda}}{\tilde{\chi}}
-   \\
-   2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_i}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
- \end{align}
+\begin{definition}[Square and Angle Bracket Notation]
+  \label{def:bracket_notation}
+  \begin{align}
+    \agl{\lambda}{\chi} &\equiv& \lambda^\alpha \chi^\beta \epsilon_{\alpha\beta} &= \lambda^\alpha \chi_\alpha
+    \\
+    \ltd{\alpha}\tilde{\chi}^{\dot{\alpha}} &=& \epsilon_{\dot{\alpha}\beta}\ltu{\beta}\ltu{\alpha} &\equiv \sqr{\tilde{\lambda}}{\tilde{\chi}}
+    \\
+    2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_i}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
+  \end{align}
+\end{definition}
 
 ## Creating Amplitudes for a three particle interaction:
+
+Let us now begin using our bracket notation from Definition \ref{def:bracket_notation}, to create a simple three particle interaction.
 
 \begin{figure}
   \centering

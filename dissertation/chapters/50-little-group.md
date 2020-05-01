@@ -253,32 +253,3 @@ In 3+1 dimensions, the little group for a massive particle is the rotation group
 @Banerjee:2002aa
 
 
-## Spinors
-
-\begin{definition}[Spinors]
-  Raising and lowering spinor indices
-
-\begin{align}
-  \ld{\alpha} &= \epsilon_{\alpha\beta} \lu{\beta} \\
-  \lu{\alpha} &\equiv \epsilon^{\alpha\beta} \ld{\beta} \\
-  \lmtd[\alpha] &= \epsilon_{\dot{\alpha}\dot{\beta}} \ltu[\beta] \\
-  \ltu &\equiv \epsilon^{\dot{\alpha}\dot{\beta}} \lmtd[\beta]
-  \label{eq:spinors}
-\end{align}
-\end{definition}
-
-Proof:
-\begin{align}
-  \lu{\alpha\prime} &= \epsilon^{\alpha\beta}\tensor{M}{_\beta^\gamma}\ld{\gamma}\\
-  &= \underbrace{\epsilon^{\alpha\beta} \tensor{M}{_\beta^\gamma}}_{ \tensor{\left [ \left( M^T \right)^{-1} \right ]}{^{\alpha}_{\delta}} \lu{\delta}} \epsilon_{\gamma\delta} \lu{\delta}\\
-  \to \lu{\alpha'} &= \lu{\delta} \tensor{\left( M^{-1} \right)}{_{\delta} ^{\alpha}}\\
-  \tensor{\epsilon}{^{\alpha\beta}}\tensor{M}{_\beta^\gamma}\tensor{\epsilon}{_{\gamma\delta}} &\eqq \tensor{ \left( M^{-1} \right) }{_\delta^\alpha}
-\end{align}
-
-
-Calculating a Spinor, we have a consistency condition:
-
-\begin{equation}
-  \tensor{\epsilon}{^{\alpha\beta}} \tensor{\epsilon}{_{\beta\rho}} \equiv \tensor{\delta}{^\alpha_\rho}
-\end{equation}
-

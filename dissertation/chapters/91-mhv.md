@@ -325,7 +325,7 @@ This leaves us with the following amplitudes:
  - Only angle or square brackets can be zero, but not at the same time.
  - Two particle invariance (2 half + 3 squares )
 
- refering to ~fig \ref{fig:mhv_4particle4}, we can see that it is null at the polling \(z\), and therefore the product of the brackets must go to zero:
+Refering to Figure \ref{fig:mhv_4particle4}, we can see that it is null at the polling \(z\), and therefore the product of the brackets must go to zero:
 
 \begin{equation}
  \underbrace{
@@ -335,7 +335,7 @@ This leaves us with the following amplitudes:
 
  The angle brakets (\(\ag{\hat 2 3}\)) must be equal to zero because of the line between the two shells. The condition for blobs to be on-shell are zero
 
- This means that the right hand leg in ~fig \ref{fig:mhv_4particle4} must go to zero:
+ This means that the right hand leg in Figure \ref{fig:mhv_4particle4} must go to zero:
 
 \begin{equation}
  \frac{
@@ -345,20 +345,22 @@ This leaves us with the following amplitudes:
    } = \frac{0^3}{0^2}
 \end{equation}
 
- This shows us that \ref{fig:mhv_4particle4} is not physically possible, as the amplitude is only made of square brackets (\(+-+\)). This could be zero if square is 0, but square brackets can't be zero. Because we are shifting the particle \(\lambda_2\). \(\rm MHV\) \(2^- 1^+\) means angle brackets. One of these will always go to zero.
+ This shows us that the amplitude found in Figure \ref{fig:mhv_4particle4} is
+ not physically possible, as the amplitude is only made of square brackets
+ (\(+-+\)). This could be zero if square is 0, but square brackets can't be
+ zero. Because we are shifting the particle \(\lambda_2\). \(\rm MHV\) \(2^-
+ 1^+\) means angle brackets. One of these will always go to zero.
 
-##  Example ~Fig. \ref{fig:mhv_4particle4_alt}
-
-Try to write down what the \(\rm MHV\) diagram with the brackets. Start the brackets.
+##  Example \(\rm MHV\) diagram with brackets
 
 
-\begin{figure}[t]
+\begin{figure}
   \centering
   \input{assets/mhv_4particle4_alt.tex}
   \caption{Non vanishing Diagram}\label{fig:mhv_4particle4_alt_nonvanishing}
 \end{figure}
 
-To writ this amplitude:
+To write this amplitude using the bracket notation of \ref{def:bracket_notation}:
 
 \begin{align}
 A_L &= \frac{
@@ -520,9 +522,9 @@ Collecting the terms we arrive at our expected result:
 
 \begin{align}
   i \frac{
-    \sq{13}^4
+    \ag{13}^4
   }{
-    \sq{12}\sq{23}\sq{34}\sq{41}
+    \ag{12}\ag{23}\ag{34}\ag{41}
   }
 \end{align}
 
