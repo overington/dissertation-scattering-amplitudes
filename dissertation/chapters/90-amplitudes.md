@@ -10,7 +10,7 @@
 
   A Maximally Helicity Violating Amplitude is an interaction between \(n\)
   massless bosons, where \(n-2\) of the amplitude legs have a particular
-  helicty, and the remaining two particles have the opposite helicity.
+  helicity, and the remaining two particles have the opposite helicity.
 
 \end{definition}
 
@@ -82,7 +82,7 @@ Simplifying \([A]\), and using for instance:
   &= 2(p_1 \cdot \epsilon_3)
 \end{align}
 
-Likewise, the remaining \(p_i\) can be found by cyclicly permutation.
+Likewise, the remaining \(p_i\) can be found by cyclical permutation.
 
 
 We use the Equations \ref{eq:polarisation_vecotr_simple_amplitude1} and
@@ -258,7 +258,7 @@ Here we now have two different ways of representing the Vertex:
   &= \baa{a}{b} \bss{b}{a}
 \end{align}
 
-The phenomenologist way of writing:
+The phenomenological way of writing:
 
 \begin{align}
   a^\mu &= \frac{1}{2} \bams{a}{\mu}{a} \equiv \frac{1}{2} a^\alpha \tilde{a}^{\dot{\alpha}}\tensor{{\sigma_mu}}{_{\alpha\dot{\alpha}}}\\
@@ -372,7 +372,7 @@ This is already a well known solution (from the 60s - find ref ), where we are k
   \lmt = \pm \lambda^*
 \end{equation}
 
-Real minkowski:
+Real Minkowski:
 
 \begin{equation}
   \agl{i}{\eta} = 0 \implies \sqr{i}{\eta} = 0 \qq{and:}
@@ -423,8 +423,8 @@ Leaving us with the two quantities:
 \label{eq:shifted_amplitude}
 
 \begin{align}
-  \lthd{i}(z) &\equiv \lmtd{i} + z\lmtd{j}  &\text{Indicated beiefly as } \equiv  \sabrv{i}{j}\\
-  \lh_j(z)    &\equiv \ld{j} - z\ld{i}      &\text{Indicated beiefly as } \equiv \asbrv{i}{j}
+  \lthd{i}(z) &\equiv \lmtd{i} + z\lmtd{j}  &\text{Indicated briefly as } \equiv  \sabrv{i}{j}\\
+  \lh_j(z)    &\equiv \ld{j} - z\ld{i}      &\text{Indicated briefly as } \equiv \asbrv{i}{j}
 \end{align}
 
 Sometimes this is given the shorthand notation:

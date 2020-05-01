@@ -92,7 +92,7 @@ For the Lorentz transformation:
     \underbrace{SO(1,3)}_{\qq{group}} \to \underbrace{SL(2, \CC)\times SL(2,\CC)}_{\qq{group} \mathbb{Z_2}}
   \end{equation}
 
-  The Lorentz Group \(SO(1,3) \) is isomorephic to \(SL(2,\CC)\cross SL(2,\CC) \)
+  The Lorentz Group \(SO(1,3) \) is isomorphic to \(SL(2,\CC)\cross SL(2,\CC) \)
 
 \end{definition}
 
@@ -181,7 +181,7 @@ defined to be:
 \end{equation}
 
 For a tensor or \(\rank 2\), which is our most common use case, this can be
-reprenented by matrix as such:
+represented by matrix as such:
 
 \begin{equation}
     \epsilon_{\alpha \beta} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
@@ -216,7 +216,7 @@ And this is precisely \(\epsilon_{\alpha\beta} \det(M) = \epsilon_{\alpha\beta}\
 
 ## Little group and weights
 
-In 1932, Eugene Paul Wigner presented a paeper titled \textit{On unitary
+In 1932, Eugene Paul Wigner presented a paper titled \textit{On unitary
 representations of the inhomogeneous Lorentz group} [see @Wigner:1939aa pp
 184-194 Section 6. REDUCTION OF THE REPRESENTATIONS OF THE INHOMOGENEOUS
 LORENTZ GROUP TO REPRESENTATIONS OF A "LITTLE GROUP"], where he discusses a way
@@ -225,8 +225,8 @@ using the a new group he calls the \textit{Little Group}
 
 \begin{definition}[Little group]
 
-Wigners Little group is defined as the subgroup of homogeneous Lorentz Group
-that leaves the energy-momentum verctor of a particle invariant:
+Wigner's Little group is defined as the subgroup of homogeneous Lorentz Group
+that leaves the energy-momentum vector of a particle invariant:
 
 \begin{equation}
   \tensor{W}{^\mu_\nu} = k^\mu
@@ -236,11 +236,11 @@ that leaves the energy-momentum verctor of a particle invariant:
 
 
 For massless particles (gluons) in 3+1 dimensions; the little group is the
-euclidian group \(E(2)\), which is the semi direct product of \(SO)(2)\).
+euclidean group \(E(2)\), which is the semi direct product of \(SO)(2)\).
 
 <!--
-   - TODO: Is the euclidian group mentioned above, the same as Galilean mechanics?
-   - If so, make a mention of what eqation numner we defined it in beforehand
+   - TODO: Is the euclidean group mentioned above, the same as Galilean mechanics?
+   - If so, make a mention of what equation number we defined it in beforehand
    -->
 
 One can obtain the Little Group as a particular limit of the rotation group

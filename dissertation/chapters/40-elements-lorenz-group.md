@@ -20,7 +20,7 @@ currently available to us for exploring interactions from their fundamental
 rules in physical systems and building up the language we need in order to
 model how they interact. From this, we explore further formalisms which
 
-<!-- TODO:discussion of einstein energy momentum dispersion relation -->
+<!-- TODO:discussion of Einstein energy momentum dispersion relation -->
 
 form of relativistic interactions, which themselves have been bootstrapped from
 classical mechanics.
@@ -39,7 +39,7 @@ their relativistic to non-relativistic formulations.
 
 
 
-## The Lagrangian \( \Lg \) and Hamiltonian \(H\), and their time derivatitve
+## The Lagrangian \( \Lg \) and Hamiltonian \(H\), and their time derivative
 
 \begin{align}
   \Lg_{\text{NR}} &= \frac{1}{2} m\dvec{x}^2\\

@@ -8,7 +8,7 @@
 * Problem with current method of computation (using Feynman diagrams)
 * difference between On-shell and Off-shell
 * Aim: To find and produce generators using the 'On-Shell' methods.
-Guage theories and spinnor matricies for Gluons and massless particles were
+Gauge theories and spinor matrices for Gluons and massless particles were
 -->
 
 

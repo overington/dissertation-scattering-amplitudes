@@ -37,7 +37,7 @@ The covariant and contravariant vectors are related thus:
   X_0 = X^0, X_1 = -X^1, X_2 = -X^2, X_3 = -X^3
 \end{equation}
 
-And the square of this quantity \((X)^2\) is the summ:
+And the square of this quantity \((X)^2\) is the sum:
 
 \begin{equation}
   \sum_{\alpha = 0}^3 X^\alpha X_\alpha = X^0 X_0 + X^1 X_1 +X^2 X_2
@@ -74,15 +74,15 @@ tensor:
   \qq{mixed}         &= \tensor{X}{^{\alpha}_{\beta}}
 \end{align}
 
-Where it needs to be noted that two tensor objects are not necisarily equal
-when switching the covariant and contravarient indices around:
+Where it needs to be noted that two tensor objects are not necessarily equal
+when switching the covariant and contravariant indices around:
 
 \begin{equation}
   \tensor{X}{_{\alpha}^{\beta}} \ne \tensor{X}{^{\alpha}_{\beta}}
 \end{equation}
 
 The connection between raising or lowering an index is a change in sign of the
-spatial coordinate (ie \(X^i, i\in 1,2,3\); as an illustration:
+spatial coordinate (i.e. \(X^i, i\in 1,2,3\); as an illustration:
 
 \begin{equation}
   \tensor{X}{_{00}} = \tensor{X}{^{00}}, \qquad \tensor{X}{_{01}} = \tensor{-X}{^{01}}
@@ -175,9 +175,9 @@ and from this we can see that we can form a scalar product:
    - as well as in any other system out side of the current system.
    - 
    - 
-   - classical mechanics, moving between intertial reference frames is relatively
-   - simple becuase of the static nature of time, events int the two reference
-   - frames can be calcuculated  The Galileo Transformation [see @Landau:1975aa] 
+   - classical mechanics, moving between inertial reference frames is relatively
+   - simple because of the static nature of time, events int the two reference
+   - frames can be calculated  The Galileo Transformation [see @Landau:1975aa] 
    - 
    - #### Relative distances
    -->
@@ -214,9 +214,9 @@ It has the following properties:
 \end{itemize}
 
 \end{definition}
-<!-- #UPTO: 14th april 10:52  -->
+<!-- #UPTO: 14th April 10:52  -->
 
-## Tranformation of velocy
+## Transformation of velocity
 
 A velocity transformation
 
@@ -308,9 +308,9 @@ This leads to the formal relation of angular momentum:
   \commutator{J^i}{J^j} = i \hbar J^{ijk} \sigma^k J^k
 \end{equation}
 
-This related transformation and sum to Noethers theorem
+This related transformation and sum to Noether's theorem
 
-## Noethers Theorem
+## Noether's Theorem
 
 \begin{equation}
   \label{eq:noethers_theorem}
@@ -346,7 +346,7 @@ The \(\vec{B}\) field remains unchanged when the gradient of an arbitrary scalar
   \vec{A} \to \vec{A}+\vec{\nabla}\Lambda
 \end{equation}
 
-Similarily, with eq ~\ref{eq:maxwell_curlE} it follows that:
+Similarly, with eq ~\ref{eq:maxwell_curlE} it follows that:
 
 \begin{equation}
   \vec{\nabla}\times \vec{E} = -\pdv{\vec{B}}{t}

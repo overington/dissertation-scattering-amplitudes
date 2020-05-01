@@ -10,7 +10,7 @@ In order to begin understanding such interactions, we must first understand the
 rules by which we can describe an individual particles motion and then build up
 a language for how these motions interact in a system of particles.  We open
 here by exploring current methods available to us, in the forms of mathematical
-formalisms, and how we might use certain properties to expand on this
+formalism's, and how we might use certain properties to expand on this
 knowledge, in order to represent systems, or groups of particles, and how they
 interact.
 
@@ -115,7 +115,7 @@ velocity of light in a vacuum:
 \end{equation}
 
 
-<!-- c is large numnber, therefore classical approximation c->intfy is good
+<!-- c is large number, therefore classical approximation c->infinity is good
 approximation -->
 
 Due to the fact that this velocity is such a large number, and that in our
@@ -291,7 +291,7 @@ and in its infinitesimal form:
 \begin{center}
 \begin{tikzpicture}[scale=1, transform shape, every text node part/.style={align=center}]
   \fill [pattern=north east lines] (-2,2) -- (0,0) -- (-2,-2) -- (2,-2) -- (0,0) -- (2,2);
-  \draw [thick,<->] (-3, 0) node[text width=3cm, right]{Absolutely Seperated} -- (3,0) node[below left]{$x$} node[text width=3cm, left]{Absolutely Seperated};
+  \draw [thick,<->] (-3, 0) node[text width=3cm, right]{Absolutely Separated} -- (3,0) node[below left]{$x$} node[text width=3cm, left]{Absolutely Separated};
   \draw [thick,<->] (0, -2.2) node[below]{Absolute Past} -- (0,2.2);
   \draw (0,2.2) node[right]{$t$} +(0,0.3)node[above]{Absolute Future};
   \draw [thick] (-2,-2) -- (0,0)  -- (2,2);

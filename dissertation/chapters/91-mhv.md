@@ -325,7 +325,7 @@ This leaves us with the following amplitudes:
  - Only angle or square brackets can be zero, but not at the same time.
  - Two particle invariance (2 half + 3 squares )
 
-Refering to Figure \ref{fig:mhv_4particle4}, we can see that it is null at the polling \(z\), and therefore the product of the brackets must go to zero:
+Referring to Figure \ref{fig:mhv_4particle4}, we can see that it is null at the polling \(z\), and therefore the product of the brackets must go to zero:
 
 \begin{equation}
  \underbrace{
@@ -333,7 +333,7 @@ Refering to Figure \ref{fig:mhv_4particle4}, we can see that it is null at the p
    }_{\text{Must equal }0} \sq{32} = 0 = (\hat{p}_2 + p_3)^2
 \end{equation}
 
- The angle brakets (\(\ag{\hat 2 3}\)) must be equal to zero because of the line between the two shells. The condition for blobs to be on-shell are zero
+ The angle brackets (\(\ag{\hat 2 3}\)) must be equal to zero because of the line between the two shells. The condition for blobs to be on-shell are zero
 
  This means that the right hand leg in Figure \ref{fig:mhv_4particle4} must go to zero:
 

@@ -19,7 +19,7 @@ p^2 = p_\mu p^\mu = 0, \qq{and} p_0^2 - \vec{p}^2 = 0
 \end{align}
 \end{definition}
 
-Squaring each of the pauli matrices produces the identity matrix:
+Squaring each of the Pauli matrices produces the identity matrix:
 
 \begin{equation}
   \label{eq:pauli_identity}
@@ -52,7 +52,7 @@ They have the following anti/commutator relations
 
 ### Trace of multiplication:
 
-The trace of two pauli matrices multiplied together
+The trace of two Pauli matrices multiplied together
 \begin{equation}
   \label{eq:pauli_trace}
   \Tr \left(\sigma_i \sigma_j \right) = 2\delta^{ij}
@@ -75,7 +75,7 @@ When using the  Minkowski spacetime metric, we represent as following:
   \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -\vec{\sigma} \right)
 \end{align}
 
-With the Euclidian metric, we represent as following:
+With the Euclidean metric, we represent as following:
 
 \begin{align}
   \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, i\vec{\sigma} \right)\\
@@ -89,13 +89,13 @@ So that:
     \bar{P}^{\dot{\alpha} \alpha} &= p^\mu \bar{\sigma}_\mu^{\ \dot{\alpha}\alpha}
 \end{align}
 
-Then \(\epsilon_{\alpha\beta}\) similar to Levi-Cevita.
+Then \(\epsilon_{\alpha\beta}\) similar to Levi-Civita.
 
 \begin{equation}
   \epsilon_{12} = -\epsilon_{21}
 \end{equation}
 
-Introducing the baracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
+Introducing the bracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
 
 \begin{align}
   \rho^\mu \sigma_\mu &= \rho^0 \sigma_0 + \vec{p}\cdot \vec{\sigma}\\
@@ -201,7 +201,7 @@ Calculating a Spinor, we have a consistency condition:
 
 ## \(\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}\):
 
-We introduce here the new Spinor Helicity Fomalism that has the
+We introduce here the new Spinor Helicity formalism that has the
 following properties:
 
  - Makes simplicity manifest
@@ -266,11 +266,11 @@ Where \(\lambda, \lmt\) are two types of spinors:
 
 <!-- New From Here 16th Feb 2020 -->
 
-<!-- #TODO: write definition for spinnors -->
+<!-- #TODO: write definition for spinors -->
 
 ## Polarisation vectors for massless particles
 
-We now examine the way to calculate the polarisation vector for gluons. This process can also be used in the calculation of any particle with similar properties. They have the follwing properties:
+We now examine the way to calculate the polarisation vector for gluons. This process can also be used in the calculation of any particle with similar properties. They have the following properties:
 
  - Massless
  - Spin 1
@@ -318,7 +318,7 @@ We will use covariant 4-vector notation with \(\mu\) index to represent in \(\al
   \epsilon^{(-)}_{\alpha\dot{\alpha}}(k) &= \sqrt{2} (\text{something } A)
 \end{align}
 
-Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that the corresponding \(\lambda\) or \(\tilde\lambda\) are not parralell:
+Here we need to introduce the reference spinor (\(\mu, \tilde{\mu}\)), such that the corresponding \(\lambda\) or \(\tilde\lambda\) are not parallel:
 
 \begin{align}
   \tilde\mu \not\parallel \tilde\lambda: \qquad
