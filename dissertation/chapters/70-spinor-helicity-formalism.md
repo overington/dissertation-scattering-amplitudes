@@ -1,5 +1,219 @@
 # Spinor helicity formalism (null vectors)
 
+## Pauli Matrices
+
+We begin here exploring a special kind of matrix 
+
+\begin{definition}[Pauli Matrices]
+\label{def:pauli_matrices}
+\begin{equation}
+\label{eq:momentum_massless_particles}
+p^2 = p_\mu p^\mu = 0, \qq{and} p_0^2 - \vec{p}^2 = 0
+\end{equation}
+
+
+\begin{align}
+\sigma^1 &= \pmqty{\pmat{1}} \\ 
+\sigma^2 &= \pmqty{\pmat{2}} \\
+\sigma^3 &= \pmqty{\pmat{3}}
+\end{align}
+\end{definition}
+
+Squaring each of the pauli matrices produces the identity matrix:
+
+\begin{equation}
+  \label{eq:pauli_identity}
+  \left(\sigma^i \right)^2 = \one
+\end{equation}
+
+Proof:
+
+\begin{equation}
+\left(\sigma^1 \right)^2 = \pmqty{\pmat{1}}^2 = \pmqty{\imat{2}}
+\end{equation}
+
+### Multiplication \(\to\) identity matrix:
+
+there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by the \(j^{\text{th}}\):
+
+\begin{equation}
+  \label{eq:pauli_group}
+  \sigma^i\sigma^j = \delta^{ij}\one +i\epsilon^{ijk}\sigma{k}
+\end{equation}
+
+
+### commutation and anti commutation:
+
+They have the following anti/commutator relations
+\begin{equation}
+  \label{eq:pauli_commutator}
+  \commutator{\sigma^i}{\sigma^j} = i\epsilon^{ijk}\sigma^k = \anticommutator{\sigma^j}{\sigma^i}
+\end{equation}
+
+### Trace of multiplication:
+
+The trace of two pauli matrices multiplied together
+\begin{equation}
+  \label{eq:pauli_trace}
+  \Tr \left(\sigma_i \sigma_j \right) = 2\delta^{ij}
+\end{equation}
+where
+
+\begin{equation}
+\sigma_i \sigma_j = \delta^{ij} \one_2 + i\epsilon^{ijk}\sigma^{k}
+\end{equation}
+
+<!-- aaabbbccc -->
+
+
+### Facts about \(\sigma_\mu\):
+
+When using the  Minkowski spacetime metric, we represent as following:
+
+\begin{align}
+  \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, \vec{\sigma} \right)\\
+  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -\vec{\sigma} \right)\\
+\end{align}
+
+With the Euclidian metric, we represent as following:
+
+\begin{align}
+  \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, i\vec{\sigma} \right)\\
+  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -i\vec{\sigma} \right)\\
+\end{align}
+
+So that:
+
+\begin{align}
+    P_{\alpha \dot{\alpha}} &= p^\mu \sigma_{\mu\ \alpha \dot{\alpha}}\\
+    \bar{P}^{\dot{\alpha} \alpha} &= p^\mu \bar{\sigma}_\mu^{\ \dot{\alpha}\alpha}
+\end{align}
+
+Then \(\epsilon_{\alpha\beta}\) similar to Levi-Cevita.
+
+\begin{equation}
+  \epsilon_{12} = -\epsilon_{21}
+\end{equation}
+
+Introducing the baracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
+
+\begin{align}
+  \rho^\mu \sigma_\mu &= \rho^0 \sigma_0 + \vec{p}\cdot \vec{\sigma}\\
+  \rho_{\alpha \dot{\alpha}}&= \ld{\alpha}\ltd{\alpha}
+\end{align}
+
+
+
+### Weyl Spinors and equations
+
+\begin{definition}[Weyl Equations]
+
+Using our definition from our box operator in equation \ref{eq:box_operator}, we combine this with the definition of the Pauli Matrices from \ref{def:pauli_matrices} we now define:
+\begin{align}
+  i\partial_\mu \tensor{{\bar{\sigma}}}{^{\dot{\alpha}\alpha}} \Psi_{\alpha} = 0\\
+  i\partial_\mu \tensor{\sigma}{_{\alpha \dot{\alpha}}} \tilde{\Psi}_{\alpha} = 0
+\end{align}
+
+Where \(\Psi_\alpha, \tilde{\Psi}_\alpha\) are Weyl spinors
+\end{definition}
+
+What do we need to solve \(\Psi_\alpha = \xi_\alpha e^{ikx}\):
+
+\begin{align}
+  i\partial^{\dot{\alpha}\alpha} \left( \xi_\alpha e^{ikx}\right) &= i^2 k^{\dot{\alpha}\alpha}\xi_\alpha e^{ikx} \\
+  &= -\lu{\alpha} \ltu{\alpha} \xi_\alpha e^{ikx}
+\end{align}
+
+<!-- Properties \(SU(2)\): -->
+
+\begin{align}
+  \rho^\mu &= 2\times 2 \qq{matrix}\\
+  \sigma^0 &= \one_2\\
+  \sigma^i &= \qq{Pauli spin matrices}
+\end{align}
+
+\begin{equation}
+  \label{eq:paulispin_innerprod}
+  p^\mu \sigma_\mu \equiv \rho^0\sigma_0 + \vec{\rho}\cdot\vec{\sigma}
+\end{equation}
+
+where:
+
+\begin{align}
+  \det(p^\mu \sigma_\mu ) & \equiv \vec{p}^2 \\
+  \qq{Where, for a massless particle} p^2 &= 0\\
+  (\rho^0)^2 - (\vec{p})^2 &= 0
+\end{align}
+
+These relations here set the stage for being able to work with massless particles.
+
+
+ 3. Lorentz transformation \(SO(1,3) \to SL(2,\CC)\times SL(2,\CC)\). Arriving at Lorentz invariant transformation \(\agl{1}{\dot{2}} \equiv \tensor{\lambda}{_1^\alpha}\tensor{\lambda}{_{2\dot{\alpha}}}\)
+
+ <!-- end:dissertation/log/2020.01.21.md -->
+
+
+
+
+## Helicity
+
+Helicity (see equation \ref{eq:helicity}) is the projection of a massless
+particles' spin \(\vec{S}\) onto the the momentum \(\vec{p}\), which is then
+normalised. This quantity is invariant under Lorentz transformation.
+[@Plefka:2014aa, pp 15]
+
+\begin{definition}[Helicity]
+
+\begin{equation}
+    h := \frac{\vec{p} \cdot \vec{S}}{\abs{\vec{p}}} \label{eq:helicity}
+\end{equation}
+
+\end{definition}
+
+## \(\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}\):
+
+We introduce here the new Spinor Helicity Fomalism that has the
+following properties:
+
+ - Makes simplicity manifest
+ - Enables us to perform one operation for all massless particles with different helicities (gluons, fermions, scalars)
+ - Drastically simplifies the expression of scattering amplitudes by providing a compact form, while keeping the invariance of the four-vector form.
+ - The dispersion equation from \ref{eq:einstein_energymomentum} remains invariant  under transformation by the use of a metric. Using the spinor helicity formalism, we are able to keep the dispersion relation equivalently invariant.
+
+<!--
+   -     - \(\eta \to \Lambda^T \eta \Lambda=\eta\)
+   -     - Lorentz group definitions.
+   - 
+   -     \begin{equation}
+   -           \overbrace{\mqty(\dmat{a,b})}^{+}  \overbrace{\mqty(\dmat{1,-1})}^{sp}  \overbrace{\mqty(\dmat{a,b})}^{+}
+   -     \end{equation}
+   - 
+   -     - Transformation of velocity \(\to\) conclusion:
+   - 
+   -     \begin{equation}
+   -       v' = \frac{\dd{x} + \beta \dd{x_0}}{\dd{x_0} + \beta \dd{x}}
+   -     \end{equation} (Galilean transformation)
+   -->
+
+\begin{definition}[Spinor Helicity Formalism]
+  \begin{equation}
+    \label{eq:spinor_helicity_formalism}
+    (p^\mu \sigma_\mu)_{\alpha \dot\alpha} = \lambda_\alpha \tilde{\lambda}_{\dot\alpha}
+  \end{equation}
+\end{definition}
+
+\begin{definition}[Spin operator \(\hat{h}\)]
+
+\begin{equation}
+  \hat{h} = -\frac{1}{2}\lambda \pdv{\lambda} + \frac{1}{2} \pdv{\tilde{\lambda}} \tilde{\lambda}
+\end{equation}
+
+\end{definition}
+
+<!-- New From Here 16th Feb 2020 -->
+
+<!-- #TODO: write definition for spinnors -->
+
 ## Polarisation vectors for massless particles
 
 We now examine the way to calculate the polarisation vector for gluons. This process can also be used in the calculation of any particle with similar properties. They have the follwing properties:
@@ -85,156 +299,54 @@ Where this is a gauge freedom:
 \end{equation}
 
 
-## Pauli Matrices
+## Spinors and transformations
 
-\begin{definition}[Pauli Matrices]
-\begin{equation}
-\label{eq:momentum_massless_particles}
-p^2 = p_\mu p^mu = 0, \qq{and} p_0^2 - \vec{p}^2 = 0
-\end{equation}
+\begin{definition}[Dot Product]
 
+In order to do a dot product using this convention:
 
 \begin{align}
-\sigma^1 &= \pmqty{\pmat{1}} \\ 
-\sigma^2 &= \pmqty{\pmat{2}} \\
-\sigma^3 &= \pmqty{\pmat{3}}
+  \tensor{{p_1}}{^{\dot{\alpha}\alpha}} \tensor{{p_2}}{_{\dot{\alpha}\alpha}}
+    &= \tensor{{\tilde{\lambda_1}}}{^{\dot{\alpha}}}
+    \tensor{{\lambda_1}}{^\alpha}
+    \tensor{{\lambda_2}}{_\alpha}
+    \tensor{{\tilde{\lambda_2}}}{_{\dot{\alpha}}} \\
+  &= \agl{1}{2} \sqr{2}{1} = 2(p_1p_2)
 \end{align}
+
+and
+
+\[
+  \begin{aligned}
+    \agl{1}{2} &\equiv \tensor{{\lambda_1}}{^\alpha} \tensor{{\lambda_2}}{_\alpha}\\
+    \sqr{1}{2} &\equiv \tensor{{\lambda_1}}{_{\dot{\alpha}}} \tensor{{\lambda_2}}{^{\dot{\alpha}}}
+  \end{aligned} \qquad
+  \begin{aligned}
+    \lu{\alpha} &= \epsilon^{\alpha\beta}\ld{\beta} \\
+    \ld{\alpha} &= \epsilon_{\alpha\beta}\lu{\beta} \\
+  \end{aligned}
+\]
+
+Hence we define:
+
+\begin{align}
+  \lu{\alpha} &= \epsilon^{\alpha\beta}\ld{\beta}\\
+  \ld{\alpha} &= \epsilon_{\alpha\beta}\lu{\beta}
+\end{align}
+
+Similar to dotted spinors:
+
+\begin{align}
+  \tensor{{\sigma_\mu}}{_{\alpha\dot{\alpha}}} &\equiv
+    \left( \one, \vec{\sigma} \right)_{\alpha\dot{\alpha}}\\
+  \tensor{{\overline{\sigma}^{\mu}}}{^{\dot{\alpha}\alpha}} &\equiv
+    \left( \one, -\vec{\sigma} \right)^{\dot{\alpha} \alpha}
+      \equiv \epsilon^{\alpha \beta}\epsilon^{\dot{\alpha}\dot{\beta}}\tensor{{\sigma_\mu}}{_{\beta \dot{\beta}}}
+\end{align}
+
 \end{definition}
 
-Squaring each of the pauli matrices produces the identity matrix:
 
-\begin{equation}
-  \label{eq:pauli_identity}
-  \left(\sigma^i \right)^2 = \one
-\end{equation}
-
-Proof:
-
-\begin{equation}
-\left(\sigma^1 \right)^2 = \pmqty{\pmat{1}}^2 = \pmqty{\imat{2}}
-\end{equation}
-
-### Multiplication \(\to\) identity matrix:
-
-there is a recursive relation, when multiplying the \(i^{\text{th}}\) matrix by the \(j^{\text{th}}\):
-
-\begin{equation}
-  \label{eq:pauli_group}
-  \sigma^i\sigma^j = \delta^{ij}\one +i\epsilon^{ijk}\sigma{k}
-\end{equation}
-
-
-### commutation and anti commutation:
-
-They have the following anti/commutator relations
-\begin{equation}
-  \label{eq:pauli_commutator}
-  \commutator{\sigma^i}{\sigma^j} = i\epsilon^{ijk}\sigma^k = \anticommutator{\sigma^j}{\sigma^i}
-\end{equation}
-
-### Trace of multiplication:
-
-The trace of two pauli matrices multiplied together
-\begin{equation}
-  \label{eq:pauli_trace}
-  \Tr \left(\sigma_i \sigma_j \right) = 2\delta^{ij}
-\end{equation}
-where
-
-\begin{equation}
-\sigma_i \sigma_j = \delta^{ij} \one_2 + i\epsilon^{ijk}\sigma^{k}
-\end{equation}
-
-<!-- aaabbbccc -->
-
-## Spinor helicity formalism \(\vec{\rho} \to \vec{\rho}\cdot\vec{\sigma}\):
-
-<!--
->We shall now introduce the highly useful spinor helicity formalism for the description of scattering amplitudes of massless particles. It provides a uniform description of the on-shell degrees of freedom (momentum and polarization) for the scatter- ing states of all helicities (gluons, fermions, scalars) of massless particles. It also renders the analytic expressions of scattering amplitudes in an often much more compact form compared to the standard four-vector notation.
--->
-
-The spinor helicity formalism is a very useful description of scattering amplitudes of massless particles, enabling us to use the on-shell degrees of freedom with respect to the particles momentum and polarisation to measure the scattering amplitude of massless particles of all helicities (gluons, fermions, scalars).
-
-This method also simplifies the scattering amplitude, by rendering the analytic expressions in a form which does which is much more compact then the standard four-vector notation
-[@Plefka:2014aa, pp 15]
-
-\begin{align}
-  \commutator{\frac{\sigma^i}{2}}{\frac{\sigma^j}{2}} & = i\epsilon^{ijk}\frac{\sigma^k}{2}
-\end{align}
-
-
-<!-- Properties \(SU(2)\): -->
-
-\begin{align}
-  \rho^\mu &= 2\times 2 \qq{matrix}\\
-  \sigma^0 &= \one_2\\
-  \sigma^i &= \qq{Pauli spin matrices}
-\end{align}
-
-\begin{equation}
-  \label{eq:paulispin_innerprod}
-  p^\mu \sigma_\mu \equiv \rho^0\sigma_0 + \vec{\rho}\cdot\vec{\sigma}
-\end{equation}
-
-where:
-
-\begin{align}
-  \det(p^\mu \sigma_\mu ) & \equiv \vec{p}^2 \\
-  \qq{Where, for a massless particle} p^2 &= 0\\
-  (\rho^0)^2 - (\vec{p})^2 &= 0
-\end{align}
-
-These relations here set the stage for being able to work with massless particles.
-
-\begin{definition}[Spinor Helicity Formalism]
-  \begin{equation}
-    \label{eq:spinor_helicity_formalism}
-    (p^\mu \sigma_\mu)_{\alpha \dot\alpha} = \lambda_\alpha \tilde{\lambda}_{\dot\alpha}
-  \end{equation}
-\end{definition}
-
-<!-- New From Here 16th Feb 2020 -->
-
-### Facts about \(\sigma_\mu\):
-
-When using the  Minkowski spacetime metric, we represent as following:
-
-\begin{align}
-  \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, \vec{\sigma} \right)\\
-  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -\vec{\sigma} \right)\\
-\end{align}
-
-With the Euclidian metric, we represent as following:
-
-\begin{align}
-  \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, i\vec{\sigma} \right)\\
-  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -i\vec{\sigma} \right)\\
-\end{align}
-
-So that:
-
-\begin{align}
-    P_{\alpha \dot{\alpha}} &= p^\mu \sigma_{\mu\ \alpha \dot{\alpha}}\\
-    \bar{P}^{\dot{\alpha} \alpha} &= p^\mu \bar{\sigma}_\mu^{\ \dot{\alpha}\alpha}
-\end{align}
-
-Then \(\epsilon_{\alpha\beta}\) similar to Levi-Cevita.
-
-\begin{equation}
-  \epsilon_{12} = -\epsilon_{21}
-\end{equation}
-
-Introducing the baracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
-
-\begin{align}
-  \rho^\mu \sigma_\mu &= \rho^0 \sigma_0 + \vec{p}\cdot \vec{\sigma}\\
-  \rho_{\alpha \dot{\alpha}}&= \ld{\alpha}\ltd{\alpha}
-\end{align}
-
-
-<!--
-@import "/dissertation/assets/custom.md"
- -->
 
 ## Contraction using \(\left[ \quad  \right]\) and \(\langle \quad \rangle\) notation
 
@@ -247,34 +359,6 @@ Introducing the baracket notation: \(\langle \quad \rangle\) and \([ \quad ]\)
    \\
    2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_i}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
  \end{align}
-
-### Weyl Spinors and equations
-
-\begin{definition}[Weyl Equations]
-
-Using our definition from \ref{eq:box_operator}, we now define:
-\begin{align}
-  i\partial_\mu \tensor{{\bar{\sigma}}}{^{\dot{\alpha}\alpha}} \Psi_{\alpha} = 0\\
-  i\partial_\mu \tensor{\sigma}{_{\alpha \dot{\alpha}}} \tilde{\Psi}_{\alpha} = 0
-\end{align}
-
-Where \(\Psi_\alpha, \tilde{\Psi}_\alpha\) are Weyl spinors
-\end{definition}
-
-What do we need to solve \(\Psi_\alpha = \xi_\alpha e^{ikx}\):
-
-\begin{align}
-  i\partial^{\dot{\alpha}\alpha} \left( \xi_\alpha e^{ikx}\right) &= i^2 k^{\dot{\alpha}\alpha}\xi_\alpha e^{ikx} \\
-  &= -\lu{\alpha} \ltu{\alpha} \xi_\alpha e^{ikx}
-\end{align}
-
-\begin{definition}[Spin operator \(\hat{h}\)]
-
-\begin{equation}
-  \hat{h} = -\frac{1}{2}\lambda \pdv{\lambda} + \frac{1}{2} \pdv{\tilde{\lambda}} \tilde{\lambda}
-\end{equation}
-
-\end{definition}
 
 ## Creating Amplitudes for a three particle interaction:
 
@@ -374,35 +458,3 @@ Note:
 
 <!-- end:2019.11.19.md -->
 
-# Spinors and transformations
-
-<!-- begin:dissertation/log/2020.01.21.md -->
-
-## Symmetries
-
- - Spinor Helicity formalism -> Makes simplicity manifest
- - Dynamics: ie Why amplitudes are simple.
- - New methods are simple
- - what is the dot product in terms of spinors.
-
- ---
-
- 1. Einstein Equation \(E^2 = (pc)^2 + (mc^2)^2\)
- 2. Invariant quantities in relativity. What is the set of linear transformations that make the __metric__ invariant?
-
-    - \(\eta \to \Lambda^T \eta \Lambda=\eta\)
-    - Lorentz group definitions.
-
-    \begin{equation}
-      \overbrace{\mqty(\dmat{a,b})}^{+}  \overbrace{\mqty(\dmat{1,-1})}^{sp}  \overbrace{\mqty(\dmat{a,b})}^{+}
-    \end{equation}
-
-    - Transformation of velocity \(\to\) conclusion:
-
-    \begin{equation}
-      v' = \frac{\dd{x} + \beta \dd{x_0}}{\dd{x_0} + \beta \dd{x}}
-    \end{equation} (Galilean transformation)
-
- 3. Lorentz transformation \(SO(1,3) \to SL(2,\CC)\times SL(2,\CC)\). Arriving at Lorentz invariant transformation \(\agl{1}{\dot{2}} \equiv \tensor{\lambda}{_1^\alpha}\tensor{\lambda}{_{2\dot{\alpha}}}\)
-
- <!-- end:dissertation/log/2020.01.21.md -->

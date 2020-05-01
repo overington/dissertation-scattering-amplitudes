@@ -174,55 +174,6 @@ Where \(\lambda, \lmt\) are two types of spinors:
 
 ## Dot product:
 
-
-\begin{definition}[Dot Product]
-
-In order to do a dot product using this convention:
-
-\begin{align}
-  \tensor{{p_1}}{^{\dot{\alpha}\alpha}} \tensor{{p_2}}{_{\dot{\alpha}\alpha}}
-    &= \tensor{{\tilde{\lambda_1}}}{^{\dot{\alpha}}}
-    \tensor{{\lambda_1}}{^\alpha}
-    \tensor{{\lambda_2}}{_\alpha}
-    \tensor{{\tilde{\lambda_2}}}{_{\dot{\alpha}}} \\
-  &= \agl{1}{2} \sqr{2}{1} = 2(p_1p_2)
-\end{align}
-
-and
-
-\[
-  \begin{aligned}
-    \agl{1}{2} &\equiv \tensor{{\lambda_1}}{^\alpha} \tensor{{\lambda_2}}{_\alpha}\\
-    \sqr{1}{2} &\equiv \tensor{{\lambda_1}}{_{\dot{\alpha}}} \tensor{{\lambda_2}}{^{\dot{\alpha}}}
-  \end{aligned} \qquad
-  \begin{aligned}
-    \lu{\alpha} &= \epsilon^{\alpha\beta}\ld{\beta} \\
-    \ld{\alpha} &= \epsilon_{\alpha\beta}\lu{\beta} \\
-  \end{aligned}
-\]
-
-Hence we define:
-
-\begin{align}
-  \lu{\alpha} &= \epsilon^{\alpha\beta}\ld{\beta}\\
-  \ld{\alpha} &= \epsilon_{\alpha\beta}\lu{\beta}
-\end{align}
-
-Similar to dotted spinors:
-
-\begin{align}
-  \tensor{{\sigma_\mu}}{_{\alpha\dot{\alpha}}} &\equiv
-    \left( \one, \vec{\sigma} \right)_{\alpha\dot{\alpha}}\\
-  \tensor{{\overline{\sigma}^{\mu}}}{^{\dot{\alpha}\alpha}} &\equiv
-    \left( \one, -\vec{\sigma} \right)^{\dot{\alpha} \alpha}
-      \equiv \epsilon^{\alpha \beta}\epsilon^{\dot{\alpha}\dot{\beta}}\tensor{{\sigma_\mu}}{_{\beta \dot{\beta}}}
-\end{align}
-
-\end{definition}
-
-
-<!-- #TODO: write definition for spinnors -->
-
 \begin{definition}[Box operator]
 
 \begin{equation}
