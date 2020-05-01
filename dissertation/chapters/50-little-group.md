@@ -106,7 +106,7 @@ A spinor transforms as follows:
 
 \begin{align}
   \tensor{\Psi}{^{\prime}_\alpha} &= \tensor{M}{_\alpha^\beta}\tensor{\Psi}{_\beta}\\
-  \tensor{\bar{\Psi}}{^{\prime}_{\dot{\alpha}}} &= \tensor{M}{_{\dot{\alpha}}^{\dot{\beta}}}\tensor{\bar{\Psi}}{_\beta}\\
+  \tensor{\bar{\Psi}}{^{\prime}_{\dot{\alpha}}} &= \tensor{M}{_{\dot{\alpha}}^{\dot{\beta}}}\tensor{\bar{\Psi}}{_\beta}
 \end{align}
 
 Such that \(\tensor{M}{_\alpha^\beta}\) belongs to \(SL(2,\CC)\), i.e. with \(\det(M)=\one\)

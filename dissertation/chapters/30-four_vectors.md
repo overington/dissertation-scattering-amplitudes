@@ -28,7 +28,7 @@ coordinate system, in particular under Lorentz transformation:
   X^0 &= \frac{ X\prime^0 + \frac{V}{c} X\prime^1 }{ \sqrt{ 1-\frac{V^2}{c^2} } } \\
   X^1 &= \frac{ X\prime^1 + \frac{V}{c} X\prime^0 }{ \sqrt{ 1-\frac{V^2}{c^2} } } \\
   X^2 &= X\prime^2\\
-  X^3 &= X\prime^3\\
+  X^3 &= X\prime^3
 \end{align}
 
 The covariant and contravariant vectors are related thus:
@@ -53,7 +53,7 @@ The four-vector can also take a form, separating out the time dimension, and wit
 \begin{align}
   X^\alpha = (X^0, Xi^i)\\
   X^i = \begin{pmatrix}x\\y\\z\end{pmatrix}
-  X_\alpha = (X^0, -X_i)\\
+  X_\alpha = (X^0, -X_i)
 \end{align}
 
 Using this form, the square of a four-vector can be written as:
@@ -71,7 +71,7 @@ tensor:
 \begin{align}
   \qq{contravariant} &= \tensor{X}{^{\alpha \beta}}\\
   \qq{covariant}     &= \tensor{X}{_{\alpha \beta}}\\
-  \qq{mixed}         &= \tensor{X}{^{\alpha}_{\beta}}\\
+  \qq{mixed}         &= \tensor{X}{^{\alpha}_{\beta}}
 \end{align}
 
 Where it needs to be noted that two tensor objects are not necisarily equal
@@ -273,7 +273,7 @@ Using the a commutator:
 
 \begin{align}
   \commutator{J_i}{J_i} &= 0\\
-  \commutator{J_i}{J_j} &\ne 0\\
+  \commutator{J_i}{J_j} &\ne 0
 \end{align}
 
 This leads to the formal relation of angular momentum:

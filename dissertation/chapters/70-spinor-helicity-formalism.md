@@ -72,14 +72,14 @@ When using the  Minkowski spacetime metric, we represent as following:
 
 \begin{align}
   \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, \vec{\sigma} \right)\\
-  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -\vec{\sigma} \right)\\
+  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -\vec{\sigma} \right)
 \end{align}
 
 With the Euclidian metric, we represent as following:
 
 \begin{align}
   \sigma^\mu_{\alpha\dot{\alpha}} &= \left(\one, i\vec{\sigma} \right)\\
-  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -i\vec{\sigma} \right)\\
+  \bar{\sigma}^{\mu\  \dot{\alpha}\beta} &= \left(\one, -i\vec{\sigma} \right)
 \end{align}
 
 So that:
@@ -362,7 +362,7 @@ Similar to dotted spinors:
 
 ## Creating Amplitudes for a three particle interaction:
 
-\begin{figure}  
+\begin{figure}
   \centering
   \input{assets/amplitude_3pointsimple.tex}
   \caption{Feynman diagram of a three particle interaction}
@@ -389,21 +389,20 @@ As we are looking at massless particles; here our equation goes:
   \implies p_1 \cdot p_2 &= p_2 \cdot p_3 = p_3 \cdot p_1  = 0
 \end{align}
 
-And complex momenta:
+And complex momenta [@Plefka:2014aa]:
 
 \begin{align}
   2p_1 \cdot p_2 &= 2p_2 \cdot p_3 = 2p_3 \cdot p_1 \\
   \implies \agl{1}{2} \sqr{2}{1} &= 0\\
   \agl{2}{3} \sqr{3}{1} &= 0\\
-  \agl{3}{1} \sqr{1}{3} &= 0\\
+  \agl{3}{1} \sqr{1}{3} &= 0
 \end{align}
 
-[@Plefka:2014aa, pp 17, section 1.11 Vanishing Tree Amplitudes]
 
 We will use this and the following to explore a complex momenta:
 
 \begin{align}
-\qq{When} \agl{1}{2} &= 0
+\qq{When} \agl{1}{2} &= 0\\
    \ld{1} &\parallel \ld{2}\\
    \tensor{{\ld{1}}}{_{\alpha}} &= a \tensor{{\ld{2}}}{_{\alpha}}\\
    A(1,2,3) &= \begin{cases} \overbrace{\agl{1}{2}}^{a_1} \overbrace{\agl{2}{3}}^{a_2} \overbrace{\agl{3}{1}}^{a_3}\\
@@ -426,7 +425,7 @@ We will use this and the following to explore a complex momenta:
     } &=
      &1: + \frac{1}{2}(3-1) &= +1\\
     &&2: + \frac{1}{2}(3-1) &= +1\\
-    &&3: + \frac{1}{2}(0-2) &= -1\\
+    &&3: + \frac{1}{2}(0-2) &= -1
 \end{align}
 
 ### Simple using \(\agl{\quad}{ }\):
@@ -439,7 +438,7 @@ We will use this and the following to explore a complex momenta:
     } &=
      &1: - \frac{1}{2}(3-1) &= -1\\
     &&2: - \frac{1}{2}(3-1) &= -1\\
-    &&3: - \frac{1}{2}(0-2) &= +1\\
+    &&3: - \frac{1}{2}(0-2) &= +1
 \end{align}
 
 Note:

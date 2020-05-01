@@ -192,15 +192,18 @@ Now we simplify:
     } &= - \frac{ \agl{1}{2}^2 }{ \agl{1}{3} }
     \frac{ \sqr{3}{\tilde{\xi}} }{ \sqr{1}{\tilde{\xi}} } \\
     &= \frac{ \sqr{3}{\tilde{\xi}} }{ \sqr{1}{\tilde{\xi}} }
-      \frac{ \agl{1}{2}^2 }{ \agl{3}{1} }
+      \frac{ \agl{1}{2}^2 }{ \agl{3}{1} }\\
+    &= \frac{\ag{12}^3}{\ag{23}\ag{31}}
 \end{align}
+
+
 
 ## Notation
 
 \begin{align}
   p_{\alpha\dot{\alpha}} &= \ld{\alpha} \ld{\dot{\alpha}}\\
   p^\mu &= \# \bams{\lambda}{\mu}{\tilde{\lambda}} \\
-  &= \# \lu{\alpha} \ltu{\alpha} \tensor{\sigma}{^\mu_{\alpha\dot{\alpha}}}
+  &= \# \lu{\alpha} \ltu \tensor{\sigma}{^\mu_{\alpha\dot{\alpha}}}
 \end{align}
 
 where we are using the identity:
@@ -295,7 +298,7 @@ plane. Taking our scattering amplitude, we reduce it such that our only
 variable becomes the moment of a particle:
 
 \begin{equation}
-  (p_i +p_{i+1} + p_{i+2} + \dots )^2 \equiv \ \dij
+  (p_i +p_{i+1} + p_{i+2} + \dots )^2 \equiv \ P_{ij}^2
 \end{equation}
 
 Where we have the following quantities:
@@ -304,7 +307,7 @@ Where we have the following quantities:
 \begin{align}
   s &= (p_1 + p_2)^2\\
   t &= (p_2 + p_3)^2\\
-  u &= (p_1 + p_1)^2 \\
+  u &= (p_1 + p_3)^2 \\
   p_4 &= -p_1 -p_2 -p_3 -p_4  \Rightarrow A(S,t,u)
 \end{align}
 
@@ -320,10 +323,10 @@ Gauge theory, n-point amplitudes. We now deform our amplitude in such a way that
 Which leaves our amplitude in a state with only complexified momenta \(p_i(z) \qq{and} p_i(z)\)
 
 \begin{align}
-  \sA(z) &= A(-p_1, p_2, \cdots, p_i(z), \cdots, p_j(z), \cdots  p_n  )\\
-  \sA(0) &= A(-p_1, p_2, \cdots,  p_n  )
+  \sA(z) &= A(p_1, p_2, \cdots, p_i(z), \cdots, p_j(z), \cdots  p_n  )\\
+  \sA(0) &= A(p_1, p_2, \cdots,  p_n  )
 \end{align}
-.
+
 
 This process can be particularly useful when exploring massless particles \(\left ( \sum p_i^2 = 0 \right )\); however this is not a constrain, and also works just as well with massive particles.
 
@@ -382,7 +385,7 @@ Taking complex Minkowski:
 \left .
 \begin{aligned}
   \underline{\agl{i}{\eta}} \udots{\(\sqr{\eta}{i}\)} \to 0\\
-  \udots{\(\agl{j}{\eta}\)} \underline{\sqr{\eta}{j}} \to 0\\
+  \udots{\(\agl{j}{\eta}\)} \underline{\sqr{\eta}{j}} \to 0
 \end{aligned} \right \} \qq{2 options}
 \end{equation}
 
@@ -403,7 +406,7 @@ Where implies that the we are left with:
 p_i \to p_i(z) &= p_i +z \eta\\
   &= \ld{i}\lmtd{i} + z\ld{i}\lmtd{j}\\
   &= \ld{i}(\lmtd{i} + z\lmtd{j})\\
-  &\equiv \ld{i} \lthd{i}(z)\\
+  &\equiv \ld{i} \lthd{i}(z)
 \end{aligned}
 \qquad \qquad
 \begin{aligned}
@@ -420,15 +423,13 @@ Leaving us with the two quantities:
 \label{eq:shifted_amplitude}
 
 \begin{align}
-  \lthd{i}(z) &\equiv \lmtd{i} + z\lmtd{j} \\
-  \lh_j(z)    &\equiv \ld{j} - z\ld{i}
+  \lthd{i}(z) &\equiv \lmtd{i} + z\lmtd{j}  &\text{Indicated beiefly as } \equiv  \sabrv{i}{j}\\
+  \lh_j(z)    &\equiv \ld{j} - z\ld{i}      &\text{Indicated beiefly as } \equiv \asbrv{i}{j}
 \end{align}
 
 Sometimes this is given the shorthand notation:
 
 \begin{align}
-  \lthd{i}(z) &\equiv  \sabrv{i}{j}\\
-  \lh_j(z) &\equiv \asbrv{i}{j}
 \end{align}
 
 This leads us to being able to describe amplitudes in the simple form:
@@ -467,7 +468,7 @@ When we complexify this, we get:
 \begin{align}
   \hat{p}(z) &= P + z\eta\\
   \hat{p}^2(z) =0 &= P^2 + 0 + 2z(P\cdot\eta)\\
-  ??? \qquad \frac{z}{P}&= \frac{P^2}{2(P\cdot\eta)}
+  \qquad \frac{z}{P}&= \frac{P^2}{2(P\cdot\eta)}
 \end{align}
 
 rewriting this:
@@ -577,7 +578,7 @@ In order to calculate this MHV amplitude, we need to find a way of simplifying t
 \text{case }[1]
 \begin{cases}
   \hat{\lambda}_5 &= \lambda_5 + z\lambda_1\\
-  \hat{\tilde\lambda}_1 &= \tilde \lambda_1 - z\tilde \lambda_5\\
+  \hat{\tilde\lambda}_1 &= \tilde \lambda_1 - z\tilde \lambda_5
 \end{cases}
 \end{equation}
 
@@ -585,7 +586,7 @@ In order to calculate this MHV amplitude, we need to find a way of simplifying t
 \text{case } [2]
 \begin{cases}
   \hat{\lambda}_1 &= \lambda_1 + z\lambda_5\\
-  \hat{\tilde\lambda}_5 &= \tilde \lambda_5 - z\tilde \lambda_1\\
+  \hat{\tilde\lambda}_5 &= \tilde \lambda_5 - z\tilde \lambda_1
 \end{cases}
 \end{equation}
 

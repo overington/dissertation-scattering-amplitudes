@@ -75,7 +75,7 @@ For this, we have a possible pairing:
 
 \begin{align}
   \ag{\hat p 1} \sq{4 \hat p} &= \sq{4 \hat p}\sq{\hat p 1}\\
-  &= \bsma{4}{\hat p}{1}\\
+  &= \bsma{4}{\hat p}{1}
 \end{align}
 
 Here we are looking for a way to keep out particles on shell, so we use the complex momentum, and find the correct particles momentum to work allow for this calculation. In this case, we are choosing \(\hat p = \hat{\lambda}_1 + z\lambda_2\):
@@ -147,7 +147,7 @@ Now putting everything together:
       \ag{12} \sq{34}^2 \ag{31}
       }{
         \ag{34} \sq{42} \sq{23} \ag{32}
-      }\\
+      }
 \end{equation}
 
 This can be further simplified into our shifted pole:
@@ -238,17 +238,19 @@ Putting all this together:
     } = \pm \one
 \end{align}
 
-## Meeting Notes:
-
-Slide equations:
-
-\begin{align}
-  p &= \lambda \tilde{\lambda}\\
-  p_\mu \to p_{\alpha\dot{\alpha}} &= p_\mu \sigma^\mu\\
-  \text{show } p_\mu p^\mu = 0\\
-  p_{\alpha\dot{\alpha}} \equiv \lambda_\alpha \tilde{\lambda}_\alpha\\
-  \det{(p_{\alpha\dot{\alpha}})} &= p^2
-\end{align}  
+<!--
+   - ## Meeting Notes:
+   - 
+   - Slide equations:
+   - 
+   - \begin{align}
+   -   p &= \lambda \tilde{\lambda}\\
+   -   p_\mu \to p_{\alpha\dot{\alpha}} &= p_\mu \sigma^\mu\\
+   -   \text{show } p_\mu p^\mu = 0\\
+   -   p_{\alpha\dot{\alpha}} \equiv \lambda_\alpha \tilde{\lambda}_\alpha\\
+   -   \det{(p_{\alpha\dot{\alpha}})} &= p^2
+   - \end{align}  
+   -->
 
 <!-- end:dissertation/log/2020.02.18.md -->
 ## Deriving 3 point amplitudes
@@ -511,6 +513,17 @@ Plugging this back into the original expression, this becomes:
         }_{\tilde{\lambda}_{\hat{p}}}\\
   \lambda_{\hat{p}} &= \lambda_3\\
   \tilde{\lambda}_{\hat{p}} &= \tilde{\lambda}_3 - \frac{\sq{34}}{\sq{24}} \tilde{\lambda}_2
+\end{align}
+
+
+Collecting the terms we arrive at our expected result:
+
+\begin{align}
+  i \frac{
+    \sq{13}^4
+  }{
+    \sq{12}\sq{23}\sq{34}\sq{41}
+  }
 \end{align}
 
 <!--
