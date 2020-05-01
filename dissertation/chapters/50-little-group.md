@@ -3,7 +3,7 @@
 ## \(SU(2)\)
 
 \begin{align}
-  SU(2) \to U(N) &= N\times N matrix\\
+  SU(2) \to U(N) &= N\times N \qq{matrix}\\
    &= U^\dagger U = \one \qq{Unitary}
 \end{align}
 
@@ -13,7 +13,7 @@ Taylor expansion of \(U\):
 
 \begin{align}
   U &= e^{iA}\\
-  e^x &= 1 + \frac{x^2}{2} + \frac{x^3}{3} \dots
+  e^x &= 1 + \frac{x}{1!} \frac{x^2}{2!} + \frac{x^3}{3!} \dots
 \end{align}
 
 Impose the following conditions:
@@ -63,10 +63,9 @@ where:
 
 ## \(SO(1,3)\) Lorentz Group
 
-Why \(x_{\dot{\alpha} \alpha}\)  What is this object?
-
-For the Lorentz transformation:
-
+<!--
+   - Why \(x_{\dot{\alpha} \alpha}\)  What is this object?
+   -->
 <!-- #TODO: Write definition of Lorentz Group -->
 
 \begin{definition}[Lorentz Transformations]
@@ -80,7 +79,7 @@ For the Lorentz transformation:
     P_{\alpha \dot{\alpha}} &= \rho^{\mu}\sigma_{\mu \alpha \dot{\alpha}} \to MPM^\dagger
   \end{align}
 
-  Using \(P^{\mu}\rho_\mu = \det p\), the following can be obtained:
+  Using \(P^{\mu}\rho_\mu = \det(p)\), the following can be obtained:
 
   \begin{align}
     \det( MpM^\dagger ) &= \det(p)\\
@@ -134,7 +133,7 @@ and any function of the principal invariants is also objective.
 \end{definition}
 
 
-When working with determinants, a common method of calculation and simplification is the Levi-Civita symbol.
+When working with determinants, a common method of calculation and simplification is the Levi Civita symbol.
 
 \begin{definition}[Determinants]
 
@@ -152,24 +151,18 @@ When working with determinants, a common method of calculation and simplificatio
 
 \end{definition}
 
-Using the Levi-Civita symbol, we can calculate a determinant as such:
+Using the Levi Civita symbol, we can calculate a determinant as such:
 
 
 
 \begin{definition}[Levi Civita symbol]
 
-The Levi-Civita symbol reduces a tensor of \(\rank n\) to one of \(\rank 0\) (a
+The Levi Civita symbol reduces a tensor of \(\rank n\) to one of \(\rank 0\) (a
 scalar). It is denoted by \(\epsilon _{a_1, a_2, a_3,\cdots,a_n}\), where
 \(\epsilon\) has \(n\) subscripts, each of which identifies one of the objects.
 
-Depending on the reference order of its objects, the Levi-Civita symbol is
+Depending on the reference order of its objects, the Levi Civita symbol is
 defined to be:
-
-\begin{itemize}
-  \item \(+1 \qq{if} a_1, a_2, a_3,\cdots,a_n \) represents an even permutation.
-  \item \(−1 \qq{if} a_1, a_2, a_3,\cdots,a_n \) represents an odd permutation.
-  \item \( 0 \qq{if} a_1, a_2, a_3,\cdots,a_n \) does not represent a permutation (i.e., contains duplicate of any of its entries).
-\end{itemize}
 
 \begin{equation}
  \epsilon _{a_1, a_2, a_3,\cdots,a_n}= \begin{cases}
@@ -180,17 +173,17 @@ defined to be:
  \label{eq:levi_civita}
 \end{equation}
 
-For a tensor or \(\rank 2\), which is our most common use case, this can be
+For a tensor or \(\rank(2)\), which is our most common use case, this can be
 represented by matrix as such:
 
 \begin{equation}
     \epsilon_{\alpha \beta} = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
-     \label{eq:levi_civita_matrix}
+     \label{eq:levi_civita_tensor}
 \end{equation}
 
 \end{definition}
 
-Using definitions for the  Levi Civita tensor from equation \ref{eq:levi_citita}, we will now explore how this transforms with \(M\)
+Using definitions for the Levi Civita tensor from equation \ref{eq:levi_civita_tensor}, we will now explore how this transforms with \(M\)
 
 \begin{equation}
   \epsilon_{\alpha\beta} \to \\

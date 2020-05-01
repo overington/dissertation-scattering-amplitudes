@@ -1,19 +1,20 @@
 # Conclusion
 
-The techniques which have been explored here can apply to many theories,
-including gravitation.
+The techniques which have been explored here are versatile in their use and
+application.  The generality of this technique is its power, and can be seen
+from its usefulness in the decrease in calculations needed when compared to the
+same interaction using the Feynman QCD method; and is especially useful when
+encountering recursion relations in scattering amplitudes.
 
-If we were using Feynman Diagrams, the method would be difficult, but using
-this method is much easier.
+They can also be applied to a wide range of applications; for example in
+current research it is currently being applied in current and further research
+in theories including gravitation; into explicit solutions to \(\mathcal{N} =
+4\) supersymmetric recursion relations, and \(\mathcal{N} = 8\) supergravity.
 
-The generality of this technique is its power.
-
-These technique has been used in collider physics, amplitude techniques - in the
-LHC, and even current research in Gravitational waves; where the amplitudes
-being measured are black holes, rather than 
-
-The strength of these techniques opens up a broad range of possibilities; comes
-a wide range of possibilities.
+These techniques have been used in accelerator and collider physics, for
+example in the LHC, and even current research in Gravitational waves; where the
+amplitudes being measured are black holes, rather than particle scattering
+amplitudes.
 
 # Bibliography
 

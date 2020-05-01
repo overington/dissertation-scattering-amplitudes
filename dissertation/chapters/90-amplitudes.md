@@ -288,8 +288,8 @@ Using complex analysis, we want to inspect the amplitude \(A_n(z)\). This is
 because the sum of tree-level Feynman diagrams are gauge invariant, and
 therefore when they are deformed by \(z\), they remain unchanged. Therefore we
 can choose the Feynman gauge for the following discussion, without loss of
-generality. It is clear that \(An(z)\) is a rational function of the
-\(\ld{i}\),\(\lmt_i\) and \(z\). Moreover, \(An(z = 0)\) can only have poles where the
+generality. It is clear that \(A_n(z)\) is a rational function of the
+\(\ld{i}\),\(\lmt_i\) and \(z\). Moreover, \(A_n(z = 0)\) can only have poles where the
 denominators of Feynman propagators become zero.
 
 When inspecting a function using complex analysis, we try to simplify the
@@ -308,7 +308,7 @@ Where we have the following quantities:
   s &= (p_1 + p_2)^2\\
   t &= (p_2 + p_3)^2\\
   u &= (p_1 + p_3)^2 \\
-  p_4 &= -p_1 -p_2 -p_3 -p_4  \Rightarrow A(S,t,u)
+  p_4 &= -p_1 -p_2 -p_3 -p_4  \Rightarrow A(s,t,u)
 \end{align}
 
 Gauge theory, n-point amplitudes. We now deform our amplitude in such a way that:
@@ -401,36 +401,28 @@ Where implies that the we are left with:
   2(p_j\cdot \eta) &= 0
 \end{align}
 
-\[
-\begin{aligned}
+\begin{align}
 p_i \to p_i(z) &= p_i +z \eta\\
   &= \ld{i}\lmtd{i} + z\ld{i}\lmtd{j}\\
   &= \ld{i}(\lmtd{i} + z\lmtd{j})\\
   &\equiv \ld{i} \lthd{i}(z)
-\end{aligned}
-\qquad \qquad
-\begin{aligned}
+\end{align}
+
+\begin{align}
 p_j \to p_j(z) &= p_j -z \eta\\
   &= \ld{j}\lmtd{j} - z\ld{i}\lmtd{j}\\
   &= (\ld{j} - z\ld{i})\lmtd{j}\\
   &\equiv \lh_j \lmtd{j}(z)
-\end{aligned}
-\taglabel{eq:complexmomentum}
-\]
+\end{align}
 
 Leaving us with the two quantities:
 
-\label{eq:shifted_amplitude}
 
 \begin{align}
-  \lthd{i}(z) &\equiv \lmtd{i} + z\lmtd{j}  &\text{Indicated briefly as } \equiv  \sabrv{i}{j}\\
+  \lthd{i}(z) &\equiv \lmtd{i} + z\lmtd{j}  &\text{Indicated briefly as } \equiv  \sabrv{i}{j} \label{eq:shifted_amplitude} \\
   \lh_j(z)    &\equiv \ld{j} - z\ld{i}      &\text{Indicated briefly as } \equiv \asbrv{i}{j}
 \end{align}
 
-Sometimes this is given the shorthand notation:
-
-\begin{align}
-\end{align}
 
 This leads us to being able to describe amplitudes in the simple form:
 
@@ -552,10 +544,12 @@ For example:
 
 [@Plefka:2014aa, pp 15]
 
-## General Notes:
-
- - \(\agl{\quad}{} \sqr{\quad}{}\)
- - \(\RR\) Minkowski implies vanishing of one implies vanishing of other
+<!--
+   - ## General Notes:
+   - 
+   -  - \(\agl{\quad}{} \sqr{\quad}{}\)
+   -  - \(\RR\) Minkowski implies vanishing of one implies vanishing of other
+   -->
 
 ## Example of shifted poles
 

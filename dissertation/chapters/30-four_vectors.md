@@ -183,14 +183,13 @@ and from this we can see that we can form a scalar product:
    -->
 
 
-### Moving Beyond Galilean Mechanics
 
-
-
-Using reference systems or co-ordinates.  This fist step will allow us to set a
-time and spatial dimensions of the system, and allow us to compare two systems
-in relation to one another, and measure the change in this relation as one of
-the systems evolves over time in relation to the other.
+<!--
+   - Using reference systems or co-ordinates.  This fist step will allow us to set a
+   - time and spatial dimensions of the system, and allow us to compare two systems
+   - in relation to one another, and measure the change in this relation as one of
+   - the systems evolves over time in relation to the other.
+   -->
 
 
 
@@ -310,8 +309,6 @@ This leads to the formal relation of angular momentum:
 
 This related transformation and sum to Noether's theorem
 
-## Noether's Theorem
-
 \begin{equation}
   \label{eq:noethers_theorem}
   I = \sum_r \pdv{\L}{\dot{q}_r}\delta q_r
@@ -319,7 +316,7 @@ This related transformation and sum to Noether's theorem
 
 
 
-## Lorentz invariance using the covariant form of Maxwell's Equations of electrodynamics
+## Deriving Lorentz invariance for the four-vector form of Maxwell's Equations
 
 <!-- https://www.ippp.dur.ac.uk/~krauss/Lectures/QuarksLeptons/QED/GaugeInvariance_1.html -->
 
@@ -334,7 +331,7 @@ Starting from the classical form of the Maxwell equations:
   \vec{\nabla}\times \vec{B}&=\vec{J}+\pdv{\vec{E}}{t}
 \end{align}
 
-Taking a closer look at equation ~\ref{eq:maxwell_divB}, we can set see that this suggests that there is a vector potential
+Taking a closer look at Equation \ref{eq:maxwell_divB}, we can set see that this suggests that there is a vector potential
 
 \begin{equation}
   \vec{B} = \left(  \vec{\nabla} \times \vec{A}\right)
@@ -346,7 +343,7 @@ The \(\vec{B}\) field remains unchanged when the gradient of an arbitrary scalar
   \vec{A} \to \vec{A}+\vec{\nabla}\Lambda
 \end{equation}
 
-Similarly, with eq ~\ref{eq:maxwell_curlE} it follows that:
+Similarly, with Equation ref{eq:maxwell_curlE} it follows that:
 
 \begin{equation}
   \vec{\nabla}\times \vec{E} = -\pdv{\vec{B}}{t}
@@ -396,7 +393,7 @@ Using
   (\vec{a}\times \vec{b})^i = \epsilon^{ijk}a^j b^k
 \end{align}
 
-Where \(\epsilon^{ijk}\) is Levi Civita symbol we define in equation ~\ref{eq:levi_civita}.
+Where \(\epsilon^{ijk}\) is Levi Civita symbol we define in Equation \ref{eq:levi_civita}.
 
 Combing the above mentioned expansions, we will now find a different way to write the Maxwell equations:
 
@@ -414,7 +411,7 @@ Combing the above mentioned expansions, we will now find a different way to writ
   \left( \pdv[2]{t} - \vec{\nabla}^2 \right)A^0 - \pdv{t} \left( \vec{\nabla}\cdot \vec{A} + \pdv{A^0}{t} \right) &= \rho
 \end{align}
 
-This leads us to our new Box operator '\(\Box\)' which we defined in equation ~\ref{eq:box_operator} for a four-vector, defined as:
+This leads us to our new Box operator '\(\Box\)' which we defined in Equation \ref{eq:box_operator} for a four-vector, defined as:
 
 \begin{equation}
   \Box A^\mu = \partial^\mu \left( \partial_\nu A^\nu \right) = J^\mu

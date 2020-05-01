@@ -1,44 +1,5 @@
 # Elements of the Lorentz group (from classical mechanics to relativistic physics)
 
-## Einsteins dispersion relation
-
-<!-- previously this section was named Interactions -->
-
-At the heart of an interaction between free particles, is the Einsteins
-conservative energy and momentum associated with each entering particle to
-exiting particles using *De Broglie dispersion relations*, which connects the
-energy, momentum, and mass of particles through relativistic dispersion
-relation:
-
-\begin{equation}
-  \label{eq:einstein_energymomentum}
-  E^2 = ( \vec{p} c )^2 + (mc^2 )^2
-\end{equation}
-
-
-currently available to us for exploring interactions from their fundamental
-rules in physical systems and building up the language we need in order to
-model how they interact. From this, we explore further formalisms which
-
-<!-- TODO:discussion of Einstein energy momentum dispersion relation -->
-
-form of relativistic interactions, which themselves have been bootstrapped from
-classical mechanics.
-
-setting out the notation for which we will use throughout the duration of this
-paper, in order to be able to concisely explain
-
-In order to take into account relativistic effects, we begin here by working
-through the formalism of the Lorentz Group to arrive at the relativistic
-formalisms for
-
-the a special group called the Lorentz Group,
-
-Let us first take a look at the Lagrangian equation, and how they differ from
-their relativistic to non-relativistic formulations.
-
-
-
 ## The Lagrangian \( \Lg \) and Hamiltonian \(H\), and their time derivative
 
 \begin{align}
@@ -72,7 +33,7 @@ Where
 Thus leaving us with the following set of equations:
 
 \begin{align}
-  H &= T+V
+  H &= T+V\\
   &= \sum_i{\dvec{q}^i\pdv{L}{\dvec{q}^i} -L} = \sum_i{\dvec{q}^ip_i-L}
 \end{align}
 
@@ -85,7 +46,7 @@ where
 leading to
 
 \begin{align}
-  \H &= m\dvec{x}^2 - (-m\sqrt{1-\dvec{x}^2})\\
+  \H &= m\dvec{x}^2 - \left (-m\sqrt{1-\dvec{x}^2}\right ) \\
   &= \frac{m\dvec{x}}{\sqrt{1-\dvec{x}^2}}\dvec{x} +m\sqrt{1-\dvec{x}^2} \\
   &= \frac{\cancel{m\dvec{x}^2}+m-\cancel{m\dvec{x}^2}}{\sqrt{1-\dvec{x}^2}}\\
   &= \frac{m}{\sqrt{1-\dvec{x}^2}}
@@ -107,7 +68,7 @@ Using this approximation, we derive:
 
 ### Einstein Equation
 
-Where we arrive at Einsteins formula, when setting c = 1
+Where we arrive at Einsteins formula, when setting \(c = 1\)
 \begin{equation}
   \label{eq:einstein}
   H = E = \frac{m}{\sqrt{1-\dvec{x}^2}}

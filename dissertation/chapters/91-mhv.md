@@ -256,9 +256,11 @@ Putting all this together:
 ## Deriving 3 point amplitudes
 <!-- begin:dissertation/log/2020.03.11.md -->
 
-- Derive \(\rm MHV\) amplitude
-- Perform a shift for a 4-point amplitude.
-- Negative helicity
+<!--
+   - - Derive \(\rm MHV\) amplitude
+   - - Perform a shift for a 4-point amplitude.
+   - - Negative helicity
+   -->
 
 \begin{equation}
   (\rm MHV) \to A(1^- 2^+ 3^- 4^+) = \frac{

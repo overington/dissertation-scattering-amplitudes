@@ -89,7 +89,7 @@ So that:
     \bar{P}^{\dot{\alpha} \alpha} &= p^\mu \bar{\sigma}_\mu^{\ \dot{\alpha}\alpha}
 \end{align}
 
-Then \(\epsilon_{\alpha\beta}\) similar to Levi-Civita.
+Then \(\epsilon_{\alpha\beta}\) similar to Levi Civita.
 
 \begin{equation}
   \epsilon_{12} = -\epsilon_{21}
@@ -414,7 +414,7 @@ In order to move back and forth between a four-vector and a spinor, we introduce
     \\
     \ltd{\alpha}\tilde{\chi}^{\dot{\alpha}} &=& \epsilon_{\dot{\alpha}\beta}\ltu[\beta]\ltu &\equiv \sqr{\tilde{\lambda}}{\tilde{\chi}}
     \\
-    2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_i}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
+    2(p_i\cdot p_j) &\equiv& \tensor{{p_i}}{_{\alpha\dot{\alpha}}} \tensor{{p_j}}{^{\dot{\alpha}\alpha}} &= \agl{i}{j} \sqr{j}{i}
   \end{align}
 \end{definition}
 

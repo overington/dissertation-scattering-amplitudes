@@ -1,8 +1,4 @@
-
 <!-- ## Building a scattering amplitude / Relativity -->
-
-
-
 
 # The Relativity Principle
 
@@ -14,7 +10,47 @@ formalism's, and how we might use certain properties to expand on this
 knowledge, in order to represent systems, or groups of particles, and how they
 interact.
 
-At the heart of 
+<!-- previously this section was named Interactions -->
+
+At the heart of an interaction between free particles, is the Einsteins
+conservative energy and momentum associated with each entering particle to
+exiting particles using *De Broglie dispersion relations*, which connects the
+energy, momentum, and mass of particles through relativistic dispersion
+relation:
+
+\begin{equation}
+  \label{eq:einstein_energymomentum}
+  E^2 = ( \vec{p} c )^2 + (mc^2 )^2
+\end{equation}
+
+
+<!--
+   - currently available to us for exploring interactions from their fundamental
+   - rules in physical systems and building up the language we need in order to
+   - model how they interact. From this, we explore further formalisms which
+   -->
+
+<!-- TODO:discussion of Einstein energy momentum dispersion relation -->
+
+<!--
+   - form of relativistic interactions, which themselves have been bootstrapped from
+   - classical mechanics.
+   - 
+   - setting out the notation for which we will use throughout the duration of this
+   - paper, in order to be able to concisely explain
+   - 
+   - In order to take into account relativistic effects, we begin here by working
+   - through the formalism of the Lorentz Group to arrive at the relativistic
+   - formalisms for
+   - 
+   - the a special group called the Lorentz Group,
+   - 
+   - Let us first take a look at the Lagrangian equation, and how they differ from
+   - their relativistic to non-relativistic formulations.
+   -->
+
+
+
 
 
 ## Maximum velocity of propagation
@@ -90,12 +126,11 @@ terms of coordinates and time in different inertial reference systems, has one
 and the same form. 
 
 The laws of nature are identical in all inertial systems of reference.
-Experiments show that instantaneous interactions interactions are impossible
-principle of relativity is valid [See @Landau:1975aa]
+Experiments show that instantaneous interactions interactions are impossible,
+and that the principle of relativity is valid [See @Landau:1975aa].
 
-
-In their classical form, the any changes or interactions which happen to a body
-in an inertial frame, will happen instantaneously; for example the effects of
+In their classical form, any changes or interactions which happen to a body
+in an inertial frame will happen instantaneously; for example the effects of
 a gravitational field, or the electro-magnetic field. Changes to a body within
 this frame will be propagated to all other bodies in this or any other inertial
 frame instantaneously.
@@ -304,11 +339,8 @@ and in its infinitesimal form:
 
 
 Another important observation to point due to the maximum velocity of
-propagation \(c\); any event can only effect another only if the interval between
-them is time-like, that is: xxx; this follows immediately from the fact that no interaction
-can propagate at a velocity greater than our maximum velocity of propagation
-\(c\),
-
-
-
+propagation \(c\); any event can only effect another if the interval between
+them is time-like, that is: if the interval between two events is a real
+number; this follows immediately from the fact that no interaction can
+propagate at a velocity greater than our maximum velocity of propagation \(c\).
 
